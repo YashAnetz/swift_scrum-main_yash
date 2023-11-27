@@ -12,6 +12,7 @@ export const UserAvatar = ({
   const imageMinName = image?.replace(".webp", "-min.webp");
   const imageSrc = size > 80 ? `/avatars/${image}` : `/avatars/${imageMinName}`;
   const imageSize = {
+    borderRadius:'5px',
     width: `${size}px`,
     minWidth: `${size}px`,
     height: `${size}px`,
@@ -25,8 +26,8 @@ export const UserAvatar = ({
   return (
     <Tooltip title={name} show={tooltip}>
       <Avatar.Root className="flex items-center rounded-full" style={imageSize}>
-        <Avatar.Image
-          className="rounded-full object-cover"
+        <Avatar.Image 
+          className=" object-cover"
           src={image && imageSrc}
           style={imageSize}
           alt={name}

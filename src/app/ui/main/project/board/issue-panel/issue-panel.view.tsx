@@ -121,49 +121,82 @@ export const IssuePanel = ({ issue }: Props): JSX.Element => {
   }, [fetcher.type]);
 
   return (
-    <>
-      <Dialog.Root open={true}>
+    <div >
+      <Dialog.Root  open={true}>
         <Dialog.Portal container={portalContainer}>
-          <Dialog.Overlay className={isOpen ? "" : "bg-opacity-0"}>
+          <Dialog.Overlay  className={isOpen ? "" : "bg-opacity-0"}>
             <Dialog.Content
               onEscapeKeyDown={handleProgrammaticClose}
               onPointerDownOutside={handleProgrammaticClose}
               className={isOpen ? "" : "translate-y-[10px] opacity-0"}
             >
-              <PanelHeaderIssue
+              <PanelHeaderIssue 
                 id={issue?.id || "Create new issue"}
                 deleteDisabled={
                   userIsNotReporter ||
                   defaultIssuesIds.includes(issue?.id || "")
                 }
               />
-              <Form method="post" onSubmit={handleFormSumbit} ref={formRef}>
-                <div className="grid grid-cols-5 gap-16">
-                  <section className="col-span-3">
+              <Form style={{backgroundColor:'#2D4059',width:'940px',padding:'20px',borderRadius:'20px'}}  method="post" onSubmit={handleFormSumbit} ref={formRef}>
+                <div  className="grid grid-cols-5 gap-16">
+                <section className="col-span-2 space-y-10 dark:text-font-light-dark">
+                    <div>
+                      <p style={{color:'#ffd460'}} className="mb-1">Status</p>
+                      <SelectStatus
+                        initStatus={issue?.categoryType || initStatus}
+                      />
+                    </div>
+                    <div>
+                      <p style={{color:'#ffd460'}} className="mb-1">Priority</p>
+                      <SelectPriority
+                        initPriority={issue?.priority.id || "low"}
+                      />
+                    </div>
+                    <div>
+                      <p style={{color:'#ffd460'}} className="mb-1">Asignee</p>
+                      <SelectAsignee initAsignee={issue?.asignee || user} />
+                    </div>
+                    <div>
+                      <p style={{color:'#ffd460'}} className="mb-1">Reporter</p>
+                      <div style={{backgroundColor:'#5a7fb0',borderRadius:'5px'}} className="mt-1 flex w-fit items-center gap-2  bg-grey-300 py-1 pl-1 pr-3.5 pb-1 dark:bg-dark-500">
+                        <UserAvatar {...reporter} />
+                        <input
+                          type="hidden"
+                          name="reporter"
+                          value={reporter.id}
+                        />
+                        <p className="m-0">{reporter.name}</p>
+                      </div>
+                    </div>
+                    <div style={{color:'#ffd460'}}>
+                      <CreatedUpdatedAt  issue={issue} />
+                    </div>
+                  </section>
+                  <section  className="col-span-3">
                     <Dialog.Title className="my-5 -ml-3">
-                      <Title
+                      <Title 
                         initTitle={issue?.name || ""}
                         readOnly={userIsNotReporter}
                         error={actionData?.errors?.name}
                       />
                     </Dialog.Title>
-                    <p className="font-primary-black text-font-main dark:text-font-main-dark">
+                    <p style={{color:'#ffd460'}} className="font-primary-black text-font-main dark:text-font-main-dark">
                       Description
                     </p>
-                    <div className="-ml-3">
+                    <div style={{color:'#ffd460'}} className="-ml-3">
                       <Description
                         initDescription={issue?.description || ""}
                         readOnly={userIsNotReporter}
                       />
                     </div>
                     <div className="mt-6">
-                      <p className="font-primary-black text-font-main dark:text-font-main-dark">
+                      <p style={{color:'#ffd460'}} className="font-primary-black text-font-main dark:text-font-main-dark">
                         Comments
                       </p>
-                      <div>
+                      <div >
                         <CreateComment addComment={addComment} />
                       </div>
-                      <ul className="mt-8 space-y-6">
+                      <ul style={{color:'white'}} className="mt-8 space-y-6">
                         {comments.map((comment) => (
                           <li key={comment.id}>
                             <ViewComment
@@ -175,45 +208,13 @@ export const IssuePanel = ({ issue }: Props): JSX.Element => {
                       </ul>
                     </div>
                   </section>
-                  <section className="col-span-2 space-y-10 dark:text-font-light-dark">
-                    <div>
-                      <p className="mb-1">Status</p>
-                      <SelectStatus
-                        initStatus={issue?.categoryType || initStatus}
-                      />
-                    </div>
-                    <div>
-                      <p className="mb-1">Priority</p>
-                      <SelectPriority
-                        initPriority={issue?.priority.id || "low"}
-                      />
-                    </div>
-                    <div>
-                      <p className="mb-1">Asignee</p>
-                      <SelectAsignee initAsignee={issue?.asignee || user} />
-                    </div>
-                    <div>
-                      <p className="mb-1">Reporter</p>
-                      <div className="mt-1 flex w-fit items-center gap-2 rounded-full bg-grey-300 py-1 pl-1 pr-3.5 pb-1 dark:bg-dark-500">
-                        <UserAvatar {...reporter} />
-                        <input
-                          type="hidden"
-                          name="reporter"
-                          value={reporter.id}
-                        />
-                        <p className="m-0">{reporter.name}</p>
-                      </div>
-                    </div>
-                    <div>
-                      <CreatedUpdatedAt issue={issue} />
-                    </div>
-                  </section>
+               
                 </div>
                 <div className="mt-6 grid grid-cols-3 items-end">
-                  <span className="font-primary-light text-2xs text-font-light text-opacity-80 dark:text-font-light-dark">
+                  <span style={{color:'#ffd460'}} className=" text-2xs text-font-light text-opacity-80 dark:text-font-light-dark">
                     Press <Kbd>Shift</Kbd> + <Kbd>S</Kbd> to accept
                   </span>
-                  <button
+                  <button style={{color:'#ffd460',backgroundColor:'#5a7fb0',borderRadius:'20px'}}
                     type="submit"
                     className="flex w-fit cursor-pointer items-center gap-4 justify-self-center rounded border-none bg-primary-main py-2 px-8 font-primary-bold text-lg text-white enabled:hover:bg-primary-main-hover disabled:cursor-not-allowed disabled:opacity-60"
                     disabled={transition.state !== "idle"}
@@ -228,7 +229,7 @@ export const IssuePanel = ({ issue }: Props): JSX.Element => {
                       "Accept"
                     )}
                   </button>
-                  <span className="justify-self-end font-primary-light text-2xs text-font-light text-opacity-80 dark:text-font-light-dark">
+                  <span style={{color:'#ffd460'}} className="justify-self-end font-primary-light text-2xs text-font-light text-opacity-80 dark:text-font-light-dark">
                     Press <Kbd>Esc</Kbd> to close
                   </span>
                 </div>
@@ -238,11 +239,11 @@ export const IssuePanel = ({ issue }: Props): JSX.Element => {
         </Dialog.Portal>
       </Dialog.Root>
       {/* To avoid hydration issues because a missmatch with the server*/}
-      <div
+      <div 
         ref={setPortalContainer}
         className="fixed top-0 left-0 w-full h-full z-50"
       />
-    </>
+    </div>
   );
 };
 

@@ -13,7 +13,7 @@ export const ProjectsView = ({
   projectsSummary,
 }: ProjectsViewProps): JSX.Element => {
   return (
-    <div style={{backgroundColor:'#2D4059',height:'100vh'}} className="bg-white p-6 dark:bg-dark-400">
+    <div style={{backgroundColor:'#5a7fb0'}} className="bg-white p-6 dark:bg-dark-400">
       <h1 style={{color:'#ffd460',marginLeft:'300px'}} className="font-primary-black text-2xl">PROJECTS</h1>
       
       <div style={{marginLeft:'300px'}} className="4 mt-4 grid grid-cols-auto-400 gap-8">

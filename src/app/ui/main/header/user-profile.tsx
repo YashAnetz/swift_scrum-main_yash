@@ -17,26 +17,27 @@ export const UserProfile = (): JSX.Element => {
         <DropdownMenu.Content
           align="end"
           sideOffset={5}
+          style={{backgroundColor:'#2D4059'}}
           className={cx(
-            "z-50 rounded bg-white shadow-md-dark dark:bg-dark-400",
+            "z-50 rounded  shadow-md-dark dark:bg-dark-400",
             "radix-side-bottom:animate-slide-down radix-side-top:animate-slide-up"
           )}
         >
           <DropdownMenu.Item className="flex flex-col items-center p-3 !outline-none">
             <UserAvatar {...user} size={80} />
-            <span className="mt-2 text-lg">{user.name}</span>
+            <span style={{color:'#ffd460'}} className="mt-2 text-lg">{user.name}</span>
           </DropdownMenu.Item>
           <DropdownMenu.Separator className="h-px bg-grey-500 dark:bg-dark-100" />
           <DropdownMenu.Item className="select-none p-1 !outline-none">
-            <Form action="action/logout" method="post">
-              <button
+            <Form style={{backgroundColor:'#5a7fb0'}}  action="action/logout" method="post">
+              <button style={{backgroundColor:'white'}}
                 type="submit"
                 onClick={(e) => e.stopPropagation()} // To prevent dropdown menu from closing
                 className="flex w-full items-center gap-2 rounded p-2 text-sm text-error-main hover:bg-error-light dark:text-error-main-dark dark:hover:bg-dark-100"
                 aria-label="Log out"
               >
                 <FaPowerOff />
-                <span>Log out</span>
+                <span>Sign out</span>
               </button>
             </Form>
           </DropdownMenu.Item>

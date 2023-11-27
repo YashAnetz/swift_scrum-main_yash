@@ -92,7 +92,7 @@ export const ProjectPanelView = ({ project, users }: Props): JSX.Element => {
               onEscapeKeyDown={handleProgrammaticClose}
               onPointerDownOutside={handleProgrammaticClose}
               className={cx(
-                "max-w-[600px]",
+                "max-w-[500px]",
                 !isOpen && "translate-y-[10px] opacity-0"
               )}
             >

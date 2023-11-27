@@ -5,7 +5,7 @@ import {
   $d08ef79370b62062$export$6d08773d2e66f8f2,
   $d08ef79370b62062$export$7c6e2c02157bb7d2,
   $d08ef79370b62062$export$be92b6f5f03c0fe9
-} from "/build/_shared/chunk-RA6QCO7A.js";
+} from "/build/_shared/chunk-6PMHYZHM.js";
 import {
   FaPowerOff
 } from "/build/_shared/chunk-P4P35UP3.js";
@@ -16,7 +16,7 @@ import {
 } from "/build/_shared/chunk-EZ43UAVT.js";
 import {
   UserAvatar
-} from "/build/_shared/chunk-RB7NZDFW.js";
+} from "/build/_shared/chunk-HKTS347N.js";
 import "/build/_shared/chunk-GE42YXME.js";
 import "/build/_shared/chunk-KTTHBX2X.js";
 import "/build/_shared/chunk-6DAQMQYB.js";
@@ -70,35 +70,37 @@ var UserProfile = () => {
       {
         align: "end",
         sideOffset: 5,
+        style: { backgroundColor: "#2D4059" },
         className: t(
-          "z-50 rounded bg-white shadow-md-dark dark:bg-dark-400",
+          "z-50 rounded  shadow-md-dark dark:bg-dark-400",
           "radix-side-bottom:animate-slide-down radix-side-top:animate-slide-up"
         ),
         children: [
           /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)($d08ef79370b62062$export$6d08773d2e66f8f2, { className: "flex flex-col items-center p-3 !outline-none", children: [
             /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(UserAvatar, { ...user, size: 80 }, void 0, false, {
               fileName: "src/app/ui/main/header/user-profile.tsx",
-              lineNumber: 26,
+              lineNumber: 27,
               columnNumber: 13
             }, this),
-            /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("span", { className: "mt-2 text-lg", children: user.name }, void 0, false, {
+            /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("span", { style: { color: "#ffd460" }, className: "mt-2 text-lg", children: user.name }, void 0, false, {
               fileName: "src/app/ui/main/header/user-profile.tsx",
-              lineNumber: 27,
+              lineNumber: 28,
               columnNumber: 13
             }, this)
           ] }, void 0, true, {
             fileName: "src/app/ui/main/header/user-profile.tsx",
-            lineNumber: 25,
+            lineNumber: 26,
             columnNumber: 11
           }, this),
           /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)($d08ef79370b62062$export$1ff3c3f08ae963c0, { className: "h-px bg-grey-500 dark:bg-dark-100" }, void 0, false, {
             fileName: "src/app/ui/main/header/user-profile.tsx",
-            lineNumber: 29,
+            lineNumber: 30,
             columnNumber: 11
           }, this),
-          /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)($d08ef79370b62062$export$6d08773d2e66f8f2, { className: "select-none p-1 !outline-none", children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(Form, { action: "action/logout", method: "post", children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(
+          /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)($d08ef79370b62062$export$6d08773d2e66f8f2, { className: "select-none p-1 !outline-none", children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(Form, { style: { backgroundColor: "#5a7fb0" }, action: "action/logout", method: "post", children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(
             "button",
             {
+              style: { backgroundColor: "white" },
               type: "submit",
               onClick: (e) => e.stopPropagation(),
               className: "flex w-full items-center gap-2 rounded p-2 text-sm text-error-main hover:bg-error-light dark:text-error-main-dark dark:hover:bg-dark-100",
@@ -106,12 +108,12 @@ var UserProfile = () => {
               children: [
                 /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(FaPowerOff, {}, void 0, false, {
                   fileName: "src/app/ui/main/header/user-profile.tsx",
-                  lineNumber: 38,
+                  lineNumber: 39,
                   columnNumber: 17
                 }, this),
-                /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("span", { children: "Log out" }, void 0, false, {
+                /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("span", { children: "Sign out" }, void 0, false, {
                   fileName: "src/app/ui/main/header/user-profile.tsx",
-                  lineNumber: 39,
+                  lineNumber: 40,
                   columnNumber: 17
                 }, this)
               ]
@@ -120,17 +122,17 @@ var UserProfile = () => {
             true,
             {
               fileName: "src/app/ui/main/header/user-profile.tsx",
-              lineNumber: 32,
+              lineNumber: 33,
               columnNumber: 15
             },
             this
           ) }, void 0, false, {
             fileName: "src/app/ui/main/header/user-profile.tsx",
-            lineNumber: 31,
+            lineNumber: 32,
             columnNumber: 13
           }, this) }, void 0, false, {
             fileName: "src/app/ui/main/header/user-profile.tsx",
-            lineNumber: 30,
+            lineNumber: 31,
             columnNumber: 11
           }, this)
         ]
@@ -248,4 +250,4 @@ function AppRoute() {
 export {
   AppRoute as default
 };
-//# sourceMappingURL=/build/routes/__main-2QA6EXTK.js.map
+//# sourceMappingURL=/build/routes/__main-WJF3YPIQ.js.map

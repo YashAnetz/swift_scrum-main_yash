@@ -132,7 +132,7 @@ var defaultProjectsIds = projectsMock.map(
 var ProjectsView = ({
   projectsSummary
 }) => {
-  return /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { style: { backgroundColor: "#2D4059", height: "100vh" }, className: "bg-white p-6 dark:bg-dark-400", children: [
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { style: { backgroundColor: "#5a7fb0" }, className: "bg-white p-6 dark:bg-dark-400", children: [
     /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("h1", { style: { color: "#ffd460", marginLeft: "300px" }, className: "font-primary-black text-2xl", children: "PROJECTS" }, void 0, false, {
       fileName: "src/app/ui/main/projects/projects.view.tsx",
       lineNumber: 17,
@@ -417,4 +417,4 @@ export {
   ProjectsRoute as default,
   meta
 };
-//# sourceMappingURL=/build/routes/__main/projects-Q5JVE54A.js.map
+//# sourceMappingURL=/build/routes/__main/projects-S4STP3U5.js.map

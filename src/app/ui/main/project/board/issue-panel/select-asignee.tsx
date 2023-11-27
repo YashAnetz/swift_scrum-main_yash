@@ -28,7 +28,7 @@ export const SelectAsignee = ({ initAsignee }: Props): JSX.Element => {
   };
 
   return (
-    <Select.Root
+    <Select.Root style={{backgroundColor:'#2D4059'}}
       name="asignee"
       defaultValue={initAsignee.id}
       onValueChange={onValueChange}

@@ -14,7 +14,7 @@ export const UserAvatarList = ({ users }: Props): JSX.Element => {
       {displayUsers.map((user, index) => (
         <div
           key={index}
-          className="z-10 -ml-[5px] rounded-full border-2 border-primary-light bg-white hover:z-20 dark:border-dark-100"
+          className="z-10 -ml-[5px]  border-2 border-primary-light bg-white hover:z-20 dark:border-dark-100"
         >
           <UserAvatar {...user} size={AVATAR_SIZE} tooltip />
         </div>
@@ -32,6 +32,7 @@ const MoreUsers = ({ users }: MoreUsersProps): JSX.Element => (
   <div className="z-10">
     <DropdownMenu.Root>
       <DropdownMenu.Trigger
+        className="-ml-[5px] box-content flex cursor-pointer items-center justify-center  border-2 border-primary-light bg-grey-500 text-lg text-font-main hover:underline dark:border-dark-100"
         style={{
           width: `${AVATAR_SIZE}px`,
           height: `${AVATAR_SIZE}px`,
@@ -39,7 +40,7 @@ const MoreUsers = ({ users }: MoreUsersProps): JSX.Element => (
       >
         {users.length - MAX_DISPLAY_USERS}+
       </DropdownMenu.Trigger>
-      <DropdownMenu.Content className="z-50 h-[400px] rounded-md bg-white p-2 shadow-blue dark:bg-dark-500">
+      <DropdownMenu.Content className="z-50 h-[400px]  bg-white p-2 shadow-blue dark:bg-dark-500">
         <ScrollArea className="pr-4">
           {users.map((user) => (
             <DropdownMenu.Item

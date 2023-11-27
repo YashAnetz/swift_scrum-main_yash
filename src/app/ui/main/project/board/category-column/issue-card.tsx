@@ -46,7 +46,7 @@ export const IssueCard = ({
   }, [isDragging, handleDragging]);
 
   return (
-    <div
+    <div 
       ref={isSubmitting ? undefined : dragRef}
       className={cx(
         "flex w-full cursor-pointer flex-col rounded border-none bg-white p-3 text-left shadow-xs duration-200 ease-in-out hover:bg-primary-light dark:bg-dark-300 dark:text-font-main-dark dark:hover:bg-dark-100",
@@ -58,13 +58,14 @@ export const IssueCard = ({
         <>
           <p className="min-h-[48px] w-full line-clamp-2">{issue.name}</p>
           <div className="flex items-center justify-between pt-4">
-            <span className="flex items-center">
-              <TaskIcon size={18} />
-              <span className="ml-1.5 text-2xs text-font-light dark:text-font-light-dark">
+            <span style={{backgroundColor:'#2D4059', color:'#ffd460',padding:'5px',borderRadius:'5px'}} className="flex items-center">
+            <PriorityIcon priority={issue.priority.id} />
+              <TaskIcon size={15} />
+              <span style={{color:'#ffd460'}} className="ml-1.5 text-2xs text-font-light dark:text-font-light-dark">
                 {issueIdPrefix}
               </span>
             </span>
-            <PriorityIcon priority={issue.priority.id} />
+           
           </div>
         </>
       </Link>

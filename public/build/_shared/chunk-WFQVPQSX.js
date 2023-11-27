@@ -155,19 +155,19 @@ var Title2 = ({
       return;
     setTitle(newTitle);
   };
-  return /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("div", { className: "relative", children: [
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("div", { style: { color: "#2D4059" }, className: "relative", children: [
     /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)(
       TextareaAutosize,
       {
         name: "title",
         value: title,
         setValue: updateTitle,
-        placeholder: "Write the title",
+        placeholder: "Enter Issue name",
         readOnly,
         onFocus,
         onBlur,
         textareaClassName: t(
-          "font-primary-black text-2xl",
+          "text-2xl",
           requireError && "focus-visible:outline-error-main outline outline-2 outline-error-main dark:outline-error-main-dark dark:focus-visible:outline-error-main-dark"
         ),
         autofocus: true
@@ -190,7 +190,7 @@ var Title2 = ({
       "span",
       {
         className: t(
-          "absolute right-0 top-full font-primary-light",
+          "absolute right-0 top-full ",
           isMaxLength ? "text-error-main dark:text-error-main-dark" : "text-font-light dark:text-font-light-dark"
         ),
         children: [
@@ -261,4 +261,4 @@ export {
   Title2,
   Description
 };
-//# sourceMappingURL=/build/_shared/chunk-VRFK2U4R.js.map
+//# sourceMappingURL=/build/_shared/chunk-WFQVPQSX.js.map

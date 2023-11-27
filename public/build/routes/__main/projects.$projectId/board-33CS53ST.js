@@ -8,7 +8,7 @@ import {
   isValidSort,
   sortList,
   useProjectStore
-} from "/build/_shared/chunk-56M7ZW4T.js";
+} from "/build/_shared/chunk-4NR53C3Y.js";
 import {
   $ae6933e535247d3d$export$7d15b64cf5a3a4c4,
   $cc7e05a45900e73f$export$2f60d3ec9ad468f2,
@@ -20,7 +20,7 @@ import {
   $cc7e05a45900e73f$export$bf1aedc3039c8d63,
   $cc7e05a45900e73f$export$d5c6c08dc2d3ca7,
   $cc7e05a45900e73f$export$d6e5bf9c43ea9319
-} from "/build/_shared/chunk-5M6ZSNFD.js";
+} from "/build/_shared/chunk-VXZWJF3R.js";
 import {
   BsClockHistory
 } from "/build/_shared/chunk-YNKUQ7C5.js";
@@ -35,7 +35,7 @@ import {
   $d08ef79370b62062$export$6d08773d2e66f8f2,
   $d08ef79370b62062$export$7c6e2c02157bb7d2,
   $d08ef79370b62062$export$be92b6f5f03c0fe9
-} from "/build/_shared/chunk-RA6QCO7A.js";
+} from "/build/_shared/chunk-6PMHYZHM.js";
 import {
   FaSortAmountDownAlt
 } from "/build/_shared/chunk-P4P35UP3.js";
@@ -44,7 +44,7 @@ import {
 } from "/build/_shared/chunk-4TVAHHRS.js";
 import {
   UserAvatar
-} from "/build/_shared/chunk-RB7NZDFW.js";
+} from "/build/_shared/chunk-HKTS347N.js";
 import {
   $921a889cee6df7e8$export$99c2b779aa4e8b8b
 } from "/build/_shared/chunk-GE42YXME.js";
@@ -4414,6 +4414,7 @@ var Search = () => {
     /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(
       "input",
       {
+        style: { height: "55px" },
         type: "text",
         name: "search",
         value: search,
@@ -5267,7 +5268,7 @@ var ScrollArea = ({
       /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)(
         $57acba87d6e25586$export$9a4e88b92edfce6b,
         {
-          orientation: "horizontal",
+          orientation: "vertical",
           className: t(
             "flex w-2  touch-none select-none rounded-full bg-grey-400 duration-150 ease-out hover:bg-grey-600 dark:bg-dark-100"
           ),
@@ -5275,7 +5276,7 @@ var ScrollArea = ({
             $57acba87d6e25586$export$6521433ed15a34db,
             {
               className: t(
-                "relative h-full flex-1 -translate-x-1/2 -translate-y-1/2 rounded-full bg-font-grey",
+                "relative h-full flex-1 -translate-x-1/2 -translate-y-1/2  bg-font-grey",
                 "before:absolute before:top-1/2 before:left-1/2"
               )
             },
@@ -5325,7 +5326,7 @@ var UserAvatarList = ({ users }) => {
     displayUsers.map((user, index) => /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)(
       "div",
       {
-        className: "z-10 -ml-[5px] rounded-full border-2 border-primary-light bg-white hover:z-20 dark:border-dark-100",
+        className: "z-10 -ml-[5px]  border-2 border-primary-light bg-white hover:z-20 dark:border-dark-100",
         children: /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)(UserAvatar, { ...user, size: AVATAR_SIZE, tooltip: true }, void 0, false, {
           fileName: "src/app/ui/main/project/board/avatar-list.tsx",
           lineNumber: 19,
@@ -5356,6 +5357,7 @@ var MoreUsers = ({ users }) => /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDE
   /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)(
     $d08ef79370b62062$export$41fb9f06171c75f4,
     {
+      className: "-ml-[5px] box-content flex cursor-pointer items-center justify-center  border-2 border-primary-light bg-grey-500 text-lg text-font-main hover:underline dark:border-dark-100",
       style: {
         width: `${AVATAR_SIZE}px`,
         height: `${AVATAR_SIZE}px`
@@ -5374,7 +5376,7 @@ var MoreUsers = ({ users }) => /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDE
     },
     this
   ),
-  /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)($d08ef79370b62062$export$7c6e2c02157bb7d2, { className: "z-50 h-[400px] rounded-md bg-white p-2 shadow-blue dark:bg-dark-500", children: [
+  /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)($d08ef79370b62062$export$7c6e2c02157bb7d2, { className: "z-50 h-[400px]  bg-white p-2 shadow-blue dark:bg-dark-500", children: [
     /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)(ScrollArea, { className: "pr-4", children: users.map((user) => /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)(
       $d08ef79370b62062$export$6d08773d2e66f8f2,
       {
@@ -5382,12 +5384,12 @@ var MoreUsers = ({ users }) => /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDE
         children: [
           /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)(UserAvatar, { ...user, size: 44 }, void 0, false, {
             fileName: "src/app/ui/main/project/board/avatar-list.tsx",
-            lineNumber: 49,
+            lineNumber: 50,
             columnNumber: 15
           }, this),
           /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("span", { className: "dark:text-font-main-dark", children: user.name }, void 0, false, {
             fileName: "src/app/ui/main/project/board/avatar-list.tsx",
-            lineNumber: 50,
+            lineNumber: 51,
             columnNumber: 15
           }, this)
         ]
@@ -5396,23 +5398,23 @@ var MoreUsers = ({ users }) => /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDE
       true,
       {
         fileName: "src/app/ui/main/project/board/avatar-list.tsx",
-        lineNumber: 45,
+        lineNumber: 46,
         columnNumber: 13
       },
       this
     )) }, void 0, false, {
       fileName: "src/app/ui/main/project/board/avatar-list.tsx",
-      lineNumber: 43,
+      lineNumber: 44,
       columnNumber: 9
     }, this),
     /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)($d08ef79370b62062$export$21b07c8f274aebd5, { className: "fill-white dark:fill-dark-500" }, void 0, false, {
       fileName: "src/app/ui/main/project/board/avatar-list.tsx",
-      lineNumber: 54,
+      lineNumber: 55,
       columnNumber: 9
     }, this)
   ] }, void 0, true, {
     fileName: "src/app/ui/main/project/board/avatar-list.tsx",
-    lineNumber: 42,
+    lineNumber: 43,
     columnNumber: 7
   }, this)
 ] }, void 0, true, {
@@ -5453,7 +5455,7 @@ var SelectSort = () => {
   const handleSubmit = (value) => {
     submit({ sortBy: value });
   };
-  return /* @__PURE__ */ (0, import_jsx_dev_runtime4.jsxDEV)(Form, { method: "get", children: /* @__PURE__ */ (0, import_jsx_dev_runtime4.jsxDEV)($cc7e05a45900e73f$export$be92b6f5f03c0fe9, { defaultValue: sortBy, onValueChange: handleSubmit, children: [
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime4.jsxDEV)(Form, { style: { backgroundColor: "#2D4059" }, method: "get", children: /* @__PURE__ */ (0, import_jsx_dev_runtime4.jsxDEV)($cc7e05a45900e73f$export$be92b6f5f03c0fe9, { defaultValue: sortBy, onValueChange: handleSubmit, children: [
     /* @__PURE__ */ (0, import_jsx_dev_runtime4.jsxDEV)(
       $cc7e05a45900e73f$export$41fb9f06171c75f4,
       {
@@ -5602,29 +5604,27 @@ var IssueCard = ({
           lineNumber: 59,
           columnNumber: 11
         }, this),
-        /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("div", { className: "flex items-center justify-between pt-4", children: [
-          /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("span", { className: "flex items-center", children: [
-            /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)(TaskIcon, { size: 18 }, void 0, false, {
-              fileName: "src/app/ui/main/project/board/category-column/issue-card.tsx",
-              lineNumber: 62,
-              columnNumber: 15
-            }, this),
-            /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("span", { className: "ml-1.5 text-2xs text-font-light dark:text-font-light-dark", children: issueIdPrefix }, void 0, false, {
-              fileName: "src/app/ui/main/project/board/category-column/issue-card.tsx",
-              lineNumber: 63,
-              columnNumber: 15
-            }, this)
-          ] }, void 0, true, {
-            fileName: "src/app/ui/main/project/board/category-column/issue-card.tsx",
-            lineNumber: 61,
-            columnNumber: 13
-          }, this),
+        /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("div", { className: "flex items-center justify-between pt-4", children: /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("span", { style: { backgroundColor: "#2D4059", color: "#ffd460", padding: "5px", borderRadius: "5px" }, className: "flex items-center", children: [
           /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)(PriorityIcon, { priority: issue.priority.id }, void 0, false, {
             fileName: "src/app/ui/main/project/board/category-column/issue-card.tsx",
-            lineNumber: 67,
+            lineNumber: 62,
             columnNumber: 13
+          }, this),
+          /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)(TaskIcon, { size: 15 }, void 0, false, {
+            fileName: "src/app/ui/main/project/board/category-column/issue-card.tsx",
+            lineNumber: 63,
+            columnNumber: 15
+          }, this),
+          /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("span", { style: { color: "#ffd460" }, className: "ml-1.5 text-2xs text-font-light dark:text-font-light-dark", children: issueIdPrefix }, void 0, false, {
+            fileName: "src/app/ui/main/project/board/category-column/issue-card.tsx",
+            lineNumber: 64,
+            columnNumber: 15
           }, this)
         ] }, void 0, true, {
+          fileName: "src/app/ui/main/project/board/category-column/issue-card.tsx",
+          lineNumber: 61,
+          columnNumber: 13
+        }, this) }, void 0, false, {
           fileName: "src/app/ui/main/project/board/category-column/issue-card.tsx",
           lineNumber: 60,
           columnNumber: 11
@@ -5710,168 +5710,174 @@ var CategoryColumn = (props) => {
       setColumnHeight(columnRef.current.offsetHeight);
     }
   }, []);
-  return /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(
-    "div",
-    {
-      style: { backgroundColor: "#2D4059", borderRadius: "10px", display: "flex", width: "900px" },
-      ref: dropRef,
-      className: "relative flex h-full w-[400px] max-w-[900px] flex-col rounded-md bg-grey-200 dark:bg-dark-500",
-      children: [
-        /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(
-          "div",
-          {
-            className: t(
-              "absolute z-50 box-border h-[100%] w-[100%] rounded p-1.5 duration-200",
-              isDragging ? "visible" : "hidden",
-              isOver || "bg-white bg-opacity-70 dark:bg-dark-300 dark:bg-opacity-70"
-            ),
-            children: /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(
-              "div",
-              {
-                className: t(
-                  "relative h-full w-full rounded border-[3px]",
-                  isDragging ? "visible" : "hidden",
-                  isOver ? "border-solid border-success-main" : "flex items-center justify-center border-dashed border-primary-main dark:border-primary-main-dark"
-                ),
-                children: !isOver && /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("span", { style: { backgroundColor: "#2D4059" }, className: "rounded bg-white px-1 dark:bg-dark-100", children: "DROP HERE" }, void 0, false, {
+  return (
+    // 3 boxes here
+    // 
+    // 
+    // 
+    /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(
+      "div",
+      {
+        style: { backgroundColor: "#2D4059", borderRadius: "10px", display: "flex", width: "900px" },
+        ref: dropRef,
+        className: "relative flex h-[350px] w-[400px] max-w-[900px] flex-col rounded-md bg-grey-200 dark:bg-dark-500",
+        children: [
+          /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(
+            "div",
+            {
+              className: t(
+                "absolute z-50 box-border h-[100%] w-[100%] rounded p-1.5 duration-200",
+                isDragging ? "visible" : "hidden",
+                isOver || "bg-white bg-opacity-70 dark:bg-dark-300 dark:bg-opacity-70"
+              ),
+              children: /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(
+                "div",
+                {
+                  className: t(
+                    "relative h-full w-full rounded border-[3px]",
+                    isDragging ? "visible" : "hidden",
+                    isOver ? "border-solid border-success-main" : "flex items-center justify-center border-dashed border-primary-main dark:border-primary-main-dark"
+                  ),
+                  children: !isOver && /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("span", { className: "rounded bg-white px-1 dark:bg-dark-100", children: "DROP HERE" }, void 0, false, {
+                    fileName: "src/app/ui/main/project/board/category-column/category-column.tsx",
+                    lineNumber: 111,
+                    columnNumber: 13
+                  }, this)
+                },
+                void 0,
+                false,
+                {
                   fileName: "src/app/ui/main/project/board/category-column/category-column.tsx",
-                  lineNumber: 106,
-                  columnNumber: 13
+                  lineNumber: 100,
+                  columnNumber: 9
+                },
+                this
+              )
+            },
+            void 0,
+            false,
+            {
+              fileName: "src/app/ui/main/project/board/category-column/category-column.tsx",
+              lineNumber: 93,
+              columnNumber: 7
+            },
+            this
+          ),
+          /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("div", { className: "sticky top-0 left-0 flex justify-between px-3 py-2.5 font-primary-light text-xs uppercase text-font-light duration-200 ease-in-out dark:text-font-light-dark", children: [
+            /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("span", { className: "flex gap-4", children: [
+              /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("span", { children: category.name }, void 0, false, {
+                fileName: "src/app/ui/main/project/board/category-column/category-column.tsx",
+                lineNumber: 120,
+                columnNumber: 11
+              }, this),
+              !emptyCategory && /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("span", { children: [
+                "( ",
+                category.issues.length,
+                " )"
+              ] }, void 0, true, {
+                fileName: "src/app/ui/main/project/board/category-column/category-column.tsx",
+                lineNumber: 122,
+                columnNumber: 30
+              }, this)
+            ] }, void 0, true, {
+              fileName: "src/app/ui/main/project/board/category-column/category-column.tsx",
+              lineNumber: 119,
+              columnNumber: 9
+            }, this),
+            /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(
+              Link,
+              {
+                to: issueLink,
+                className: "flex cursor-pointer rounded border-none p-1 text-font-light/60 hover:bg-grey-400 dark:text-font-light-dark dark:hover:bg-dark-100",
+                "aria-label": `Add new ${category.name} issue`,
+                children: /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(AiOutlinePlus, { size: 24 }, void 0, false, {
+                  fileName: "src/app/ui/main/project/board/category-column/category-column.tsx",
+                  lineNumber: 129,
+                  columnNumber: 11
                 }, this)
               },
               void 0,
               false,
               {
                 fileName: "src/app/ui/main/project/board/category-column/category-column.tsx",
-                lineNumber: 95,
+                lineNumber: 124,
                 columnNumber: 9
               },
               this
             )
-          },
-          void 0,
-          false,
-          {
-            fileName: "src/app/ui/main/project/board/category-column/category-column.tsx",
-            lineNumber: 88,
-            columnNumber: 7
-          },
-          this
-        ),
-        /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("div", { className: "sticky top-0 left-0 flex justify-between px-3 py-2.5 font-primary-light text-xs uppercase text-font-light duration-200 ease-in-out dark:text-font-light-dark", children: [
-          /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("span", { className: "flex gap-2", children: [
-            /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("span", { children: category.name }, void 0, false, {
-              fileName: "src/app/ui/main/project/board/category-column/category-column.tsx",
-              lineNumber: 115,
-              columnNumber: 11
-            }, this),
-            !emptyCategory && /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("span", { children: [
-              "( ",
-              category.issues.length,
-              " )"
-            ] }, void 0, true, {
-              fileName: "src/app/ui/main/project/board/category-column/category-column.tsx",
-              lineNumber: 117,
-              columnNumber: 30
-            }, this)
           ] }, void 0, true, {
             fileName: "src/app/ui/main/project/board/category-column/category-column.tsx",
-            lineNumber: 114,
-            columnNumber: 9
+            lineNumber: 118,
+            columnNumber: 7
           }, this),
-          /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(
-            Link,
+          /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("div", { ref: columnRef, className: "h-full", children: /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("div", { style: { height: `${columnHeight}px` }, children: /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(ScrollArea, { children: /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("ul", { style: { borderRadius: "80px" }, className: "mt-1 max-w-[600px] px-1 pb-1", children: emptyCategory ? /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(EmptyCategory, {}, void 0, false, {
+            fileName: "src/app/ui/main/project/board/category-column/category-column.tsx",
+            lineNumber: 139,
+            columnNumber: 17
+          }, this) : filteredIssues().map((issue, index) => /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("li", { className: "mb-2", children: /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(
+            IssueCard,
             {
-              to: issueLink,
-              className: "flex cursor-pointer rounded border-none p-1 text-font-light/60 hover:bg-grey-400 dark:text-font-light-dark dark:hover:bg-dark-100",
-              "aria-label": `Add new ${category.name} issue`,
-              children: /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(AiOutlinePlus, { size: 24 }, void 0, false, {
-                fileName: "src/app/ui/main/project/board/category-column/category-column.tsx",
-                lineNumber: 124,
-                columnNumber: 11
-              }, this)
+              issue,
+              categoryId: category.id,
+              isSubmitting: submittingIssues.includes(issue.id),
+              handleDragging
             },
             void 0,
             false,
             {
               fileName: "src/app/ui/main/project/board/category-column/category-column.tsx",
-              lineNumber: 119,
-              columnNumber: 9
+              lineNumber: 143,
+              columnNumber: 21
             },
             this
-          )
-        ] }, void 0, true, {
-          fileName: "src/app/ui/main/project/board/category-column/category-column.tsx",
-          lineNumber: 113,
-          columnNumber: 7
-        }, this),
-        /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("div", { ref: columnRef, className: "h-full", children: /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("div", { style: { height: `${columnHeight}px` }, children: /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(ScrollArea, { children: /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("ul", { style: { borderRadius: "40px" }, className: "mt-1 max-w-[390px] px-1 pb-1", children: emptyCategory ? /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(EmptyCategory, {}, void 0, false, {
-          fileName: "src/app/ui/main/project/board/category-column/category-column.tsx",
-          lineNumber: 134,
-          columnNumber: 17
-        }, this) : filteredIssues().map((issue, index) => /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("li", { className: "mb-2", children: /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(
-          IssueCard,
-          {
-            issue,
-            categoryId: category.id,
-            isSubmitting: submittingIssues.includes(issue.id),
-            handleDragging
-          },
-          void 0,
-          false,
-          {
+          ) }, index, false, {
             fileName: "src/app/ui/main/project/board/category-column/category-column.tsx",
-            lineNumber: 138,
-            columnNumber: 21
-          },
-          this
-        ) }, index, false, {
-          fileName: "src/app/ui/main/project/board/category-column/category-column.tsx",
-          lineNumber: 137,
-          columnNumber: 19
-        }, this)) }, void 0, false, {
-          fileName: "src/app/ui/main/project/board/category-column/category-column.tsx",
-          lineNumber: 131,
-          columnNumber: 13
-        }, this) }, void 0, false, {
-          fileName: "src/app/ui/main/project/board/category-column/category-column.tsx",
-          lineNumber: 130,
-          columnNumber: 11
-        }, this) }, void 0, false, {
-          fileName: "src/app/ui/main/project/board/category-column/category-column.tsx",
-          lineNumber: 129,
-          columnNumber: 9
-        }, this) }, void 0, false, {
-          fileName: "src/app/ui/main/project/board/category-column/category-column.tsx",
-          lineNumber: 128,
-          columnNumber: 7
-        }, this)
-      ]
-    },
-    void 0,
-    true,
-    {
-      fileName: "src/app/ui/main/project/board/category-column/category-column.tsx",
-      lineNumber: 83,
-      columnNumber: 5
-    },
-    this
+            lineNumber: 142,
+            columnNumber: 19
+          }, this)) }, void 0, false, {
+            fileName: "src/app/ui/main/project/board/category-column/category-column.tsx",
+            lineNumber: 136,
+            columnNumber: 13
+          }, this) }, void 0, false, {
+            fileName: "src/app/ui/main/project/board/category-column/category-column.tsx",
+            lineNumber: 135,
+            columnNumber: 11
+          }, this) }, void 0, false, {
+            fileName: "src/app/ui/main/project/board/category-column/category-column.tsx",
+            lineNumber: 134,
+            columnNumber: 9
+          }, this) }, void 0, false, {
+            fileName: "src/app/ui/main/project/board/category-column/category-column.tsx",
+            lineNumber: 133,
+            columnNumber: 7
+          }, this)
+        ]
+      },
+      void 0,
+      true,
+      {
+        fileName: "src/app/ui/main/project/board/category-column/category-column.tsx",
+        lineNumber: 88,
+        columnNumber: 5
+      },
+      this
+    )
   );
 };
 var EmptyCategory = () => /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("li", { className: "mt-4 flex flex-col items-center text-font-light dark:text-font-light-dark", children: [
   /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(RxValueNone, { size: 36 }, void 0, false, {
     fileName: "src/app/ui/main/project/board/category-column/category-column.tsx",
-    lineNumber: 165,
+    lineNumber: 170,
     columnNumber: 5
   }, this),
   /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("p", { className: "mt-4 font-primary-light text-xs uppercase", children: "No issues found" }, void 0, false, {
     fileName: "src/app/ui/main/project/board/category-column/category-column.tsx",
-    lineNumber: 166,
+    lineNumber: 171,
     columnNumber: 5
   }, this)
 ] }, void 0, true, {
   fileName: "src/app/ui/main/project/board/category-column/category-column.tsx",
-  lineNumber: 164,
+  lineNumber: 169,
   columnNumber: 3
 }, this);
 
@@ -5903,7 +5909,7 @@ var BoardView = ({ project }) => {
         lineNumber: 29,
         columnNumber: 11
       }, this),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("div", { className: "inline", children: /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)(SelectSort, {}, void 0, false, {
+      /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("div", { style: { backgroundColor: "#2D4059", padding: "10px", color: "#ffd460", borderRadius: "10px", height: "65px" }, className: "inline", children: /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)(SelectSort, {}, void 0, false, {
         fileName: "src/app/ui/main/project/board/board.view.tsx",
         lineNumber: 33,
         columnNumber: 13
@@ -5963,25 +5969,6 @@ var Categories = ({ categories }) => {
     return () => window.removeEventListener("keydown", onKeyDown);
   }, [onKeyDown]);
   return /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("section", { className: "mt-12 flex h-full flex-col", children: [
-    /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("span", { className: "mb-2 block justify-self-end font-primary-light text-2xs text-font-light text-opacity-80 dark:text-font-light-dark", children: [
-      "Press ",
-      /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)(Kbd, { children: "Shift" }, void 0, false, {
-        fileName: "src/app/ui/main/project/board/board.view.tsx",
-        lineNumber: 88,
-        columnNumber: 15
-      }, this),
-      " + ",
-      /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)(Kbd, { children: "N" }, void 0, false, {
-        fileName: "src/app/ui/main/project/board/board.view.tsx",
-        lineNumber: 88,
-        columnNumber: 34
-      }, this),
-      " to create a new issue"
-    ] }, void 0, true, {
-      fileName: "src/app/ui/main/project/board/board.view.tsx",
-      lineNumber: 87,
-      columnNumber: 7
-    }, this),
     /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("div", { className: "flex h-full gap-3 flex-row", children: categories.map((category) => /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)(
       CategoryColumn,
       {
@@ -5995,13 +5982,32 @@ var Categories = ({ categories }) => {
       false,
       {
         fileName: "src/app/ui/main/project/board/board.view.tsx",
-        lineNumber: 92,
+        lineNumber: 90,
         columnNumber: 11
       },
       this
     )) }, void 0, false, {
       fileName: "src/app/ui/main/project/board/board.view.tsx",
-      lineNumber: 90,
+      lineNumber: 88,
+      columnNumber: 7
+    }, this),
+    /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("span", { style: { color: "#ffd460" }, className: "mb-2 block justify-self-end font-primary-light text-2xs text-font-light text-opacity-80 dark:text-font-light-dark", children: [
+      "Press ",
+      /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)(Kbd, { children: "Shift" }, void 0, false, {
+        fileName: "src/app/ui/main/project/board/board.view.tsx",
+        lineNumber: 101,
+        columnNumber: 15
+      }, this),
+      " + ",
+      /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)(Kbd, { children: "N" }, void 0, false, {
+        fileName: "src/app/ui/main/project/board/board.view.tsx",
+        lineNumber: 101,
+        columnNumber: 34
+      }, this),
+      " to create a new issue"
+    ] }, void 0, true, {
+      fileName: "src/app/ui/main/project/board/board.view.tsx",
+      lineNumber: 100,
       columnNumber: 7
     }, this)
   ] }, void 0, true, {
@@ -6085,4 +6091,4 @@ react/cjs/react-jsx-runtime.development.js:
    * LICENSE file in the root directory of this source tree.
    *)
 */
-//# sourceMappingURL=/build/routes/__main/projects.$projectId/board-AAW77T77.js.map
+//# sourceMappingURL=/build/routes/__main/projects.$projectId/board-33CS53ST.js.map

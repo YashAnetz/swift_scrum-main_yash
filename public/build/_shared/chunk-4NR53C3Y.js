@@ -333,6 +333,9 @@ var useProjectStore = () => {
 };
 
 // node_modules/react-icons/hi/index.esm.js
+function HiExclamation(props) {
+  return GenIcon({ "tag": "svg", "attr": { "viewBox": "0 0 20 20", "fill": "currentColor", "aria-hidden": "true" }, "child": [{ "tag": "path", "attr": { "fillRule": "evenodd", "d": "M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z", "clipRule": "evenodd" } }] })(props);
+}
 function HiFlag(props) {
   return GenIcon({ "tag": "svg", "attr": { "viewBox": "0 0 20 20", "fill": "currentColor", "aria-hidden": "true" }, "child": [{ "tag": "path", "attr": { "fillRule": "evenodd", "d": "M3 6a3 3 0 013-3h10a1 1 0 01.8 1.6L14.25 8l2.55 3.4A1 1 0 0116 13H6a1 1 0 00-1 1v3a1 1 0 11-2 0V6z", "clipRule": "evenodd" } }] })(props);
 }
@@ -377,9 +380,9 @@ var PriorityIcon = ({
       priority === "medium" && "text-warn-main",
       priority === "high" && "text-error-main"
     ),
-    children: /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)(HiFlag, { size }, void 0, false, {
+    children: /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)(HiExclamation, { size }, void 0, false, {
       fileName: "src/app/components/priority-icon.tsx",
-      lineNumber: 17,
+      lineNumber: 18,
       columnNumber: 5
     }, this)
   },
@@ -387,7 +390,7 @@ var PriorityIcon = ({
   false,
   {
     fileName: "src/app/components/priority-icon.tsx",
-    lineNumber: 9,
+    lineNumber: 10,
     columnNumber: 3
   },
   this
@@ -404,4 +407,4 @@ export {
   PriorityIcon,
   EVENTS
 };
-//# sourceMappingURL=/build/_shared/chunk-56M7ZW4T.js.map
+//# sourceMappingURL=/build/_shared/chunk-4NR53C3Y.js.map

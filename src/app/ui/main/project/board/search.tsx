@@ -21,8 +21,8 @@ export const Search = (): JSX.Element => {
   };
 
   return (
-    <div className="relative w-fit">
-      <input
+    <div  className="relative w-fit">
+      <input style={{height:'55px'}}
         type="text"
         name="search"
         value={search}

@@ -80,9 +80,14 @@ export const CategoryColumn = (props: CategoryColumnProps): JSX.Element => {
   }, []);
 
   return (
+
+    // 3 boxes here
+    // 
+    // 
+    // 
     <div style={{backgroundColor:'#2D4059',borderRadius:'10px',display:'flex',width:'900px'}}
       ref={dropRef}
-      className="relative flex h-full w-[400px] max-w-[900px] flex-col rounded-md bg-grey-200 dark:bg-dark-500"
+      className="relative flex h-[350px] w-[400px] max-w-[900px] flex-col rounded-md bg-grey-200 dark:bg-dark-500"
     >
       {/* Column drop area */}
       <div 
@@ -103,7 +108,7 @@ export const CategoryColumn = (props: CategoryColumnProps): JSX.Element => {
         >
           
           {!isOver && (
-            <span style={{backgroundColor:'#2D4059'}} className="rounded bg-white px-1 dark:bg-dark-100">
+            <span  className="rounded bg-white px-1 dark:bg-dark-100">
               DROP HERE
             </span>
           )}
@@ -111,7 +116,7 @@ export const CategoryColumn = (props: CategoryColumnProps): JSX.Element => {
       </div>
       {/* Column header */}
       <div className="sticky top-0 left-0 flex justify-between px-3 py-2.5 font-primary-light text-xs uppercase text-font-light duration-200 ease-in-out dark:text-font-light-dark">
-        <span className="flex gap-2">
+        <span className="flex gap-4">
           <span >{category.name}</span>
           
           {!emptyCategory && <span>( {category.issues.length} )</span>}
@@ -128,13 +133,13 @@ export const CategoryColumn = (props: CategoryColumnProps): JSX.Element => {
       <div  ref={columnRef} className="h-full">
         <div style={{ height: `${columnHeight}px` }}>
           <ScrollArea>
-            <ul style={{borderRadius:'40px'}} className="mt-1 max-w-[390px] px-1 pb-1">
+            <ul style={{borderRadius:'80px'}} className="mt-1 max-w-[600px] px-1 pb-1">
               
               {emptyCategory ? (
                 <EmptyCategory />
               ) : (
                 filteredIssues().map((issue, index) => (
-                  <li  key={index} className="mb-2">
+                  <li    key={index} className="mb-2">
                     <IssueCard 
                       issue={issue}
                       categoryId={category.id}

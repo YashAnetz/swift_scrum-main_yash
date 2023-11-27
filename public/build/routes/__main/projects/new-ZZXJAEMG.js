@@ -9,7 +9,7 @@ import {
   Root,
   Title,
   Title2
-} from "/build/_shared/chunk-VRFK2U4R.js";
+} from "/build/_shared/chunk-WFQVPQSX.js";
 import {
   IoCloseOutline,
   Kbd
@@ -26,7 +26,7 @@ import {
 import {
   $db6c3485150b8e66$export$1ab7ae714698c4b8,
   UserAvatar
-} from "/build/_shared/chunk-RB7NZDFW.js";
+} from "/build/_shared/chunk-HKTS347N.js";
 import {
   $921a889cee6df7e8$export$99c2b779aa4e8b8b
 } from "/build/_shared/chunk-GE42YXME.js";
@@ -320,7 +320,7 @@ var ProjectPanelView = ({ project, users }) => {
             onEscapeKeyDown: handleProgrammaticClose,
             onPointerDownOutside: handleProgrammaticClose,
             className: t(
-              "max-w-[600px]",
+              "max-w-[500px]",
               !isOpen && "translate-y-[10px] opacity-0"
             ),
             children: [
@@ -669,4 +669,4 @@ export {
   IssuePanelRoute as default,
   meta
 };
-//# sourceMappingURL=/build/routes/__main/projects/new-Y5F6GLQH.js.map
+//# sourceMappingURL=/build/routes/__main/projects/new-ZZXJAEMG.js.map

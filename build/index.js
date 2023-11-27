@@ -240,7 +240,7 @@ var import_jsx_dev_runtime6 = require("react/jsx-dev-runtime"), Error500 = ({ me
 }, this);
 
 // src/app/styles/app-compiled.css
-var app_compiled_default = "/build/_assets/app-compiled-DD2OTY5O.css";
+var app_compiled_default = "/build/_assets/app-compiled-O24HZIG3.css";
 
 // src/app/styles/fonts.css
 var fonts_default = "/build/_assets/fonts-O3VH7KO3.css";
@@ -657,6 +657,7 @@ var import_jsx_dev_runtime12 = require("react/jsx-dev-runtime"), UserAvatar = ({
   tooltip = !1
 }) => {
   let imageMinName = image == null ? void 0 : image.replace(".webp", "-min.webp"), imageSrc = size > 80 ? `/avatars/${image}` : `/avatars/${imageMinName}`, imageSize = {
+    borderRadius: "5px",
     width: `${size}px`,
     minWidth: `${size}px`,
     height: `${size}px`
@@ -665,7 +666,7 @@ var import_jsx_dev_runtime12 = require("react/jsx-dev-runtime"), UserAvatar = ({
     /* @__PURE__ */ (0, import_jsx_dev_runtime12.jsxDEV)(
       Avatar.Image,
       {
-        className: "rounded-full object-cover",
+        className: " object-cover",
         src: image && imageSrc,
         style: imageSize,
         alt: name
@@ -674,7 +675,7 @@ var import_jsx_dev_runtime12 = require("react/jsx-dev-runtime"), UserAvatar = ({
       !1,
       {
         fileName: "src/app/components/user-avatar.tsx",
-        lineNumber: 28,
+        lineNumber: 29,
         columnNumber: 9
       },
       this
@@ -695,18 +696,18 @@ var import_jsx_dev_runtime12 = require("react/jsx-dev-runtime"), UserAvatar = ({
       !1,
       {
         fileName: "src/app/components/user-avatar.tsx",
-        lineNumber: 34,
+        lineNumber: 35,
         columnNumber: 9
       },
       this
     )
   ] }, void 0, !0, {
     fileName: "src/app/components/user-avatar.tsx",
-    lineNumber: 27,
+    lineNumber: 28,
     columnNumber: 7
   }, this) }, void 0, !1, {
     fileName: "src/app/components/user-avatar.tsx",
-    lineNumber: 26,
+    lineNumber: 27,
     columnNumber: 5
   }, this);
 };
@@ -729,35 +730,37 @@ var import_jsx_dev_runtime13 = require("react/jsx-dev-runtime"), UserProfile = (
       {
         align: "end",
         sideOffset: 5,
+        style: { backgroundColor: "#2D4059" },
         className: (0, import_classix3.default)(
-          "z-50 rounded bg-white shadow-md-dark dark:bg-dark-400",
+          "z-50 rounded  shadow-md-dark dark:bg-dark-400",
           "radix-side-bottom:animate-slide-down radix-side-top:animate-slide-up"
         ),
         children: [
           /* @__PURE__ */ (0, import_jsx_dev_runtime13.jsxDEV)(DropdownMenu.Item, { className: "flex flex-col items-center p-3 !outline-none", children: [
             /* @__PURE__ */ (0, import_jsx_dev_runtime13.jsxDEV)(UserAvatar, { ...user, size: 80 }, void 0, !1, {
               fileName: "src/app/ui/main/header/user-profile.tsx",
-              lineNumber: 26,
+              lineNumber: 27,
               columnNumber: 13
             }, this),
-            /* @__PURE__ */ (0, import_jsx_dev_runtime13.jsxDEV)("span", { className: "mt-2 text-lg", children: user.name }, void 0, !1, {
+            /* @__PURE__ */ (0, import_jsx_dev_runtime13.jsxDEV)("span", { style: { color: "#ffd460" }, className: "mt-2 text-lg", children: user.name }, void 0, !1, {
               fileName: "src/app/ui/main/header/user-profile.tsx",
-              lineNumber: 27,
+              lineNumber: 28,
               columnNumber: 13
             }, this)
           ] }, void 0, !0, {
             fileName: "src/app/ui/main/header/user-profile.tsx",
-            lineNumber: 25,
+            lineNumber: 26,
             columnNumber: 11
           }, this),
           /* @__PURE__ */ (0, import_jsx_dev_runtime13.jsxDEV)(DropdownMenu.Separator, { className: "h-px bg-grey-500 dark:bg-dark-100" }, void 0, !1, {
             fileName: "src/app/ui/main/header/user-profile.tsx",
-            lineNumber: 29,
+            lineNumber: 30,
             columnNumber: 11
           }, this),
-          /* @__PURE__ */ (0, import_jsx_dev_runtime13.jsxDEV)(DropdownMenu.Item, { className: "select-none p-1 !outline-none", children: /* @__PURE__ */ (0, import_jsx_dev_runtime13.jsxDEV)(import_react8.Form, { action: "action/logout", method: "post", children: /* @__PURE__ */ (0, import_jsx_dev_runtime13.jsxDEV)(
+          /* @__PURE__ */ (0, import_jsx_dev_runtime13.jsxDEV)(DropdownMenu.Item, { className: "select-none p-1 !outline-none", children: /* @__PURE__ */ (0, import_jsx_dev_runtime13.jsxDEV)(import_react8.Form, { style: { backgroundColor: "#5a7fb0" }, action: "action/logout", method: "post", children: /* @__PURE__ */ (0, import_jsx_dev_runtime13.jsxDEV)(
             "button",
             {
+              style: { backgroundColor: "white" },
               type: "submit",
               onClick: (e) => e.stopPropagation(),
               className: "flex w-full items-center gap-2 rounded p-2 text-sm text-error-main hover:bg-error-light dark:text-error-main-dark dark:hover:bg-dark-100",
@@ -765,12 +768,12 @@ var import_jsx_dev_runtime13 = require("react/jsx-dev-runtime"), UserProfile = (
               children: [
                 /* @__PURE__ */ (0, import_jsx_dev_runtime13.jsxDEV)(import_fa.FaPowerOff, {}, void 0, !1, {
                   fileName: "src/app/ui/main/header/user-profile.tsx",
-                  lineNumber: 38,
+                  lineNumber: 39,
                   columnNumber: 17
                 }, this),
-                /* @__PURE__ */ (0, import_jsx_dev_runtime13.jsxDEV)("span", { children: "Log out" }, void 0, !1, {
+                /* @__PURE__ */ (0, import_jsx_dev_runtime13.jsxDEV)("span", { children: "Sign out" }, void 0, !1, {
                   fileName: "src/app/ui/main/header/user-profile.tsx",
-                  lineNumber: 39,
+                  lineNumber: 40,
                   columnNumber: 17
                 }, this)
               ]
@@ -779,17 +782,17 @@ var import_jsx_dev_runtime13 = require("react/jsx-dev-runtime"), UserProfile = (
             !0,
             {
               fileName: "src/app/ui/main/header/user-profile.tsx",
-              lineNumber: 32,
+              lineNumber: 33,
               columnNumber: 15
             },
             this
           ) }, void 0, !1, {
             fileName: "src/app/ui/main/header/user-profile.tsx",
-            lineNumber: 31,
+            lineNumber: 32,
             columnNumber: 13
           }, this) }, void 0, !1, {
             fileName: "src/app/ui/main/header/user-profile.tsx",
-            lineNumber: 30,
+            lineNumber: 31,
             columnNumber: 11
           }, this)
         ]
@@ -1067,46 +1070,46 @@ var import_react12 = require("@remix-run/react"), import_jsx_dev_runtime17 = req
   image
 }) => {
   let section = (0, import_react12.useLocation)().pathname.split("/").slice(-1)[0], sectionTitle = sectionTitles[section] || sectionTitles[defaultSection];
-  return /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)("div", { className: "relative flex h-full flex-grow", children: /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)("div", { className: "z-10 flex h-full w-full flex-grow flex-col py-6 px-5", children: [
-    /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)("section", { children: [
-      /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)(import_react12.Link, { to: "/projects", className: "underline underline-offset-[3px]", children: "Projects" }, void 0, !1, {
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)("div", { style: { backgroundColor: "#3a5170" }, className: "relative flex h-full flex-grow", children: /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)("div", { className: "z-10 flex h-full w-full flex-grow flex-col py-6 px-5", children: [
+    /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)("section", { style: { color: "#ffd460", padding: "10px", width: "600px", borderRadius: "10px" }, children: [
+      /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)(import_react12.Link, { to: "/projects", className: "underline underline-offset-[3px]", children: "open" }, void 0, !1, {
         fileName: "src/app/ui/main/project/project.view.tsx",
         lineNumber: 26,
-        columnNumber: 11
+        columnNumber: 13
       }, this),
       /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)("span", { className: "mx-2", children: "/" }, void 0, !1, {
         fileName: "src/app/ui/main/project/project.view.tsx",
         lineNumber: 29,
-        columnNumber: 11
+        columnNumber: 13
       }, this),
       /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)("span", { children: name }, void 0, !1, {
         fileName: "src/app/ui/main/project/project.view.tsx",
         lineNumber: 30,
-        columnNumber: 11
+        columnNumber: 13
       }, this),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)("h1", { className: "mt-4 mb-5 font-primary-black text-2xl", children: sectionTitle }, void 0, !1, {
+      /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)("h1", { className: "mt-4 mb-5 font-primary-black text-3xl", children: sectionTitle }, void 0, !1, {
         fileName: "src/app/ui/main/project/project.view.tsx",
         lineNumber: 31,
-        columnNumber: 11
+        columnNumber: 13
       }, this)
     ] }, void 0, !0, {
       fileName: "src/app/ui/main/project/project.view.tsx",
       lineNumber: 25,
-      columnNumber: 9
+      columnNumber: 11
     }, this),
     /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)(import_react12.Outlet, {}, void 0, !1, {
       fileName: "src/app/ui/main/project/project.view.tsx",
       lineNumber: 35,
-      columnNumber: 9
+      columnNumber: 11
     }, this)
   ] }, void 0, !0, {
     fileName: "src/app/ui/main/project/project.view.tsx",
     lineNumber: 24,
-    columnNumber: 7
+    columnNumber: 9
   }, this) }, void 0, !1, {
     fileName: "src/app/ui/main/project/project.view.tsx",
     lineNumber: 22,
-    columnNumber: 5
+    columnNumber: 7
   }, this);
 };
 
@@ -3695,6 +3698,7 @@ var import_jsx_dev_runtime23 = require("react/jsx-dev-runtime"), Search = () => 
     /* @__PURE__ */ (0, import_jsx_dev_runtime23.jsxDEV)(
       "input",
       {
+        style: { height: "55px" },
         type: "text",
         name: "search",
         value: search,
@@ -3810,7 +3814,7 @@ var ScrollAreaPrimitive = __toESM(require("@radix-ui/react-scroll-area")), impor
       /* @__PURE__ */ (0, import_jsx_dev_runtime25.jsxDEV)(
         ScrollAreaPrimitive.Scrollbar,
         {
-          orientation: "horizontal",
+          orientation: "vertical",
           className: (0, import_classix5.default)(
             "flex w-2  touch-none select-none rounded-full bg-grey-400 duration-150 ease-out hover:bg-grey-600 dark:bg-dark-100"
           ),
@@ -3818,7 +3822,7 @@ var ScrollAreaPrimitive = __toESM(require("@radix-ui/react-scroll-area")), impor
             ScrollAreaPrimitive.Thumb,
             {
               className: (0, import_classix5.default)(
-                "relative h-full flex-1 -translate-x-1/2 -translate-y-1/2 rounded-full bg-font-grey",
+                "relative h-full flex-1 -translate-x-1/2 -translate-y-1/2  bg-font-grey",
                 "before:absolute before:top-1/2 before:left-1/2"
               )
             },
@@ -3865,7 +3869,7 @@ var import_jsx_dev_runtime26 = require("react/jsx-dev-runtime"), AVATAR_SIZE = 4
     displayUsers.map((user, index) => /* @__PURE__ */ (0, import_jsx_dev_runtime26.jsxDEV)(
       "div",
       {
-        className: "z-10 -ml-[5px] rounded-full border-2 border-primary-light bg-white hover:z-20 dark:border-dark-100",
+        className: "z-10 -ml-[5px]  border-2 border-primary-light bg-white hover:z-20 dark:border-dark-100",
         children: /* @__PURE__ */ (0, import_jsx_dev_runtime26.jsxDEV)(UserAvatar, { ...user, size: AVATAR_SIZE, tooltip: !0 }, void 0, !1, {
           fileName: "src/app/ui/main/project/board/avatar-list.tsx",
           lineNumber: 19,
@@ -3895,6 +3899,7 @@ var import_jsx_dev_runtime26 = require("react/jsx-dev-runtime"), AVATAR_SIZE = 4
   /* @__PURE__ */ (0, import_jsx_dev_runtime26.jsxDEV)(
     DropdownMenu2.Trigger,
     {
+      className: "-ml-[5px] box-content flex cursor-pointer items-center justify-center  border-2 border-primary-light bg-grey-500 text-lg text-font-main hover:underline dark:border-dark-100",
       style: {
         width: `${AVATAR_SIZE}px`,
         height: `${AVATAR_SIZE}px`
@@ -3913,7 +3918,7 @@ var import_jsx_dev_runtime26 = require("react/jsx-dev-runtime"), AVATAR_SIZE = 4
     },
     this
   ),
-  /* @__PURE__ */ (0, import_jsx_dev_runtime26.jsxDEV)(DropdownMenu2.Content, { className: "z-50 h-[400px] rounded-md bg-white p-2 shadow-blue dark:bg-dark-500", children: [
+  /* @__PURE__ */ (0, import_jsx_dev_runtime26.jsxDEV)(DropdownMenu2.Content, { className: "z-50 h-[400px]  bg-white p-2 shadow-blue dark:bg-dark-500", children: [
     /* @__PURE__ */ (0, import_jsx_dev_runtime26.jsxDEV)(ScrollArea, { className: "pr-4", children: users.map((user) => /* @__PURE__ */ (0, import_jsx_dev_runtime26.jsxDEV)(
       DropdownMenu2.Item,
       {
@@ -3921,12 +3926,12 @@ var import_jsx_dev_runtime26 = require("react/jsx-dev-runtime"), AVATAR_SIZE = 4
         children: [
           /* @__PURE__ */ (0, import_jsx_dev_runtime26.jsxDEV)(UserAvatar, { ...user, size: 44 }, void 0, !1, {
             fileName: "src/app/ui/main/project/board/avatar-list.tsx",
-            lineNumber: 49,
+            lineNumber: 50,
             columnNumber: 15
           }, this),
           /* @__PURE__ */ (0, import_jsx_dev_runtime26.jsxDEV)("span", { className: "dark:text-font-main-dark", children: user.name }, void 0, !1, {
             fileName: "src/app/ui/main/project/board/avatar-list.tsx",
-            lineNumber: 50,
+            lineNumber: 51,
             columnNumber: 15
           }, this)
         ]
@@ -3935,23 +3940,23 @@ var import_jsx_dev_runtime26 = require("react/jsx-dev-runtime"), AVATAR_SIZE = 4
       !0,
       {
         fileName: "src/app/ui/main/project/board/avatar-list.tsx",
-        lineNumber: 45,
+        lineNumber: 46,
         columnNumber: 13
       },
       this
     )) }, void 0, !1, {
       fileName: "src/app/ui/main/project/board/avatar-list.tsx",
-      lineNumber: 43,
+      lineNumber: 44,
       columnNumber: 9
     }, this),
     /* @__PURE__ */ (0, import_jsx_dev_runtime26.jsxDEV)(DropdownMenu2.Arrow, { className: "fill-white dark:fill-dark-500" }, void 0, !1, {
       fileName: "src/app/ui/main/project/board/avatar-list.tsx",
-      lineNumber: 54,
+      lineNumber: 55,
       columnNumber: 9
     }, this)
   ] }, void 0, !0, {
     fileName: "src/app/ui/main/project/board/avatar-list.tsx",
-    lineNumber: 42,
+    lineNumber: 43,
     columnNumber: 7
   }, this)
 ] }, void 0, !0, {
@@ -3988,7 +3993,7 @@ var import_jsx_dev_runtime27 = require("react/jsx-dev-runtime"), SelectSort = ()
       columnNumber: 9
     }, this)
   );
-  return /* @__PURE__ */ (0, import_jsx_dev_runtime27.jsxDEV)(import_react33.Form, { method: "get", children: /* @__PURE__ */ (0, import_jsx_dev_runtime27.jsxDEV)(Select.Root, { defaultValue: sortBy, onValueChange: (value) => {
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime27.jsxDEV)(import_react33.Form, { style: { backgroundColor: "#2D4059" }, method: "get", children: /* @__PURE__ */ (0, import_jsx_dev_runtime27.jsxDEV)(Select.Root, { defaultValue: sortBy, onValueChange: (value) => {
     submit({ sortBy: value });
   }, children: [
     /* @__PURE__ */ (0, import_jsx_dev_runtime27.jsxDEV)(
@@ -4127,9 +4132,9 @@ var import_classix7 = __toESM(require("classix")), import_hi2 = require("react-i
       priority === "medium" && "text-warn-main",
       priority === "high" && "text-error-main"
     ),
-    children: /* @__PURE__ */ (0, import_jsx_dev_runtime29.jsxDEV)(import_hi2.HiFlag, { size }, void 0, !1, {
+    children: /* @__PURE__ */ (0, import_jsx_dev_runtime29.jsxDEV)(import_hi2.HiExclamation, { size }, void 0, !1, {
       fileName: "src/app/components/priority-icon.tsx",
-      lineNumber: 17,
+      lineNumber: 18,
       columnNumber: 5
     }, this)
   },
@@ -4137,7 +4142,7 @@ var import_classix7 = __toESM(require("classix")), import_hi2 = require("react-i
   !1,
   {
     fileName: "src/app/components/priority-icon.tsx",
-    lineNumber: 9,
+    lineNumber: 10,
     columnNumber: 3
   },
   this
@@ -4180,29 +4185,27 @@ var import_jsx_dev_runtime30 = require("react/jsx-dev-runtime"), IssueCard = ({
           lineNumber: 59,
           columnNumber: 11
         }, this),
-        /* @__PURE__ */ (0, import_jsx_dev_runtime30.jsxDEV)("div", { className: "flex items-center justify-between pt-4", children: [
-          /* @__PURE__ */ (0, import_jsx_dev_runtime30.jsxDEV)("span", { className: "flex items-center", children: [
-            /* @__PURE__ */ (0, import_jsx_dev_runtime30.jsxDEV)(TaskIcon, { size: 18 }, void 0, !1, {
-              fileName: "src/app/ui/main/project/board/category-column/issue-card.tsx",
-              lineNumber: 62,
-              columnNumber: 15
-            }, this),
-            /* @__PURE__ */ (0, import_jsx_dev_runtime30.jsxDEV)("span", { className: "ml-1.5 text-2xs text-font-light dark:text-font-light-dark", children: issueIdPrefix }, void 0, !1, {
-              fileName: "src/app/ui/main/project/board/category-column/issue-card.tsx",
-              lineNumber: 63,
-              columnNumber: 15
-            }, this)
-          ] }, void 0, !0, {
-            fileName: "src/app/ui/main/project/board/category-column/issue-card.tsx",
-            lineNumber: 61,
-            columnNumber: 13
-          }, this),
+        /* @__PURE__ */ (0, import_jsx_dev_runtime30.jsxDEV)("div", { className: "flex items-center justify-between pt-4", children: /* @__PURE__ */ (0, import_jsx_dev_runtime30.jsxDEV)("span", { style: { backgroundColor: "#2D4059", color: "#ffd460", padding: "5px", borderRadius: "5px" }, className: "flex items-center", children: [
           /* @__PURE__ */ (0, import_jsx_dev_runtime30.jsxDEV)(PriorityIcon, { priority: issue.priority.id }, void 0, !1, {
             fileName: "src/app/ui/main/project/board/category-column/issue-card.tsx",
-            lineNumber: 67,
+            lineNumber: 62,
             columnNumber: 13
+          }, this),
+          /* @__PURE__ */ (0, import_jsx_dev_runtime30.jsxDEV)(TaskIcon, { size: 15 }, void 0, !1, {
+            fileName: "src/app/ui/main/project/board/category-column/issue-card.tsx",
+            lineNumber: 63,
+            columnNumber: 15
+          }, this),
+          /* @__PURE__ */ (0, import_jsx_dev_runtime30.jsxDEV)("span", { style: { color: "#ffd460" }, className: "ml-1.5 text-2xs text-font-light dark:text-font-light-dark", children: issueIdPrefix }, void 0, !1, {
+            fileName: "src/app/ui/main/project/board/category-column/issue-card.tsx",
+            lineNumber: 64,
+            columnNumber: 15
           }, this)
         ] }, void 0, !0, {
+          fileName: "src/app/ui/main/project/board/category-column/issue-card.tsx",
+          lineNumber: 61,
+          columnNumber: 13
+        }, this) }, void 0, !1, {
           fileName: "src/app/ui/main/project/board/category-column/issue-card.tsx",
           lineNumber: 60,
           columnNumber: 11
@@ -4264,12 +4267,16 @@ var import_jsx_dev_runtime31 = require("react/jsx-dev-runtime"), CategoryColumn 
     }
   }, [fetcher, setSubmittingIssues]), (0, import_react36.useEffect)(() => {
     columnRef.current && setColumnHeight(columnRef.current.offsetHeight);
-  }, []), /* @__PURE__ */ (0, import_jsx_dev_runtime31.jsxDEV)(
+  }, []), // 3 boxes here
+  // 
+  // 
+  // 
+  /* @__PURE__ */ (0, import_jsx_dev_runtime31.jsxDEV)(
     "div",
     {
       style: { backgroundColor: "#2D4059", borderRadius: "10px", display: "flex", width: "900px" },
       ref: dropRef,
-      className: "relative flex h-full w-[400px] max-w-[900px] flex-col rounded-md bg-grey-200 dark:bg-dark-500",
+      className: "relative flex h-[350px] w-[400px] max-w-[900px] flex-col rounded-md bg-grey-200 dark:bg-dark-500",
       children: [
         /* @__PURE__ */ (0, import_jsx_dev_runtime31.jsxDEV)(
           "div",
@@ -4287,9 +4294,9 @@ var import_jsx_dev_runtime31 = require("react/jsx-dev-runtime"), CategoryColumn 
                   isDragging ? "visible" : "hidden",
                   isOver ? "border-solid border-success-main" : "flex items-center justify-center border-dashed border-primary-main dark:border-primary-main-dark"
                 ),
-                children: !isOver && /* @__PURE__ */ (0, import_jsx_dev_runtime31.jsxDEV)("span", { style: { backgroundColor: "#2D4059" }, className: "rounded bg-white px-1 dark:bg-dark-100", children: "DROP HERE" }, void 0, !1, {
+                children: !isOver && /* @__PURE__ */ (0, import_jsx_dev_runtime31.jsxDEV)("span", { className: "rounded bg-white px-1 dark:bg-dark-100", children: "DROP HERE" }, void 0, !1, {
                   fileName: "src/app/ui/main/project/board/category-column/category-column.tsx",
-                  lineNumber: 106,
+                  lineNumber: 111,
                   columnNumber: 13
                 }, this)
               },
@@ -4297,7 +4304,7 @@ var import_jsx_dev_runtime31 = require("react/jsx-dev-runtime"), CategoryColumn 
               !1,
               {
                 fileName: "src/app/ui/main/project/board/category-column/category-column.tsx",
-                lineNumber: 95,
+                lineNumber: 100,
                 columnNumber: 9
               },
               this
@@ -4307,16 +4314,16 @@ var import_jsx_dev_runtime31 = require("react/jsx-dev-runtime"), CategoryColumn 
           !1,
           {
             fileName: "src/app/ui/main/project/board/category-column/category-column.tsx",
-            lineNumber: 88,
+            lineNumber: 93,
             columnNumber: 7
           },
           this
         ),
         /* @__PURE__ */ (0, import_jsx_dev_runtime31.jsxDEV)("div", { className: "sticky top-0 left-0 flex justify-between px-3 py-2.5 font-primary-light text-xs uppercase text-font-light duration-200 ease-in-out dark:text-font-light-dark", children: [
-          /* @__PURE__ */ (0, import_jsx_dev_runtime31.jsxDEV)("span", { className: "flex gap-2", children: [
+          /* @__PURE__ */ (0, import_jsx_dev_runtime31.jsxDEV)("span", { className: "flex gap-4", children: [
             /* @__PURE__ */ (0, import_jsx_dev_runtime31.jsxDEV)("span", { children: category.name }, void 0, !1, {
               fileName: "src/app/ui/main/project/board/category-column/category-column.tsx",
-              lineNumber: 115,
+              lineNumber: 120,
               columnNumber: 11
             }, this),
             !emptyCategory && /* @__PURE__ */ (0, import_jsx_dev_runtime31.jsxDEV)("span", { children: [
@@ -4325,12 +4332,12 @@ var import_jsx_dev_runtime31 = require("react/jsx-dev-runtime"), CategoryColumn 
               " )"
             ] }, void 0, !0, {
               fileName: "src/app/ui/main/project/board/category-column/category-column.tsx",
-              lineNumber: 117,
+              lineNumber: 122,
               columnNumber: 30
             }, this)
           ] }, void 0, !0, {
             fileName: "src/app/ui/main/project/board/category-column/category-column.tsx",
-            lineNumber: 114,
+            lineNumber: 119,
             columnNumber: 9
           }, this),
           /* @__PURE__ */ (0, import_jsx_dev_runtime31.jsxDEV)(
@@ -4341,7 +4348,7 @@ var import_jsx_dev_runtime31 = require("react/jsx-dev-runtime"), CategoryColumn 
               "aria-label": `Add new ${category.name} issue`,
               children: /* @__PURE__ */ (0, import_jsx_dev_runtime31.jsxDEV)(import_ai.AiOutlinePlus, { size: 24 }, void 0, !1, {
                 fileName: "src/app/ui/main/project/board/category-column/category-column.tsx",
-                lineNumber: 124,
+                lineNumber: 129,
                 columnNumber: 11
               }, this)
             },
@@ -4349,19 +4356,19 @@ var import_jsx_dev_runtime31 = require("react/jsx-dev-runtime"), CategoryColumn 
             !1,
             {
               fileName: "src/app/ui/main/project/board/category-column/category-column.tsx",
-              lineNumber: 119,
+              lineNumber: 124,
               columnNumber: 9
             },
             this
           )
         ] }, void 0, !0, {
           fileName: "src/app/ui/main/project/board/category-column/category-column.tsx",
-          lineNumber: 113,
+          lineNumber: 118,
           columnNumber: 7
         }, this),
-        /* @__PURE__ */ (0, import_jsx_dev_runtime31.jsxDEV)("div", { ref: columnRef, className: "h-full", children: /* @__PURE__ */ (0, import_jsx_dev_runtime31.jsxDEV)("div", { style: { height: `${columnHeight}px` }, children: /* @__PURE__ */ (0, import_jsx_dev_runtime31.jsxDEV)(ScrollArea, { children: /* @__PURE__ */ (0, import_jsx_dev_runtime31.jsxDEV)("ul", { style: { borderRadius: "40px" }, className: "mt-1 max-w-[390px] px-1 pb-1", children: emptyCategory ? /* @__PURE__ */ (0, import_jsx_dev_runtime31.jsxDEV)(EmptyCategory, {}, void 0, !1, {
+        /* @__PURE__ */ (0, import_jsx_dev_runtime31.jsxDEV)("div", { ref: columnRef, className: "h-full", children: /* @__PURE__ */ (0, import_jsx_dev_runtime31.jsxDEV)("div", { style: { height: `${columnHeight}px` }, children: /* @__PURE__ */ (0, import_jsx_dev_runtime31.jsxDEV)(ScrollArea, { children: /* @__PURE__ */ (0, import_jsx_dev_runtime31.jsxDEV)("ul", { style: { borderRadius: "80px" }, className: "mt-1 max-w-[600px] px-1 pb-1", children: emptyCategory ? /* @__PURE__ */ (0, import_jsx_dev_runtime31.jsxDEV)(EmptyCategory, {}, void 0, !1, {
           fileName: "src/app/ui/main/project/board/category-column/category-column.tsx",
-          lineNumber: 134,
+          lineNumber: 139,
           columnNumber: 17
         }, this) : filteredIssues().map((issue, index) => /* @__PURE__ */ (0, import_jsx_dev_runtime31.jsxDEV)("li", { className: "mb-2", children: /* @__PURE__ */ (0, import_jsx_dev_runtime31.jsxDEV)(
           IssueCard,
@@ -4375,29 +4382,29 @@ var import_jsx_dev_runtime31 = require("react/jsx-dev-runtime"), CategoryColumn 
           !1,
           {
             fileName: "src/app/ui/main/project/board/category-column/category-column.tsx",
-            lineNumber: 138,
+            lineNumber: 143,
             columnNumber: 21
           },
           this
         ) }, index, !1, {
           fileName: "src/app/ui/main/project/board/category-column/category-column.tsx",
-          lineNumber: 137,
+          lineNumber: 142,
           columnNumber: 19
         }, this)) }, void 0, !1, {
           fileName: "src/app/ui/main/project/board/category-column/category-column.tsx",
-          lineNumber: 131,
+          lineNumber: 136,
           columnNumber: 13
         }, this) }, void 0, !1, {
           fileName: "src/app/ui/main/project/board/category-column/category-column.tsx",
-          lineNumber: 130,
+          lineNumber: 135,
           columnNumber: 11
         }, this) }, void 0, !1, {
           fileName: "src/app/ui/main/project/board/category-column/category-column.tsx",
-          lineNumber: 129,
+          lineNumber: 134,
           columnNumber: 9
         }, this) }, void 0, !1, {
           fileName: "src/app/ui/main/project/board/category-column/category-column.tsx",
-          lineNumber: 128,
+          lineNumber: 133,
           columnNumber: 7
         }, this)
       ]
@@ -4406,7 +4413,7 @@ var import_jsx_dev_runtime31 = require("react/jsx-dev-runtime"), CategoryColumn 
     !0,
     {
       fileName: "src/app/ui/main/project/board/category-column/category-column.tsx",
-      lineNumber: 83,
+      lineNumber: 88,
       columnNumber: 5
     },
     this
@@ -4414,17 +4421,17 @@ var import_jsx_dev_runtime31 = require("react/jsx-dev-runtime"), CategoryColumn 
 }, EmptyCategory = () => /* @__PURE__ */ (0, import_jsx_dev_runtime31.jsxDEV)("li", { className: "mt-4 flex flex-col items-center text-font-light dark:text-font-light-dark", children: [
   /* @__PURE__ */ (0, import_jsx_dev_runtime31.jsxDEV)(import_rx.RxValueNone, { size: 36 }, void 0, !1, {
     fileName: "src/app/ui/main/project/board/category-column/category-column.tsx",
-    lineNumber: 165,
+    lineNumber: 170,
     columnNumber: 5
   }, this),
   /* @__PURE__ */ (0, import_jsx_dev_runtime31.jsxDEV)("p", { className: "mt-4 font-primary-light text-xs uppercase", children: "No issues found" }, void 0, !1, {
     fileName: "src/app/ui/main/project/board/category-column/category-column.tsx",
-    lineNumber: 166,
+    lineNumber: 171,
     columnNumber: 5
   }, this)
 ] }, void 0, !0, {
   fileName: "src/app/ui/main/project/board/category-column/category-column.tsx",
-  lineNumber: 164,
+  lineNumber: 169,
   columnNumber: 3
 }, this);
 
@@ -4461,7 +4468,7 @@ var import_jsx_dev_runtime32 = require("react/jsx-dev-runtime"), BoardView = ({ 
       lineNumber: 29,
       columnNumber: 11
     }, this),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime32.jsxDEV)("div", { className: "inline", children: /* @__PURE__ */ (0, import_jsx_dev_runtime32.jsxDEV)(SelectSort, {}, void 0, !1, {
+    /* @__PURE__ */ (0, import_jsx_dev_runtime32.jsxDEV)("div", { style: { backgroundColor: "#2D4059", padding: "10px", color: "#ffd460", borderRadius: "10px", height: "65px" }, className: "inline", children: /* @__PURE__ */ (0, import_jsx_dev_runtime32.jsxDEV)(SelectSort, {}, void 0, !1, {
       fileName: "src/app/ui/main/project/board/board.view.tsx",
       lineNumber: 33,
       columnNumber: 13
@@ -4504,25 +4511,6 @@ var import_jsx_dev_runtime32 = require("react/jsx-dev-runtime"), BoardView = ({ 
   }, [categories]), (0, import_react38.useEffect)(() => {
     revalidate();
   }, [dataUpdated, revalidate]), (0, import_react38.useEffect)(() => (window.addEventListener("keydown", onKeyDown), () => window.removeEventListener("keydown", onKeyDown)), [onKeyDown]), /* @__PURE__ */ (0, import_jsx_dev_runtime32.jsxDEV)("section", { className: "mt-12 flex h-full flex-col", children: [
-    /* @__PURE__ */ (0, import_jsx_dev_runtime32.jsxDEV)("span", { className: "mb-2 block justify-self-end font-primary-light text-2xs text-font-light text-opacity-80 dark:text-font-light-dark", children: [
-      "Press ",
-      /* @__PURE__ */ (0, import_jsx_dev_runtime32.jsxDEV)(Kbd, { children: "Shift" }, void 0, !1, {
-        fileName: "src/app/ui/main/project/board/board.view.tsx",
-        lineNumber: 88,
-        columnNumber: 15
-      }, this),
-      " + ",
-      /* @__PURE__ */ (0, import_jsx_dev_runtime32.jsxDEV)(Kbd, { children: "N" }, void 0, !1, {
-        fileName: "src/app/ui/main/project/board/board.view.tsx",
-        lineNumber: 88,
-        columnNumber: 34
-      }, this),
-      " to create a new issue"
-    ] }, void 0, !0, {
-      fileName: "src/app/ui/main/project/board/board.view.tsx",
-      lineNumber: 87,
-      columnNumber: 7
-    }, this),
     /* @__PURE__ */ (0, import_jsx_dev_runtime32.jsxDEV)("div", { className: "flex h-full gap-3 flex-row", children: categories.map((category) => /* @__PURE__ */ (0, import_jsx_dev_runtime32.jsxDEV)(
       CategoryColumn,
       {
@@ -4536,13 +4524,32 @@ var import_jsx_dev_runtime32 = require("react/jsx-dev-runtime"), BoardView = ({ 
       !1,
       {
         fileName: "src/app/ui/main/project/board/board.view.tsx",
-        lineNumber: 92,
+        lineNumber: 90,
         columnNumber: 11
       },
       this
     )) }, void 0, !1, {
       fileName: "src/app/ui/main/project/board/board.view.tsx",
-      lineNumber: 90,
+      lineNumber: 88,
+      columnNumber: 7
+    }, this),
+    /* @__PURE__ */ (0, import_jsx_dev_runtime32.jsxDEV)("span", { style: { color: "#ffd460" }, className: "mb-2 block justify-self-end font-primary-light text-2xs text-font-light text-opacity-80 dark:text-font-light-dark", children: [
+      "Press ",
+      /* @__PURE__ */ (0, import_jsx_dev_runtime32.jsxDEV)(Kbd, { children: "Shift" }, void 0, !1, {
+        fileName: "src/app/ui/main/project/board/board.view.tsx",
+        lineNumber: 101,
+        columnNumber: 15
+      }, this),
+      " + ",
+      /* @__PURE__ */ (0, import_jsx_dev_runtime32.jsxDEV)(Kbd, { children: "N" }, void 0, !1, {
+        fileName: "src/app/ui/main/project/board/board.view.tsx",
+        lineNumber: 101,
+        columnNumber: 34
+      }, this),
+      " to create a new issue"
+    ] }, void 0, !0, {
+      fileName: "src/app/ui/main/project/board/board.view.tsx",
+      lineNumber: 100,
       columnNumber: 7
     }, this)
   ] }, void 0, !0, {
@@ -5001,7 +5008,7 @@ var import_jsx_dev_runtime35 = require("react/jsx-dev-runtime"), DEFAULT_MAX_LEN
   error
 }) => {
   let [title, setTitle] = (0, import_react42.useState)(initTitle), [isFocus, setIsFocus] = (0, import_react42.useState)(!0), isMaxLength = title.length >= maxLength, requireError = error && (title.length === 0 || textAreOnlySpaces(title));
-  return /* @__PURE__ */ (0, import_jsx_dev_runtime35.jsxDEV)("div", { className: "relative", children: [
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime35.jsxDEV)("div", { style: { color: "#2D4059" }, className: "relative", children: [
     /* @__PURE__ */ (0, import_jsx_dev_runtime35.jsxDEV)(
       TextareaAutosize,
       {
@@ -5010,12 +5017,12 @@ var import_jsx_dev_runtime35 = require("react/jsx-dev-runtime"), DEFAULT_MAX_LEN
         setValue: (newTitle) => {
           newTitle.length > maxLength || setTitle(newTitle);
         },
-        placeholder: "Write the title",
+        placeholder: "Enter Issue name",
         readOnly,
         onFocus: () => setIsFocus(!0),
         onBlur: () => setIsFocus(!1),
         textareaClassName: (0, import_classix12.default)(
-          "font-primary-black text-2xl",
+          "text-2xl",
           requireError && "focus-visible:outline-error-main outline outline-2 outline-error-main dark:outline-error-main-dark dark:focus-visible:outline-error-main-dark"
         ),
         autofocus: !0
@@ -5038,7 +5045,7 @@ var import_jsx_dev_runtime35 = require("react/jsx-dev-runtime"), DEFAULT_MAX_LEN
       "span",
       {
         className: (0, import_classix12.default)(
-          "absolute right-0 top-full font-primary-light",
+          "absolute right-0 top-full ",
           isMaxLength ? "text-error-main dark:text-error-main-dark" : "text-font-light dark:text-font-light-dark"
         ),
         children: [
@@ -5883,6 +5890,7 @@ var import_jsx_dev_runtime45 = require("react/jsx-dev-runtime"), SelectAsignee =
   return /* @__PURE__ */ (0, import_jsx_dev_runtime45.jsxDEV)(
     Select5.Root,
     {
+      style: { backgroundColor: "#2D4059" },
       name: "asignee",
       defaultValue: initAsignee.id,
       onValueChange,
@@ -6014,7 +6022,7 @@ var import_jsx_dev_runtime46 = require("react/jsx-dev-runtime"), IssuePanel = ({
     var _a2;
     let formAction = (_a2 = fetcher.formData) == null ? void 0 : _a2.get("_action");
     fetcher.type === "actionRedirect" && formAction === "create" && import_react_toastify2.toast.success("Issue created successfully");
-  }, [fetcher.type]), /* @__PURE__ */ (0, import_jsx_dev_runtime46.jsxDEV)(import_jsx_dev_runtime46.Fragment, { children: [
+  }, [fetcher.type]), /* @__PURE__ */ (0, import_jsx_dev_runtime46.jsxDEV)("div", { children: [
     /* @__PURE__ */ (0, import_jsx_dev_runtime46.jsxDEV)(Root7, { open: !0, children: /* @__PURE__ */ (0, import_jsx_dev_runtime46.jsxDEV)(Portal3, { container: portalContainer, children: /* @__PURE__ */ (0, import_jsx_dev_runtime46.jsxDEV)(Overlay2, { className: isOpen ? "" : "bg-opacity-0", children: /* @__PURE__ */ (0, import_jsx_dev_runtime46.jsxDEV)(
       Content5,
       {
@@ -6037,106 +6045,13 @@ var import_jsx_dev_runtime46 = require("react/jsx-dev-runtime"), IssuePanel = ({
             },
             this
           ),
-          /* @__PURE__ */ (0, import_jsx_dev_runtime46.jsxDEV)(import_react52.Form, { method: "post", onSubmit: handleFormSumbit, ref: formRef, children: [
+          /* @__PURE__ */ (0, import_jsx_dev_runtime46.jsxDEV)(import_react52.Form, { style: { backgroundColor: "#2D4059", width: "940px", padding: "20px", borderRadius: "20px" }, method: "post", onSubmit: handleFormSumbit, ref: formRef, children: [
             /* @__PURE__ */ (0, import_jsx_dev_runtime46.jsxDEV)("div", { className: "grid grid-cols-5 gap-16", children: [
-              /* @__PURE__ */ (0, import_jsx_dev_runtime46.jsxDEV)("section", { className: "col-span-3", children: [
-                /* @__PURE__ */ (0, import_jsx_dev_runtime46.jsxDEV)(Title2, { className: "my-5 -ml-3", children: /* @__PURE__ */ (0, import_jsx_dev_runtime46.jsxDEV)(
-                  Title3,
-                  {
-                    initTitle: (issue == null ? void 0 : issue.name) || "",
-                    readOnly: userIsNotReporter,
-                    error: (_a = actionData == null ? void 0 : actionData.errors) == null ? void 0 : _a.name
-                  },
-                  void 0,
-                  !1,
-                  {
-                    fileName: "src/app/ui/main/project/board/issue-panel/issue-panel.view.tsx",
-                    lineNumber: 144,
-                    columnNumber: 23
-                  },
-                  this
-                ) }, void 0, !1, {
-                  fileName: "src/app/ui/main/project/board/issue-panel/issue-panel.view.tsx",
-                  lineNumber: 143,
-                  columnNumber: 21
-                }, this),
-                /* @__PURE__ */ (0, import_jsx_dev_runtime46.jsxDEV)("p", { className: "font-primary-black text-font-main dark:text-font-main-dark", children: "Description" }, void 0, !1, {
-                  fileName: "src/app/ui/main/project/board/issue-panel/issue-panel.view.tsx",
-                  lineNumber: 150,
-                  columnNumber: 21
-                }, this),
-                /* @__PURE__ */ (0, import_jsx_dev_runtime46.jsxDEV)("div", { className: "-ml-3", children: /* @__PURE__ */ (0, import_jsx_dev_runtime46.jsxDEV)(
-                  Description,
-                  {
-                    initDescription: (issue == null ? void 0 : issue.description) || "",
-                    readOnly: userIsNotReporter
-                  },
-                  void 0,
-                  !1,
-                  {
-                    fileName: "src/app/ui/main/project/board/issue-panel/issue-panel.view.tsx",
-                    lineNumber: 154,
-                    columnNumber: 23
-                  },
-                  this
-                ) }, void 0, !1, {
-                  fileName: "src/app/ui/main/project/board/issue-panel/issue-panel.view.tsx",
-                  lineNumber: 153,
-                  columnNumber: 21
-                }, this),
-                /* @__PURE__ */ (0, import_jsx_dev_runtime46.jsxDEV)("div", { className: "mt-6", children: [
-                  /* @__PURE__ */ (0, import_jsx_dev_runtime46.jsxDEV)("p", { className: "font-primary-black text-font-main dark:text-font-main-dark", children: "Comments" }, void 0, !1, {
-                    fileName: "src/app/ui/main/project/board/issue-panel/issue-panel.view.tsx",
-                    lineNumber: 160,
-                    columnNumber: 23
-                  }, this),
-                  /* @__PURE__ */ (0, import_jsx_dev_runtime46.jsxDEV)("div", { children: /* @__PURE__ */ (0, import_jsx_dev_runtime46.jsxDEV)(CreateComment, { addComment }, void 0, !1, {
-                    fileName: "src/app/ui/main/project/board/issue-panel/issue-panel.view.tsx",
-                    lineNumber: 164,
-                    columnNumber: 25
-                  }, this) }, void 0, !1, {
-                    fileName: "src/app/ui/main/project/board/issue-panel/issue-panel.view.tsx",
-                    lineNumber: 163,
-                    columnNumber: 23
-                  }, this),
-                  /* @__PURE__ */ (0, import_jsx_dev_runtime46.jsxDEV)("ul", { className: "mt-8 space-y-6", children: comments.map((comment) => /* @__PURE__ */ (0, import_jsx_dev_runtime46.jsxDEV)("li", { children: /* @__PURE__ */ (0, import_jsx_dev_runtime46.jsxDEV)(
-                    ViewComment,
-                    {
-                      comment,
-                      removeComment
-                    },
-                    void 0,
-                    !1,
-                    {
-                      fileName: "src/app/ui/main/project/board/issue-panel/issue-panel.view.tsx",
-                      lineNumber: 169,
-                      columnNumber: 29
-                    },
-                    this
-                  ) }, comment.id, !1, {
-                    fileName: "src/app/ui/main/project/board/issue-panel/issue-panel.view.tsx",
-                    lineNumber: 168,
-                    columnNumber: 27
-                  }, this)) }, void 0, !1, {
-                    fileName: "src/app/ui/main/project/board/issue-panel/issue-panel.view.tsx",
-                    lineNumber: 166,
-                    columnNumber: 23
-                  }, this)
-                ] }, void 0, !0, {
-                  fileName: "src/app/ui/main/project/board/issue-panel/issue-panel.view.tsx",
-                  lineNumber: 159,
-                  columnNumber: 21
-                }, this)
-              ] }, void 0, !0, {
-                fileName: "src/app/ui/main/project/board/issue-panel/issue-panel.view.tsx",
-                lineNumber: 142,
-                columnNumber: 19
-              }, this),
               /* @__PURE__ */ (0, import_jsx_dev_runtime46.jsxDEV)("section", { className: "col-span-2 space-y-10 dark:text-font-light-dark", children: [
                 /* @__PURE__ */ (0, import_jsx_dev_runtime46.jsxDEV)("div", { children: [
-                  /* @__PURE__ */ (0, import_jsx_dev_runtime46.jsxDEV)("p", { className: "mb-1", children: "Status" }, void 0, !1, {
+                  /* @__PURE__ */ (0, import_jsx_dev_runtime46.jsxDEV)("p", { style: { color: "#ffd460" }, className: "mb-1", children: "Status" }, void 0, !1, {
                     fileName: "src/app/ui/main/project/board/issue-panel/issue-panel.view.tsx",
-                    lineNumber: 180,
+                    lineNumber: 144,
                     columnNumber: 23
                   }, this),
                   /* @__PURE__ */ (0, import_jsx_dev_runtime46.jsxDEV)(
@@ -6148,20 +6063,20 @@ var import_jsx_dev_runtime46 = require("react/jsx-dev-runtime"), IssuePanel = ({
                     !1,
                     {
                       fileName: "src/app/ui/main/project/board/issue-panel/issue-panel.view.tsx",
-                      lineNumber: 181,
+                      lineNumber: 145,
                       columnNumber: 23
                     },
                     this
                   )
                 ] }, void 0, !0, {
                   fileName: "src/app/ui/main/project/board/issue-panel/issue-panel.view.tsx",
-                  lineNumber: 179,
+                  lineNumber: 143,
                   columnNumber: 21
                 }, this),
                 /* @__PURE__ */ (0, import_jsx_dev_runtime46.jsxDEV)("div", { children: [
-                  /* @__PURE__ */ (0, import_jsx_dev_runtime46.jsxDEV)("p", { className: "mb-1", children: "Priority" }, void 0, !1, {
+                  /* @__PURE__ */ (0, import_jsx_dev_runtime46.jsxDEV)("p", { style: { color: "#ffd460" }, className: "mb-1", children: "Priority" }, void 0, !1, {
                     fileName: "src/app/ui/main/project/board/issue-panel/issue-panel.view.tsx",
-                    lineNumber: 186,
+                    lineNumber: 150,
                     columnNumber: 23
                   }, this),
                   /* @__PURE__ */ (0, import_jsx_dev_runtime46.jsxDEV)(
@@ -6173,42 +6088,42 @@ var import_jsx_dev_runtime46 = require("react/jsx-dev-runtime"), IssuePanel = ({
                     !1,
                     {
                       fileName: "src/app/ui/main/project/board/issue-panel/issue-panel.view.tsx",
-                      lineNumber: 187,
+                      lineNumber: 151,
                       columnNumber: 23
                     },
                     this
                   )
                 ] }, void 0, !0, {
                   fileName: "src/app/ui/main/project/board/issue-panel/issue-panel.view.tsx",
-                  lineNumber: 185,
+                  lineNumber: 149,
                   columnNumber: 21
                 }, this),
                 /* @__PURE__ */ (0, import_jsx_dev_runtime46.jsxDEV)("div", { children: [
-                  /* @__PURE__ */ (0, import_jsx_dev_runtime46.jsxDEV)("p", { className: "mb-1", children: "Asignee" }, void 0, !1, {
+                  /* @__PURE__ */ (0, import_jsx_dev_runtime46.jsxDEV)("p", { style: { color: "#ffd460" }, className: "mb-1", children: "Asignee" }, void 0, !1, {
                     fileName: "src/app/ui/main/project/board/issue-panel/issue-panel.view.tsx",
-                    lineNumber: 192,
+                    lineNumber: 156,
                     columnNumber: 23
                   }, this),
                   /* @__PURE__ */ (0, import_jsx_dev_runtime46.jsxDEV)(SelectAsignee, { initAsignee: (issue == null ? void 0 : issue.asignee) || user }, void 0, !1, {
                     fileName: "src/app/ui/main/project/board/issue-panel/issue-panel.view.tsx",
-                    lineNumber: 193,
+                    lineNumber: 157,
                     columnNumber: 23
                   }, this)
                 ] }, void 0, !0, {
                   fileName: "src/app/ui/main/project/board/issue-panel/issue-panel.view.tsx",
-                  lineNumber: 191,
+                  lineNumber: 155,
                   columnNumber: 21
                 }, this),
                 /* @__PURE__ */ (0, import_jsx_dev_runtime46.jsxDEV)("div", { children: [
-                  /* @__PURE__ */ (0, import_jsx_dev_runtime46.jsxDEV)("p", { className: "mb-1", children: "Reporter" }, void 0, !1, {
+                  /* @__PURE__ */ (0, import_jsx_dev_runtime46.jsxDEV)("p", { style: { color: "#ffd460" }, className: "mb-1", children: "Reporter" }, void 0, !1, {
                     fileName: "src/app/ui/main/project/board/issue-panel/issue-panel.view.tsx",
-                    lineNumber: 196,
+                    lineNumber: 160,
                     columnNumber: 23
                   }, this),
-                  /* @__PURE__ */ (0, import_jsx_dev_runtime46.jsxDEV)("div", { className: "mt-1 flex w-fit items-center gap-2 rounded-full bg-grey-300 py-1 pl-1 pr-3.5 pb-1 dark:bg-dark-500", children: [
+                  /* @__PURE__ */ (0, import_jsx_dev_runtime46.jsxDEV)("div", { style: { backgroundColor: "#5a7fb0", borderRadius: "5px" }, className: "mt-1 flex w-fit items-center gap-2  bg-grey-300 py-1 pl-1 pr-3.5 pb-1 dark:bg-dark-500", children: [
                     /* @__PURE__ */ (0, import_jsx_dev_runtime46.jsxDEV)(UserAvatar, { ...reporter }, void 0, !1, {
                       fileName: "src/app/ui/main/project/board/issue-panel/issue-panel.view.tsx",
-                      lineNumber: 198,
+                      lineNumber: 162,
                       columnNumber: 25
                     }, this),
                     /* @__PURE__ */ (0, import_jsx_dev_runtime46.jsxDEV)(
@@ -6222,38 +6137,131 @@ var import_jsx_dev_runtime46 = require("react/jsx-dev-runtime"), IssuePanel = ({
                       !1,
                       {
                         fileName: "src/app/ui/main/project/board/issue-panel/issue-panel.view.tsx",
-                        lineNumber: 199,
+                        lineNumber: 163,
                         columnNumber: 25
                       },
                       this
                     ),
                     /* @__PURE__ */ (0, import_jsx_dev_runtime46.jsxDEV)("p", { className: "m-0", children: reporter.name }, void 0, !1, {
                       fileName: "src/app/ui/main/project/board/issue-panel/issue-panel.view.tsx",
-                      lineNumber: 204,
+                      lineNumber: 168,
                       columnNumber: 25
                     }, this)
                   ] }, void 0, !0, {
                     fileName: "src/app/ui/main/project/board/issue-panel/issue-panel.view.tsx",
-                    lineNumber: 197,
+                    lineNumber: 161,
                     columnNumber: 23
                   }, this)
                 ] }, void 0, !0, {
                   fileName: "src/app/ui/main/project/board/issue-panel/issue-panel.view.tsx",
-                  lineNumber: 195,
+                  lineNumber: 159,
                   columnNumber: 21
                 }, this),
-                /* @__PURE__ */ (0, import_jsx_dev_runtime46.jsxDEV)("div", { children: /* @__PURE__ */ (0, import_jsx_dev_runtime46.jsxDEV)(CreatedUpdatedAt, { issue }, void 0, !1, {
+                /* @__PURE__ */ (0, import_jsx_dev_runtime46.jsxDEV)("div", { style: { color: "#ffd460" }, children: /* @__PURE__ */ (0, import_jsx_dev_runtime46.jsxDEV)(CreatedUpdatedAt, { issue }, void 0, !1, {
                   fileName: "src/app/ui/main/project/board/issue-panel/issue-panel.view.tsx",
-                  lineNumber: 208,
+                  lineNumber: 172,
                   columnNumber: 23
                 }, this) }, void 0, !1, {
                   fileName: "src/app/ui/main/project/board/issue-panel/issue-panel.view.tsx",
-                  lineNumber: 207,
+                  lineNumber: 171,
                   columnNumber: 21
                 }, this)
               ] }, void 0, !0, {
                 fileName: "src/app/ui/main/project/board/issue-panel/issue-panel.view.tsx",
-                lineNumber: 178,
+                lineNumber: 142,
+                columnNumber: 17
+              }, this),
+              /* @__PURE__ */ (0, import_jsx_dev_runtime46.jsxDEV)("section", { className: "col-span-3", children: [
+                /* @__PURE__ */ (0, import_jsx_dev_runtime46.jsxDEV)(Title2, { className: "my-5 -ml-3", children: /* @__PURE__ */ (0, import_jsx_dev_runtime46.jsxDEV)(
+                  Title3,
+                  {
+                    initTitle: (issue == null ? void 0 : issue.name) || "",
+                    readOnly: userIsNotReporter,
+                    error: (_a = actionData == null ? void 0 : actionData.errors) == null ? void 0 : _a.name
+                  },
+                  void 0,
+                  !1,
+                  {
+                    fileName: "src/app/ui/main/project/board/issue-panel/issue-panel.view.tsx",
+                    lineNumber: 177,
+                    columnNumber: 23
+                  },
+                  this
+                ) }, void 0, !1, {
+                  fileName: "src/app/ui/main/project/board/issue-panel/issue-panel.view.tsx",
+                  lineNumber: 176,
+                  columnNumber: 21
+                }, this),
+                /* @__PURE__ */ (0, import_jsx_dev_runtime46.jsxDEV)("p", { style: { color: "#ffd460" }, className: "font-primary-black text-font-main dark:text-font-main-dark", children: "Description" }, void 0, !1, {
+                  fileName: "src/app/ui/main/project/board/issue-panel/issue-panel.view.tsx",
+                  lineNumber: 183,
+                  columnNumber: 21
+                }, this),
+                /* @__PURE__ */ (0, import_jsx_dev_runtime46.jsxDEV)("div", { style: { color: "#ffd460" }, className: "-ml-3", children: /* @__PURE__ */ (0, import_jsx_dev_runtime46.jsxDEV)(
+                  Description,
+                  {
+                    initDescription: (issue == null ? void 0 : issue.description) || "",
+                    readOnly: userIsNotReporter
+                  },
+                  void 0,
+                  !1,
+                  {
+                    fileName: "src/app/ui/main/project/board/issue-panel/issue-panel.view.tsx",
+                    lineNumber: 187,
+                    columnNumber: 23
+                  },
+                  this
+                ) }, void 0, !1, {
+                  fileName: "src/app/ui/main/project/board/issue-panel/issue-panel.view.tsx",
+                  lineNumber: 186,
+                  columnNumber: 21
+                }, this),
+                /* @__PURE__ */ (0, import_jsx_dev_runtime46.jsxDEV)("div", { className: "mt-6", children: [
+                  /* @__PURE__ */ (0, import_jsx_dev_runtime46.jsxDEV)("p", { style: { color: "#ffd460" }, className: "font-primary-black text-font-main dark:text-font-main-dark", children: "Comments" }, void 0, !1, {
+                    fileName: "src/app/ui/main/project/board/issue-panel/issue-panel.view.tsx",
+                    lineNumber: 193,
+                    columnNumber: 23
+                  }, this),
+                  /* @__PURE__ */ (0, import_jsx_dev_runtime46.jsxDEV)("div", { children: /* @__PURE__ */ (0, import_jsx_dev_runtime46.jsxDEV)(CreateComment, { addComment }, void 0, !1, {
+                    fileName: "src/app/ui/main/project/board/issue-panel/issue-panel.view.tsx",
+                    lineNumber: 197,
+                    columnNumber: 25
+                  }, this) }, void 0, !1, {
+                    fileName: "src/app/ui/main/project/board/issue-panel/issue-panel.view.tsx",
+                    lineNumber: 196,
+                    columnNumber: 23
+                  }, this),
+                  /* @__PURE__ */ (0, import_jsx_dev_runtime46.jsxDEV)("ul", { style: { color: "white" }, className: "mt-8 space-y-6", children: comments.map((comment) => /* @__PURE__ */ (0, import_jsx_dev_runtime46.jsxDEV)("li", { children: /* @__PURE__ */ (0, import_jsx_dev_runtime46.jsxDEV)(
+                    ViewComment,
+                    {
+                      comment,
+                      removeComment
+                    },
+                    void 0,
+                    !1,
+                    {
+                      fileName: "src/app/ui/main/project/board/issue-panel/issue-panel.view.tsx",
+                      lineNumber: 202,
+                      columnNumber: 29
+                    },
+                    this
+                  ) }, comment.id, !1, {
+                    fileName: "src/app/ui/main/project/board/issue-panel/issue-panel.view.tsx",
+                    lineNumber: 201,
+                    columnNumber: 27
+                  }, this)) }, void 0, !1, {
+                    fileName: "src/app/ui/main/project/board/issue-panel/issue-panel.view.tsx",
+                    lineNumber: 199,
+                    columnNumber: 23
+                  }, this)
+                ] }, void 0, !0, {
+                  fileName: "src/app/ui/main/project/board/issue-panel/issue-panel.view.tsx",
+                  lineNumber: 192,
+                  columnNumber: 21
+                }, this)
+              ] }, void 0, !0, {
+                fileName: "src/app/ui/main/project/board/issue-panel/issue-panel.view.tsx",
+                lineNumber: 175,
                 columnNumber: 19
               }, this)
             ] }, void 0, !0, {
@@ -6262,28 +6270,29 @@ var import_jsx_dev_runtime46 = require("react/jsx-dev-runtime"), IssuePanel = ({
               columnNumber: 17
             }, this),
             /* @__PURE__ */ (0, import_jsx_dev_runtime46.jsxDEV)("div", { className: "mt-6 grid grid-cols-3 items-end", children: [
-              /* @__PURE__ */ (0, import_jsx_dev_runtime46.jsxDEV)("span", { className: "font-primary-light text-2xs text-font-light text-opacity-80 dark:text-font-light-dark", children: [
+              /* @__PURE__ */ (0, import_jsx_dev_runtime46.jsxDEV)("span", { style: { color: "#ffd460" }, className: " text-2xs text-font-light text-opacity-80 dark:text-font-light-dark", children: [
                 "Press ",
                 /* @__PURE__ */ (0, import_jsx_dev_runtime46.jsxDEV)(Kbd, { children: "Shift" }, void 0, !1, {
                   fileName: "src/app/ui/main/project/board/issue-panel/issue-panel.view.tsx",
-                  lineNumber: 214,
+                  lineNumber: 215,
                   columnNumber: 27
                 }, this),
                 " + ",
                 /* @__PURE__ */ (0, import_jsx_dev_runtime46.jsxDEV)(Kbd, { children: "S" }, void 0, !1, {
                   fileName: "src/app/ui/main/project/board/issue-panel/issue-panel.view.tsx",
-                  lineNumber: 214,
+                  lineNumber: 215,
                   columnNumber: 46
                 }, this),
                 " to accept"
               ] }, void 0, !0, {
                 fileName: "src/app/ui/main/project/board/issue-panel/issue-panel.view.tsx",
-                lineNumber: 213,
+                lineNumber: 214,
                 columnNumber: 19
               }, this),
               /* @__PURE__ */ (0, import_jsx_dev_runtime46.jsxDEV)(
                 "button",
                 {
+                  style: { color: "#ffd460", backgroundColor: "#5a7fb0", borderRadius: "20px" },
                   type: "submit",
                   className: "flex w-fit cursor-pointer items-center gap-4 justify-self-center rounded border-none bg-primary-main py-2 px-8 font-primary-bold text-lg text-white enabled:hover:bg-primary-main-hover disabled:cursor-not-allowed disabled:opacity-60",
                   disabled: transition.state !== "idle",
@@ -6292,12 +6301,12 @@ var import_jsx_dev_runtime46 = require("react/jsx-dev-runtime"), IssuePanel = ({
                     "Submmiting",
                     /* @__PURE__ */ (0, import_jsx_dev_runtime46.jsxDEV)(Spinner, {}, void 0, !1, {
                       fileName: "src/app/ui/main/project/board/issue-panel/issue-panel.view.tsx",
-                      lineNumber: 225,
+                      lineNumber: 226,
                       columnNumber: 25
                     }, this)
                   ] }, void 0, !0, {
                     fileName: "src/app/ui/main/project/board/issue-panel/issue-panel.view.tsx",
-                    lineNumber: 223,
+                    lineNumber: 224,
                     columnNumber: 23
                   }, this) : "Accept"
                 },
@@ -6305,27 +6314,27 @@ var import_jsx_dev_runtime46 = require("react/jsx-dev-runtime"), IssuePanel = ({
                 !1,
                 {
                   fileName: "src/app/ui/main/project/board/issue-panel/issue-panel.view.tsx",
-                  lineNumber: 216,
+                  lineNumber: 217,
                   columnNumber: 19
                 },
                 this
               ),
-              /* @__PURE__ */ (0, import_jsx_dev_runtime46.jsxDEV)("span", { className: "justify-self-end font-primary-light text-2xs text-font-light text-opacity-80 dark:text-font-light-dark", children: [
+              /* @__PURE__ */ (0, import_jsx_dev_runtime46.jsxDEV)("span", { style: { color: "#ffd460" }, className: "justify-self-end font-primary-light text-2xs text-font-light text-opacity-80 dark:text-font-light-dark", children: [
                 "Press ",
                 /* @__PURE__ */ (0, import_jsx_dev_runtime46.jsxDEV)(Kbd, { children: "Esc" }, void 0, !1, {
                   fileName: "src/app/ui/main/project/board/issue-panel/issue-panel.view.tsx",
-                  lineNumber: 232,
+                  lineNumber: 233,
                   columnNumber: 27
                 }, this),
                 " to close"
               ] }, void 0, !0, {
                 fileName: "src/app/ui/main/project/board/issue-panel/issue-panel.view.tsx",
-                lineNumber: 231,
+                lineNumber: 232,
                 columnNumber: 19
               }, this)
             ] }, void 0, !0, {
               fileName: "src/app/ui/main/project/board/issue-panel/issue-panel.view.tsx",
-              lineNumber: 212,
+              lineNumber: 213,
               columnNumber: 17
             }, this)
           ] }, void 0, !0, {
@@ -6366,7 +6375,7 @@ var import_jsx_dev_runtime46 = require("react/jsx-dev-runtime"), IssuePanel = ({
       !1,
       {
         fileName: "src/app/ui/main/project/board/issue-panel/issue-panel.view.tsx",
-        lineNumber: 241,
+        lineNumber: 242,
         columnNumber: 7
       },
       this
@@ -6384,33 +6393,33 @@ var import_jsx_dev_runtime46 = require("react/jsx-dev-runtime"), IssuePanel = ({
   return /* @__PURE__ */ (0, import_jsx_dev_runtime46.jsxDEV)("table", { children: /* @__PURE__ */ (0, import_jsx_dev_runtime46.jsxDEV)("tbody", { className: "text-sm", children: values.map(({ label, value }) => /* @__PURE__ */ (0, import_jsx_dev_runtime46.jsxDEV)("tr", { children: [
     /* @__PURE__ */ (0, import_jsx_dev_runtime46.jsxDEV)("td", { className: "pr-4", children: /* @__PURE__ */ (0, import_jsx_dev_runtime46.jsxDEV)("p", { className: "mb-2", children: label }, void 0, !1, {
       fileName: "src/app/ui/main/project/board/issue-panel/issue-panel.view.tsx",
-      lineNumber: 265,
+      lineNumber: 266,
       columnNumber: 15
     }, this) }, void 0, !1, {
       fileName: "src/app/ui/main/project/board/issue-panel/issue-panel.view.tsx",
-      lineNumber: 264,
+      lineNumber: 265,
       columnNumber: 13
     }, this),
     /* @__PURE__ */ (0, import_jsx_dev_runtime46.jsxDEV)("td", { children: /* @__PURE__ */ (0, import_jsx_dev_runtime46.jsxDEV)("p", { className: "mb-2 text-white", children: value ? formatDateTime(value) : "Just now" }, void 0, !1, {
       fileName: "src/app/ui/main/project/board/issue-panel/issue-panel.view.tsx",
-      lineNumber: 268,
+      lineNumber: 269,
       columnNumber: 15
     }, this) }, void 0, !1, {
       fileName: "src/app/ui/main/project/board/issue-panel/issue-panel.view.tsx",
-      lineNumber: 267,
+      lineNumber: 268,
       columnNumber: 13
     }, this)
   ] }, label, !0, {
     fileName: "src/app/ui/main/project/board/issue-panel/issue-panel.view.tsx",
-    lineNumber: 263,
+    lineNumber: 264,
     columnNumber: 11
   }, this)) }, void 0, !1, {
     fileName: "src/app/ui/main/project/board/issue-panel/issue-panel.view.tsx",
-    lineNumber: 261,
+    lineNumber: 262,
     columnNumber: 7
   }, this) }, void 0, !1, {
     fileName: "src/app/ui/main/project/board/issue-panel/issue-panel.view.tsx",
-    lineNumber: 260,
+    lineNumber: 261,
     columnNumber: 5
   }, this);
 }, Spinner = () => /* @__PURE__ */ (0, import_jsx_dev_runtime46.jsxDEV)(
@@ -6432,7 +6441,7 @@ var import_jsx_dev_runtime46 = require("react/jsx-dev-runtime"), IssuePanel = ({
         !1,
         {
           fileName: "src/app/ui/main/project/board/issue-panel/issue-panel.view.tsx",
-          lineNumber: 287,
+          lineNumber: 288,
           columnNumber: 5
         },
         this
@@ -6447,7 +6456,7 @@ var import_jsx_dev_runtime46 = require("react/jsx-dev-runtime"), IssuePanel = ({
         !1,
         {
           fileName: "src/app/ui/main/project/board/issue-panel/issue-panel.view.tsx",
-          lineNumber: 291,
+          lineNumber: 292,
           columnNumber: 5
         },
         this
@@ -6458,7 +6467,7 @@ var import_jsx_dev_runtime46 = require("react/jsx-dev-runtime"), IssuePanel = ({
   !0,
   {
     fileName: "src/app/ui/main/project/board/issue-panel/issue-panel.view.tsx",
-    lineNumber: 280,
+    lineNumber: 281,
     columnNumber: 3
   },
   this
@@ -6778,7 +6787,7 @@ var import_jsx_dev_runtime50 = require("react/jsx-dev-runtime"), defaultProjects
   (projectMock) => projectMock.id
 ), ProjectsView = ({
   projectsSummary
-}) => /* @__PURE__ */ (0, import_jsx_dev_runtime50.jsxDEV)("div", { style: { backgroundColor: "#2D4059", height: "100vh" }, className: "bg-white p-6 dark:bg-dark-400", children: [
+}) => /* @__PURE__ */ (0, import_jsx_dev_runtime50.jsxDEV)("div", { style: { backgroundColor: "#5a7fb0" }, className: "bg-white p-6 dark:bg-dark-400", children: [
   /* @__PURE__ */ (0, import_jsx_dev_runtime50.jsxDEV)("h1", { style: { color: "#ffd460", marginLeft: "300px" }, className: "font-primary-black text-2xl", children: "PROJECTS" }, void 0, !1, {
     fileName: "src/app/ui/main/projects/projects.view.tsx",
     lineNumber: 17,
@@ -7156,7 +7165,7 @@ var import_jsx_dev_runtime53 = require("react/jsx-dev-runtime"), ProjectPanelVie
             onEscapeKeyDown: handleProgrammaticClose,
             onPointerDownOutside: handleProgrammaticClose,
             className: (0, import_classix21.default)(
-              "max-w-[600px]",
+              "max-w-[500px]",
               !isOpen && "translate-y-[10px] opacity-0"
             ),
             children: [
@@ -7796,7 +7805,7 @@ function NotFound404Route() {
 }
 
 // server-assets-manifest:@remix-run/dev/assets-manifest
-var assets_manifest_default = { entry: { module: "/build/entry.client-4CY7YKVG.js", imports: ["/build/_shared/chunk-6DAQMQYB.js", "/build/_shared/chunk-QERF53GL.js", "/build/_shared/chunk-JR7JHID7.js", "/build/_shared/chunk-4D7IJTTE.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-CKCTNMRW.js", imports: ["/build/_shared/chunk-TH5S6TNI.js", "/build/_shared/chunk-FSLR7CSD.js", "/build/_shared/chunk-NY22QEBI.js", "/build/_shared/chunk-Y5IUY2WO.js", "/build/_shared/chunk-WA2U3LPD.js", "/build/_shared/chunk-SVGTTPU7.js", "/build/_shared/chunk-XCXQ6IAD.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !0, hasErrorBoundary: !0 }, "routes/404": { id: "routes/404", parentId: "root", path: "404", index: void 0, caseSensitive: void 0, module: "/build/routes/404-WJMBUNTI.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/__main": { id: "routes/__main", parentId: "root", path: void 0, index: void 0, caseSensitive: void 0, module: "/build/routes/__main-2QA6EXTK.js", imports: ["/build/_shared/chunk-RA6QCO7A.js", "/build/_shared/chunk-P4P35UP3.js", "/build/_shared/chunk-4TVAHHRS.js", "/build/_shared/chunk-EZ43UAVT.js", "/build/_shared/chunk-RB7NZDFW.js", "/build/_shared/chunk-GE42YXME.js", "/build/_shared/chunk-KTTHBX2X.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/__main/projects": { id: "routes/__main/projects", parentId: "routes/__main", path: "projects", index: void 0, caseSensitive: void 0, module: "/build/routes/__main/projects-Q5JVE54A.js", imports: ["/build/_shared/chunk-EDGCQ7EH.js", "/build/_shared/chunk-NCHMJE4I.js", "/build/_shared/chunk-VD4CXEVL.js", "/build/_shared/chunk-EEOCHXUC.js", "/build/_shared/chunk-KHVVK2Q5.js", "/build/_shared/chunk-FSLR7CSD.js", "/build/_shared/chunk-NY22QEBI.js", "/build/_shared/chunk-WA2U3LPD.js"], hasAction: !0, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !0 }, "routes/__main/projects.$projectId": { id: "routes/__main/projects.$projectId", parentId: "routes/__main", path: "projects/:projectId", index: void 0, caseSensitive: void 0, module: "/build/routes/__main/projects.$projectId-X4ZPOAWL.js", imports: ["/build/_shared/chunk-AUYLHJJM.js", "/build/_shared/chunk-NY22QEBI.js", "/build/_shared/chunk-Y5IUY2WO.js", "/build/_shared/chunk-WA2U3LPD.js", "/build/_shared/chunk-SVGTTPU7.js", "/build/_shared/chunk-XCXQ6IAD.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !0, hasErrorBoundary: !0 }, "routes/__main/projects.$projectId/$": { id: "routes/__main/projects.$projectId/$", parentId: "routes/__main/projects.$projectId", path: "*", index: void 0, caseSensitive: void 0, module: "/build/routes/__main/projects.$projectId/$-HBKK36VO.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !0, hasErrorBoundary: !1 }, "routes/__main/projects.$projectId/analytics": { id: "routes/__main/projects.$projectId/analytics", parentId: "routes/__main/projects.$projectId", path: "analytics", index: void 0, caseSensitive: void 0, module: "/build/routes/__main/projects.$projectId/analytics-GVJPB2AU.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !0 }, "routes/__main/projects.$projectId/board": { id: "routes/__main/projects.$projectId/board", parentId: "routes/__main/projects.$projectId", path: "board", index: void 0, caseSensitive: void 0, module: "/build/routes/__main/projects.$projectId/board-AAW77T77.js", imports: ["/build/_shared/chunk-56M7ZW4T.js", "/build/_shared/chunk-5M6ZSNFD.js", "/build/_shared/chunk-YNKUQ7C5.js", "/build/_shared/chunk-6R7GYKXN.js", "/build/_shared/chunk-UD3IMZBA.js", "/build/_shared/chunk-RA6QCO7A.js", "/build/_shared/chunk-P4P35UP3.js", "/build/_shared/chunk-4TVAHHRS.js", "/build/_shared/chunk-RB7NZDFW.js", "/build/_shared/chunk-GE42YXME.js", "/build/_shared/chunk-KTTHBX2X.js", "/build/_shared/chunk-FSLR7CSD.js"], hasAction: !0, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !0 }, "routes/__main/projects.$projectId/board/issue/$issueId": { id: "routes/__main/projects.$projectId/board/issue/$issueId", parentId: "routes/__main/projects.$projectId/board", path: "issue/:issueId", index: void 0, caseSensitive: void 0, module: "/build/routes/__main/projects.$projectId/board/issue/$issueId-WAQEK53H.js", imports: ["/build/_shared/chunk-IELYD6QZ.js", "/build/_shared/chunk-VZDUXWBL.js", "/build/_shared/chunk-EDGCQ7EH.js", "/build/_shared/chunk-NCHMJE4I.js", "/build/_shared/chunk-VRFK2U4R.js", "/build/_shared/chunk-EEOCHXUC.js", "/build/_shared/chunk-KHVVK2Q5.js", "/build/_shared/chunk-TH5S6TNI.js", "/build/_shared/chunk-EZ43UAVT.js", "/build/_shared/chunk-AUYLHJJM.js", "/build/_shared/chunk-NY22QEBI.js", "/build/_shared/chunk-Y5IUY2WO.js", "/build/_shared/chunk-WA2U3LPD.js", "/build/_shared/chunk-XCXQ6IAD.js"], hasAction: !0, hasLoader: !0, hasCatchBoundary: !0, hasErrorBoundary: !1 }, "routes/__main/projects.$projectId/board/issue/issue-event": { id: "routes/__main/projects.$projectId/board/issue/issue-event", parentId: "routes/__main/projects.$projectId/board", path: "issue/issue-event", index: void 0, caseSensitive: void 0, module: "/build/routes/__main/projects.$projectId/board/issue/issue-event-HBPGP2AU.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/__main/projects.$projectId/board/issue/new": { id: "routes/__main/projects.$projectId/board/issue/new", parentId: "routes/__main/projects.$projectId/board", path: "issue/new", index: void 0, caseSensitive: void 0, module: "/build/routes/__main/projects.$projectId/board/issue/new-IKP5MXVU.js", imports: ["/build/_shared/chunk-IELYD6QZ.js", "/build/_shared/chunk-VZDUXWBL.js", "/build/_shared/chunk-EDGCQ7EH.js", "/build/_shared/chunk-NCHMJE4I.js", "/build/_shared/chunk-VRFK2U4R.js", "/build/_shared/chunk-EEOCHXUC.js", "/build/_shared/chunk-KHVVK2Q5.js", "/build/_shared/chunk-TH5S6TNI.js", "/build/_shared/chunk-EZ43UAVT.js", "/build/_shared/chunk-AUYLHJJM.js", "/build/_shared/chunk-NY22QEBI.js", "/build/_shared/chunk-WA2U3LPD.js"], hasAction: !0, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/__main/projects.$projectId/server-error": { id: "routes/__main/projects.$projectId/server-error", parentId: "routes/__main/projects.$projectId", path: "server-error", index: void 0, caseSensitive: void 0, module: "/build/routes/__main/projects.$projectId/server-error-7FRKP6YA.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !0 }, "routes/__main/projects/new": { id: "routes/__main/projects/new", parentId: "routes/__main/projects", path: "new", index: void 0, caseSensitive: void 0, module: "/build/routes/__main/projects/new-Y5F6GLQH.js", imports: ["/build/_shared/chunk-YNKUQ7C5.js", "/build/_shared/chunk-VRFK2U4R.js", "/build/_shared/chunk-6R7GYKXN.js", "/build/_shared/chunk-UD3IMZBA.js", "/build/_shared/chunk-EZ43UAVT.js", "/build/_shared/chunk-RB7NZDFW.js", "/build/_shared/chunk-GE42YXME.js", "/build/_shared/chunk-KTTHBX2X.js"], hasAction: !0, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/action/logout": { id: "routes/action/logout", parentId: "root", path: "action/logout", index: void 0, caseSensitive: void 0, module: "/build/routes/action/logout-6TZMVFRF.js", imports: void 0, hasAction: !0, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/action/set-theme": { id: "routes/action/set-theme", parentId: "root", path: "action/set-theme", index: void 0, caseSensitive: void 0, module: "/build/routes/action/set-theme-65MGGDEN.js", imports: void 0, hasAction: !0, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/index": { id: "routes/index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/index-HUH7SFBN.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !0, hasErrorBoundary: !1 }, "routes/login": { id: "routes/login", parentId: "root", path: "login", index: void 0, caseSensitive: void 0, module: "/build/routes/login-AQGLJ5U6.js", imports: ["/build/_shared/chunk-VZDUXWBL.js", "/build/_shared/chunk-5M6ZSNFD.js", "/build/_shared/chunk-NCHMJE4I.js", "/build/_shared/chunk-UD3IMZBA.js", "/build/_shared/chunk-KHVVK2Q5.js", "/build/_shared/chunk-4TVAHHRS.js", "/build/_shared/chunk-RB7NZDFW.js", "/build/_shared/chunk-KTTHBX2X.js"], hasAction: !0, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, version: "d2639a25", hmr: void 0, url: "/build/manifest-D2639A25.js" };
+var assets_manifest_default = { entry: { module: "/build/entry.client-4CY7YKVG.js", imports: ["/build/_shared/chunk-6DAQMQYB.js", "/build/_shared/chunk-QERF53GL.js", "/build/_shared/chunk-JR7JHID7.js", "/build/_shared/chunk-4D7IJTTE.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-C54XUT2M.js", imports: ["/build/_shared/chunk-TH5S6TNI.js", "/build/_shared/chunk-FSLR7CSD.js", "/build/_shared/chunk-NY22QEBI.js", "/build/_shared/chunk-Y5IUY2WO.js", "/build/_shared/chunk-WA2U3LPD.js", "/build/_shared/chunk-SVGTTPU7.js", "/build/_shared/chunk-XCXQ6IAD.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !0, hasErrorBoundary: !0 }, "routes/404": { id: "routes/404", parentId: "root", path: "404", index: void 0, caseSensitive: void 0, module: "/build/routes/404-WJMBUNTI.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/__main": { id: "routes/__main", parentId: "root", path: void 0, index: void 0, caseSensitive: void 0, module: "/build/routes/__main-WJF3YPIQ.js", imports: ["/build/_shared/chunk-6PMHYZHM.js", "/build/_shared/chunk-P4P35UP3.js", "/build/_shared/chunk-4TVAHHRS.js", "/build/_shared/chunk-EZ43UAVT.js", "/build/_shared/chunk-HKTS347N.js", "/build/_shared/chunk-GE42YXME.js", "/build/_shared/chunk-KTTHBX2X.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/__main/projects": { id: "routes/__main/projects", parentId: "routes/__main", path: "projects", index: void 0, caseSensitive: void 0, module: "/build/routes/__main/projects-S4STP3U5.js", imports: ["/build/_shared/chunk-EDGCQ7EH.js", "/build/_shared/chunk-NCHMJE4I.js", "/build/_shared/chunk-VD4CXEVL.js", "/build/_shared/chunk-EEOCHXUC.js", "/build/_shared/chunk-KHVVK2Q5.js", "/build/_shared/chunk-FSLR7CSD.js", "/build/_shared/chunk-NY22QEBI.js", "/build/_shared/chunk-WA2U3LPD.js"], hasAction: !0, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !0 }, "routes/__main/projects.$projectId": { id: "routes/__main/projects.$projectId", parentId: "routes/__main", path: "projects/:projectId", index: void 0, caseSensitive: void 0, module: "/build/routes/__main/projects.$projectId-Z3U7QIVS.js", imports: ["/build/_shared/chunk-AUYLHJJM.js", "/build/_shared/chunk-NY22QEBI.js", "/build/_shared/chunk-Y5IUY2WO.js", "/build/_shared/chunk-WA2U3LPD.js", "/build/_shared/chunk-SVGTTPU7.js", "/build/_shared/chunk-XCXQ6IAD.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !0, hasErrorBoundary: !0 }, "routes/__main/projects.$projectId/$": { id: "routes/__main/projects.$projectId/$", parentId: "routes/__main/projects.$projectId", path: "*", index: void 0, caseSensitive: void 0, module: "/build/routes/__main/projects.$projectId/$-HBKK36VO.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !0, hasErrorBoundary: !1 }, "routes/__main/projects.$projectId/analytics": { id: "routes/__main/projects.$projectId/analytics", parentId: "routes/__main/projects.$projectId", path: "analytics", index: void 0, caseSensitive: void 0, module: "/build/routes/__main/projects.$projectId/analytics-GVJPB2AU.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !0 }, "routes/__main/projects.$projectId/board": { id: "routes/__main/projects.$projectId/board", parentId: "routes/__main/projects.$projectId", path: "board", index: void 0, caseSensitive: void 0, module: "/build/routes/__main/projects.$projectId/board-33CS53ST.js", imports: ["/build/_shared/chunk-4NR53C3Y.js", "/build/_shared/chunk-VXZWJF3R.js", "/build/_shared/chunk-YNKUQ7C5.js", "/build/_shared/chunk-6R7GYKXN.js", "/build/_shared/chunk-UD3IMZBA.js", "/build/_shared/chunk-6PMHYZHM.js", "/build/_shared/chunk-P4P35UP3.js", "/build/_shared/chunk-4TVAHHRS.js", "/build/_shared/chunk-HKTS347N.js", "/build/_shared/chunk-GE42YXME.js", "/build/_shared/chunk-KTTHBX2X.js", "/build/_shared/chunk-FSLR7CSD.js"], hasAction: !0, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !0 }, "routes/__main/projects.$projectId/board/issue/$issueId": { id: "routes/__main/projects.$projectId/board/issue/$issueId", parentId: "routes/__main/projects.$projectId/board", path: "issue/:issueId", index: void 0, caseSensitive: void 0, module: "/build/routes/__main/projects.$projectId/board/issue/$issueId-CQGFCC5B.js", imports: ["/build/_shared/chunk-B5UC4I5R.js", "/build/_shared/chunk-HFO4DK57.js", "/build/_shared/chunk-EDGCQ7EH.js", "/build/_shared/chunk-NCHMJE4I.js", "/build/_shared/chunk-WFQVPQSX.js", "/build/_shared/chunk-EEOCHXUC.js", "/build/_shared/chunk-KHVVK2Q5.js", "/build/_shared/chunk-TH5S6TNI.js", "/build/_shared/chunk-EZ43UAVT.js", "/build/_shared/chunk-AUYLHJJM.js", "/build/_shared/chunk-NY22QEBI.js", "/build/_shared/chunk-Y5IUY2WO.js", "/build/_shared/chunk-WA2U3LPD.js", "/build/_shared/chunk-XCXQ6IAD.js"], hasAction: !0, hasLoader: !0, hasCatchBoundary: !0, hasErrorBoundary: !1 }, "routes/__main/projects.$projectId/board/issue/issue-event": { id: "routes/__main/projects.$projectId/board/issue/issue-event", parentId: "routes/__main/projects.$projectId/board", path: "issue/issue-event", index: void 0, caseSensitive: void 0, module: "/build/routes/__main/projects.$projectId/board/issue/issue-event-HBPGP2AU.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/__main/projects.$projectId/board/issue/new": { id: "routes/__main/projects.$projectId/board/issue/new", parentId: "routes/__main/projects.$projectId/board", path: "issue/new", index: void 0, caseSensitive: void 0, module: "/build/routes/__main/projects.$projectId/board/issue/new-BV547Y6L.js", imports: ["/build/_shared/chunk-B5UC4I5R.js", "/build/_shared/chunk-HFO4DK57.js", "/build/_shared/chunk-EDGCQ7EH.js", "/build/_shared/chunk-NCHMJE4I.js", "/build/_shared/chunk-WFQVPQSX.js", "/build/_shared/chunk-EEOCHXUC.js", "/build/_shared/chunk-KHVVK2Q5.js", "/build/_shared/chunk-TH5S6TNI.js", "/build/_shared/chunk-EZ43UAVT.js", "/build/_shared/chunk-AUYLHJJM.js", "/build/_shared/chunk-NY22QEBI.js", "/build/_shared/chunk-WA2U3LPD.js"], hasAction: !0, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/__main/projects.$projectId/server-error": { id: "routes/__main/projects.$projectId/server-error", parentId: "routes/__main/projects.$projectId", path: "server-error", index: void 0, caseSensitive: void 0, module: "/build/routes/__main/projects.$projectId/server-error-7FRKP6YA.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !0 }, "routes/__main/projects/new": { id: "routes/__main/projects/new", parentId: "routes/__main/projects", path: "new", index: void 0, caseSensitive: void 0, module: "/build/routes/__main/projects/new-ZZXJAEMG.js", imports: ["/build/_shared/chunk-YNKUQ7C5.js", "/build/_shared/chunk-WFQVPQSX.js", "/build/_shared/chunk-6R7GYKXN.js", "/build/_shared/chunk-UD3IMZBA.js", "/build/_shared/chunk-EZ43UAVT.js", "/build/_shared/chunk-HKTS347N.js", "/build/_shared/chunk-GE42YXME.js", "/build/_shared/chunk-KTTHBX2X.js"], hasAction: !0, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/action/logout": { id: "routes/action/logout", parentId: "root", path: "action/logout", index: void 0, caseSensitive: void 0, module: "/build/routes/action/logout-6TZMVFRF.js", imports: void 0, hasAction: !0, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/action/set-theme": { id: "routes/action/set-theme", parentId: "root", path: "action/set-theme", index: void 0, caseSensitive: void 0, module: "/build/routes/action/set-theme-65MGGDEN.js", imports: void 0, hasAction: !0, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/index": { id: "routes/index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/index-HUH7SFBN.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !0, hasErrorBoundary: !1 }, "routes/login": { id: "routes/login", parentId: "root", path: "login", index: void 0, caseSensitive: void 0, module: "/build/routes/login-TM6WV5IR.js", imports: ["/build/_shared/chunk-HFO4DK57.js", "/build/_shared/chunk-VXZWJF3R.js", "/build/_shared/chunk-NCHMJE4I.js", "/build/_shared/chunk-UD3IMZBA.js", "/build/_shared/chunk-KHVVK2Q5.js", "/build/_shared/chunk-4TVAHHRS.js", "/build/_shared/chunk-HKTS347N.js", "/build/_shared/chunk-KTTHBX2X.js"], hasAction: !0, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, version: "780eb93f", hmr: void 0, url: "/build/manifest-780EB93F.js" };
 
 // server-entry-module:@remix-run/dev/server-build
 var assetsBuildDirectory = "public/build", future = { v2_dev: !1, unstable_postcss: !1, unstable_tailwind: !1, v2_errorBoundary: !1, v2_headers: !1, v2_meta: !0, v2_normalizeFormMethod: !0, v2_routeConvention: !1 }, publicPath = "/build/", entry = { module: entry_server_exports }, routes = {

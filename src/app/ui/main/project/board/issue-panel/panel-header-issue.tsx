@@ -14,12 +14,12 @@ export const PanelHeaderIssue = ({
   const previousUrl = location.pathname.split("/issue")[0];
 
   return (
-    <div className="flex">
+    <div  className="flex">
       <span className="flex flex-grow items-center">
         <span className="flex items-center">
           <TaskIcon size={20} />
         </span>
-        <span className="ml-1 text-font-light text-opacity-80 dark:text-font-light-dark">
+        <span  className="ml-1 text-font-light text-opacity-80 dark:text-font-light-dark">
           {id}
         </span>
       </span>

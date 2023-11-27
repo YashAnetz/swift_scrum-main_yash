@@ -1,12 +1,12 @@
 import {
   IssuePanel
-} from "/build/_shared/chunk-IELYD6QZ.js";
-import "/build/_shared/chunk-VZDUXWBL.js";
-import "/build/_shared/chunk-56M7ZW4T.js";
-import "/build/_shared/chunk-5M6ZSNFD.js";
+} from "/build/_shared/chunk-B5UC4I5R.js";
+import "/build/_shared/chunk-HFO4DK57.js";
+import "/build/_shared/chunk-4NR53C3Y.js";
+import "/build/_shared/chunk-VXZWJF3R.js";
 import "/build/_shared/chunk-EDGCQ7EH.js";
 import "/build/_shared/chunk-NCHMJE4I.js";
-import "/build/_shared/chunk-VRFK2U4R.js";
+import "/build/_shared/chunk-WFQVPQSX.js";
 import "/build/_shared/chunk-6R7GYKXN.js";
 import "/build/_shared/chunk-UD3IMZBA.js";
 import "/build/_shared/chunk-EEOCHXUC.js";
@@ -15,7 +15,7 @@ import "/build/_shared/chunk-TH5S6TNI.js";
 import "/build/_shared/chunk-P4P35UP3.js";
 import "/build/_shared/chunk-4TVAHHRS.js";
 import "/build/_shared/chunk-EZ43UAVT.js";
-import "/build/_shared/chunk-RB7NZDFW.js";
+import "/build/_shared/chunk-HKTS347N.js";
 import "/build/_shared/chunk-GE42YXME.js";
 import "/build/_shared/chunk-KTTHBX2X.js";
 import "/build/_shared/chunk-6DAQMQYB.js";
@@ -83,4 +83,4 @@ export {
   IssuePanelRoute as default,
   meta
 };
-//# sourceMappingURL=/build/routes/__main/projects.$projectId/board/issue/new-IKP5MXVU.js.map
+//# sourceMappingURL=/build/routes/__main/projects.$projectId/board/issue/new-BV547Y6L.js.map

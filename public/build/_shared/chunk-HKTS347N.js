@@ -164,6 +164,7 @@ var UserAvatar = ({
   const imageMinName = image == null ? void 0 : image.replace(".webp", "-min.webp");
   const imageSrc = size > 80 ? `/avatars/${image}` : `/avatars/${imageMinName}`;
   const imageSize = {
+    borderRadius: "5px",
     width: `${size}px`,
     minWidth: `${size}px`,
     height: `${size}px`
@@ -173,7 +174,7 @@ var UserAvatar = ({
     /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)(
       $cddcb0b647441e34$export$3e431a229df88919,
       {
-        className: "rounded-full object-cover",
+        className: " object-cover",
         src: image && imageSrc,
         style: imageSize,
         alt: name
@@ -182,7 +183,7 @@ var UserAvatar = ({
       false,
       {
         fileName: "src/app/components/user-avatar.tsx",
-        lineNumber: 28,
+        lineNumber: 29,
         columnNumber: 9
       },
       this
@@ -203,18 +204,18 @@ var UserAvatar = ({
       false,
       {
         fileName: "src/app/components/user-avatar.tsx",
-        lineNumber: 34,
+        lineNumber: 35,
         columnNumber: 9
       },
       this
     )
   ] }, void 0, true, {
     fileName: "src/app/components/user-avatar.tsx",
-    lineNumber: 27,
+    lineNumber: 28,
     columnNumber: 7
   }, this) }, void 0, false, {
     fileName: "src/app/components/user-avatar.tsx",
-    lineNumber: 26,
+    lineNumber: 27,
     columnNumber: 5
   }, this);
 };
@@ -267,4 +268,4 @@ export {
   $db6c3485150b8e66$export$1ab7ae714698c4b8,
   UserAvatar
 };
-//# sourceMappingURL=/build/_shared/chunk-RB7NZDFW.js.map
+//# sourceMappingURL=/build/_shared/chunk-HKTS347N.js.map

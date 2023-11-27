@@ -45,46 +45,46 @@ var ProjectView = ({
   const location = useLocation();
   const section = location.pathname.split("/").slice(-1)[0];
   const sectionTitle = sectionTitles[section] || sectionTitles[defaultSection];
-  return /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { className: "relative flex h-full flex-grow", children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { className: "z-10 flex h-full w-full flex-grow flex-col py-6 px-5", children: [
-    /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("section", { children: [
-      /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(Link, { to: "/projects", className: "underline underline-offset-[3px]", children: "Projects" }, void 0, false, {
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { style: { backgroundColor: "#3a5170" }, className: "relative flex h-full flex-grow", children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { className: "z-10 flex h-full w-full flex-grow flex-col py-6 px-5", children: [
+    /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("section", { style: { color: "#ffd460", padding: "10px", width: "600px", borderRadius: "10px" }, children: [
+      /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(Link, { to: "/projects", className: "underline underline-offset-[3px]", children: "open" }, void 0, false, {
         fileName: "src/app/ui/main/project/project.view.tsx",
         lineNumber: 26,
-        columnNumber: 11
+        columnNumber: 13
       }, this),
       /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("span", { className: "mx-2", children: "/" }, void 0, false, {
         fileName: "src/app/ui/main/project/project.view.tsx",
         lineNumber: 29,
-        columnNumber: 11
+        columnNumber: 13
       }, this),
       /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("span", { children: name }, void 0, false, {
         fileName: "src/app/ui/main/project/project.view.tsx",
         lineNumber: 30,
-        columnNumber: 11
+        columnNumber: 13
       }, this),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("h1", { className: "mt-4 mb-5 font-primary-black text-2xl", children: sectionTitle }, void 0, false, {
+      /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("h1", { className: "mt-4 mb-5 font-primary-black text-3xl", children: sectionTitle }, void 0, false, {
         fileName: "src/app/ui/main/project/project.view.tsx",
         lineNumber: 31,
-        columnNumber: 11
+        columnNumber: 13
       }, this)
     ] }, void 0, true, {
       fileName: "src/app/ui/main/project/project.view.tsx",
       lineNumber: 25,
-      columnNumber: 9
+      columnNumber: 11
     }, this),
     /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(Outlet, {}, void 0, false, {
       fileName: "src/app/ui/main/project/project.view.tsx",
       lineNumber: 35,
-      columnNumber: 9
+      columnNumber: 11
     }, this)
   ] }, void 0, true, {
     fileName: "src/app/ui/main/project/project.view.tsx",
     lineNumber: 24,
-    columnNumber: 7
+    columnNumber: 9
   }, this) }, void 0, false, {
     fileName: "src/app/ui/main/project/project.view.tsx",
     lineNumber: 22,
-    columnNumber: 5
+    columnNumber: 7
   }, this);
 };
 
@@ -163,4 +163,4 @@ export {
   ProjectRoute as default,
   meta
 };
-//# sourceMappingURL=/build/routes/__main/projects.$projectId-X4ZPOAWL.js.map
+//# sourceMappingURL=/build/routes/__main/projects.$projectId-Z3U7QIVS.js.map

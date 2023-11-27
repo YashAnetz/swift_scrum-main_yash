@@ -4,12 +4,12 @@ import {
   SelectItemIndicator,
   SelectTrigger,
   SelectTriggerIcon
-} from "/build/_shared/chunk-VZDUXWBL.js";
+} from "/build/_shared/chunk-HFO4DK57.js";
 import {
   PriorityIcon,
   TaskIcon,
   useProjectStore
-} from "/build/_shared/chunk-56M7ZW4T.js";
+} from "/build/_shared/chunk-4NR53C3Y.js";
 import {
   $cc7e05a45900e73f$export$1ff3c3f08ae963c0,
   $cc7e05a45900e73f$export$2f60d3ec9ad468f2,
@@ -18,7 +18,7 @@ import {
   $cc7e05a45900e73f$export$bf1aedc3039c8d63,
   $cc7e05a45900e73f$export$d5c6c08dc2d3ca7,
   $cc7e05a45900e73f$export$d6e5bf9c43ea9319
-} from "/build/_shared/chunk-5M6ZSNFD.js";
+} from "/build/_shared/chunk-VXZWJF3R.js";
 import {
   Cancel,
   Confirm,
@@ -43,7 +43,7 @@ import {
   Title,
   Title2,
   textAreOnlySpaces
-} from "/build/_shared/chunk-VRFK2U4R.js";
+} from "/build/_shared/chunk-WFQVPQSX.js";
 import {
   IoCloseOutline,
   Kbd
@@ -56,7 +56,7 @@ import {
 } from "/build/_shared/chunk-EZ43UAVT.js";
 import {
   UserAvatar
-} from "/build/_shared/chunk-RB7NZDFW.js";
+} from "/build/_shared/chunk-HKTS347N.js";
 import {
   t
 } from "/build/_shared/chunk-FSLR7CSD.js";
@@ -904,6 +904,7 @@ var SelectAsignee = ({ initAsignee }) => {
   return /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)(
     $cc7e05a45900e73f$export$be92b6f5f03c0fe9,
     {
+      style: { backgroundColor: "#2D4059" },
       name: "asignee",
       defaultValue: initAsignee.id,
       onValueChange,
@@ -1076,7 +1077,7 @@ var IssuePanel = ({ issue }) => {
       Q.success("Issue created successfully");
     }
   }, [fetcher.type]);
-  return /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)(import_jsx_dev_runtime8.Fragment, { children: [
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)("div", { children: [
     /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)(Root, { open: true, children: /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)(Portal, { container: portalContainer, children: /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)(Overlay, { className: isOpen ? "" : "bg-opacity-0", children: /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)(
       Content,
       {
@@ -1099,106 +1100,13 @@ var IssuePanel = ({ issue }) => {
             },
             this
           ),
-          /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)(Form, { method: "post", onSubmit: handleFormSumbit, ref: formRef, children: [
+          /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)(Form, { style: { backgroundColor: "#2D4059", width: "940px", padding: "20px", borderRadius: "20px" }, method: "post", onSubmit: handleFormSumbit, ref: formRef, children: [
             /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)("div", { className: "grid grid-cols-5 gap-16", children: [
-              /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)("section", { className: "col-span-3", children: [
-                /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)(Title, { className: "my-5 -ml-3", children: /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)(
-                  Title2,
-                  {
-                    initTitle: (issue == null ? void 0 : issue.name) || "",
-                    readOnly: userIsNotReporter,
-                    error: (_a = actionData == null ? void 0 : actionData.errors) == null ? void 0 : _a.name
-                  },
-                  void 0,
-                  false,
-                  {
-                    fileName: "src/app/ui/main/project/board/issue-panel/issue-panel.view.tsx",
-                    lineNumber: 144,
-                    columnNumber: 23
-                  },
-                  this
-                ) }, void 0, false, {
-                  fileName: "src/app/ui/main/project/board/issue-panel/issue-panel.view.tsx",
-                  lineNumber: 143,
-                  columnNumber: 21
-                }, this),
-                /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)("p", { className: "font-primary-black text-font-main dark:text-font-main-dark", children: "Description" }, void 0, false, {
-                  fileName: "src/app/ui/main/project/board/issue-panel/issue-panel.view.tsx",
-                  lineNumber: 150,
-                  columnNumber: 21
-                }, this),
-                /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)("div", { className: "-ml-3", children: /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)(
-                  Description,
-                  {
-                    initDescription: (issue == null ? void 0 : issue.description) || "",
-                    readOnly: userIsNotReporter
-                  },
-                  void 0,
-                  false,
-                  {
-                    fileName: "src/app/ui/main/project/board/issue-panel/issue-panel.view.tsx",
-                    lineNumber: 154,
-                    columnNumber: 23
-                  },
-                  this
-                ) }, void 0, false, {
-                  fileName: "src/app/ui/main/project/board/issue-panel/issue-panel.view.tsx",
-                  lineNumber: 153,
-                  columnNumber: 21
-                }, this),
-                /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)("div", { className: "mt-6", children: [
-                  /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)("p", { className: "font-primary-black text-font-main dark:text-font-main-dark", children: "Comments" }, void 0, false, {
-                    fileName: "src/app/ui/main/project/board/issue-panel/issue-panel.view.tsx",
-                    lineNumber: 160,
-                    columnNumber: 23
-                  }, this),
-                  /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)("div", { children: /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)(CreateComment, { addComment }, void 0, false, {
-                    fileName: "src/app/ui/main/project/board/issue-panel/issue-panel.view.tsx",
-                    lineNumber: 164,
-                    columnNumber: 25
-                  }, this) }, void 0, false, {
-                    fileName: "src/app/ui/main/project/board/issue-panel/issue-panel.view.tsx",
-                    lineNumber: 163,
-                    columnNumber: 23
-                  }, this),
-                  /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)("ul", { className: "mt-8 space-y-6", children: comments.map((comment) => /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)("li", { children: /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)(
-                    ViewComment,
-                    {
-                      comment,
-                      removeComment
-                    },
-                    void 0,
-                    false,
-                    {
-                      fileName: "src/app/ui/main/project/board/issue-panel/issue-panel.view.tsx",
-                      lineNumber: 169,
-                      columnNumber: 29
-                    },
-                    this
-                  ) }, comment.id, false, {
-                    fileName: "src/app/ui/main/project/board/issue-panel/issue-panel.view.tsx",
-                    lineNumber: 168,
-                    columnNumber: 27
-                  }, this)) }, void 0, false, {
-                    fileName: "src/app/ui/main/project/board/issue-panel/issue-panel.view.tsx",
-                    lineNumber: 166,
-                    columnNumber: 23
-                  }, this)
-                ] }, void 0, true, {
-                  fileName: "src/app/ui/main/project/board/issue-panel/issue-panel.view.tsx",
-                  lineNumber: 159,
-                  columnNumber: 21
-                }, this)
-              ] }, void 0, true, {
-                fileName: "src/app/ui/main/project/board/issue-panel/issue-panel.view.tsx",
-                lineNumber: 142,
-                columnNumber: 19
-              }, this),
               /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)("section", { className: "col-span-2 space-y-10 dark:text-font-light-dark", children: [
                 /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)("div", { children: [
-                  /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)("p", { className: "mb-1", children: "Status" }, void 0, false, {
+                  /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)("p", { style: { color: "#ffd460" }, className: "mb-1", children: "Status" }, void 0, false, {
                     fileName: "src/app/ui/main/project/board/issue-panel/issue-panel.view.tsx",
-                    lineNumber: 180,
+                    lineNumber: 144,
                     columnNumber: 23
                   }, this),
                   /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)(
@@ -1210,20 +1118,20 @@ var IssuePanel = ({ issue }) => {
                     false,
                     {
                       fileName: "src/app/ui/main/project/board/issue-panel/issue-panel.view.tsx",
-                      lineNumber: 181,
+                      lineNumber: 145,
                       columnNumber: 23
                     },
                     this
                   )
                 ] }, void 0, true, {
                   fileName: "src/app/ui/main/project/board/issue-panel/issue-panel.view.tsx",
-                  lineNumber: 179,
+                  lineNumber: 143,
                   columnNumber: 21
                 }, this),
                 /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)("div", { children: [
-                  /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)("p", { className: "mb-1", children: "Priority" }, void 0, false, {
+                  /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)("p", { style: { color: "#ffd460" }, className: "mb-1", children: "Priority" }, void 0, false, {
                     fileName: "src/app/ui/main/project/board/issue-panel/issue-panel.view.tsx",
-                    lineNumber: 186,
+                    lineNumber: 150,
                     columnNumber: 23
                   }, this),
                   /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)(
@@ -1235,42 +1143,42 @@ var IssuePanel = ({ issue }) => {
                     false,
                     {
                       fileName: "src/app/ui/main/project/board/issue-panel/issue-panel.view.tsx",
-                      lineNumber: 187,
+                      lineNumber: 151,
                       columnNumber: 23
                     },
                     this
                   )
                 ] }, void 0, true, {
                   fileName: "src/app/ui/main/project/board/issue-panel/issue-panel.view.tsx",
-                  lineNumber: 185,
+                  lineNumber: 149,
                   columnNumber: 21
                 }, this),
                 /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)("div", { children: [
-                  /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)("p", { className: "mb-1", children: "Asignee" }, void 0, false, {
+                  /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)("p", { style: { color: "#ffd460" }, className: "mb-1", children: "Asignee" }, void 0, false, {
                     fileName: "src/app/ui/main/project/board/issue-panel/issue-panel.view.tsx",
-                    lineNumber: 192,
+                    lineNumber: 156,
                     columnNumber: 23
                   }, this),
                   /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)(SelectAsignee, { initAsignee: (issue == null ? void 0 : issue.asignee) || user }, void 0, false, {
                     fileName: "src/app/ui/main/project/board/issue-panel/issue-panel.view.tsx",
-                    lineNumber: 193,
+                    lineNumber: 157,
                     columnNumber: 23
                   }, this)
                 ] }, void 0, true, {
                   fileName: "src/app/ui/main/project/board/issue-panel/issue-panel.view.tsx",
-                  lineNumber: 191,
+                  lineNumber: 155,
                   columnNumber: 21
                 }, this),
                 /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)("div", { children: [
-                  /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)("p", { className: "mb-1", children: "Reporter" }, void 0, false, {
+                  /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)("p", { style: { color: "#ffd460" }, className: "mb-1", children: "Reporter" }, void 0, false, {
                     fileName: "src/app/ui/main/project/board/issue-panel/issue-panel.view.tsx",
-                    lineNumber: 196,
+                    lineNumber: 160,
                     columnNumber: 23
                   }, this),
-                  /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)("div", { className: "mt-1 flex w-fit items-center gap-2 rounded-full bg-grey-300 py-1 pl-1 pr-3.5 pb-1 dark:bg-dark-500", children: [
+                  /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)("div", { style: { backgroundColor: "#5a7fb0", borderRadius: "5px" }, className: "mt-1 flex w-fit items-center gap-2  bg-grey-300 py-1 pl-1 pr-3.5 pb-1 dark:bg-dark-500", children: [
                     /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)(UserAvatar, { ...reporter }, void 0, false, {
                       fileName: "src/app/ui/main/project/board/issue-panel/issue-panel.view.tsx",
-                      lineNumber: 198,
+                      lineNumber: 162,
                       columnNumber: 25
                     }, this),
                     /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)(
@@ -1284,38 +1192,131 @@ var IssuePanel = ({ issue }) => {
                       false,
                       {
                         fileName: "src/app/ui/main/project/board/issue-panel/issue-panel.view.tsx",
-                        lineNumber: 199,
+                        lineNumber: 163,
                         columnNumber: 25
                       },
                       this
                     ),
                     /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)("p", { className: "m-0", children: reporter.name }, void 0, false, {
                       fileName: "src/app/ui/main/project/board/issue-panel/issue-panel.view.tsx",
-                      lineNumber: 204,
+                      lineNumber: 168,
                       columnNumber: 25
                     }, this)
                   ] }, void 0, true, {
                     fileName: "src/app/ui/main/project/board/issue-panel/issue-panel.view.tsx",
-                    lineNumber: 197,
+                    lineNumber: 161,
                     columnNumber: 23
                   }, this)
                 ] }, void 0, true, {
                   fileName: "src/app/ui/main/project/board/issue-panel/issue-panel.view.tsx",
-                  lineNumber: 195,
+                  lineNumber: 159,
                   columnNumber: 21
                 }, this),
-                /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)("div", { children: /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)(CreatedUpdatedAt, { issue }, void 0, false, {
+                /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)("div", { style: { color: "#ffd460" }, children: /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)(CreatedUpdatedAt, { issue }, void 0, false, {
                   fileName: "src/app/ui/main/project/board/issue-panel/issue-panel.view.tsx",
-                  lineNumber: 208,
+                  lineNumber: 172,
                   columnNumber: 23
                 }, this) }, void 0, false, {
                   fileName: "src/app/ui/main/project/board/issue-panel/issue-panel.view.tsx",
-                  lineNumber: 207,
+                  lineNumber: 171,
                   columnNumber: 21
                 }, this)
               ] }, void 0, true, {
                 fileName: "src/app/ui/main/project/board/issue-panel/issue-panel.view.tsx",
-                lineNumber: 178,
+                lineNumber: 142,
+                columnNumber: 17
+              }, this),
+              /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)("section", { className: "col-span-3", children: [
+                /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)(Title, { className: "my-5 -ml-3", children: /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)(
+                  Title2,
+                  {
+                    initTitle: (issue == null ? void 0 : issue.name) || "",
+                    readOnly: userIsNotReporter,
+                    error: (_a = actionData == null ? void 0 : actionData.errors) == null ? void 0 : _a.name
+                  },
+                  void 0,
+                  false,
+                  {
+                    fileName: "src/app/ui/main/project/board/issue-panel/issue-panel.view.tsx",
+                    lineNumber: 177,
+                    columnNumber: 23
+                  },
+                  this
+                ) }, void 0, false, {
+                  fileName: "src/app/ui/main/project/board/issue-panel/issue-panel.view.tsx",
+                  lineNumber: 176,
+                  columnNumber: 21
+                }, this),
+                /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)("p", { style: { color: "#ffd460" }, className: "font-primary-black text-font-main dark:text-font-main-dark", children: "Description" }, void 0, false, {
+                  fileName: "src/app/ui/main/project/board/issue-panel/issue-panel.view.tsx",
+                  lineNumber: 183,
+                  columnNumber: 21
+                }, this),
+                /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)("div", { style: { color: "#ffd460" }, className: "-ml-3", children: /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)(
+                  Description,
+                  {
+                    initDescription: (issue == null ? void 0 : issue.description) || "",
+                    readOnly: userIsNotReporter
+                  },
+                  void 0,
+                  false,
+                  {
+                    fileName: "src/app/ui/main/project/board/issue-panel/issue-panel.view.tsx",
+                    lineNumber: 187,
+                    columnNumber: 23
+                  },
+                  this
+                ) }, void 0, false, {
+                  fileName: "src/app/ui/main/project/board/issue-panel/issue-panel.view.tsx",
+                  lineNumber: 186,
+                  columnNumber: 21
+                }, this),
+                /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)("div", { className: "mt-6", children: [
+                  /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)("p", { style: { color: "#ffd460" }, className: "font-primary-black text-font-main dark:text-font-main-dark", children: "Comments" }, void 0, false, {
+                    fileName: "src/app/ui/main/project/board/issue-panel/issue-panel.view.tsx",
+                    lineNumber: 193,
+                    columnNumber: 23
+                  }, this),
+                  /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)("div", { children: /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)(CreateComment, { addComment }, void 0, false, {
+                    fileName: "src/app/ui/main/project/board/issue-panel/issue-panel.view.tsx",
+                    lineNumber: 197,
+                    columnNumber: 25
+                  }, this) }, void 0, false, {
+                    fileName: "src/app/ui/main/project/board/issue-panel/issue-panel.view.tsx",
+                    lineNumber: 196,
+                    columnNumber: 23
+                  }, this),
+                  /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)("ul", { style: { color: "white" }, className: "mt-8 space-y-6", children: comments.map((comment) => /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)("li", { children: /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)(
+                    ViewComment,
+                    {
+                      comment,
+                      removeComment
+                    },
+                    void 0,
+                    false,
+                    {
+                      fileName: "src/app/ui/main/project/board/issue-panel/issue-panel.view.tsx",
+                      lineNumber: 202,
+                      columnNumber: 29
+                    },
+                    this
+                  ) }, comment.id, false, {
+                    fileName: "src/app/ui/main/project/board/issue-panel/issue-panel.view.tsx",
+                    lineNumber: 201,
+                    columnNumber: 27
+                  }, this)) }, void 0, false, {
+                    fileName: "src/app/ui/main/project/board/issue-panel/issue-panel.view.tsx",
+                    lineNumber: 199,
+                    columnNumber: 23
+                  }, this)
+                ] }, void 0, true, {
+                  fileName: "src/app/ui/main/project/board/issue-panel/issue-panel.view.tsx",
+                  lineNumber: 192,
+                  columnNumber: 21
+                }, this)
+              ] }, void 0, true, {
+                fileName: "src/app/ui/main/project/board/issue-panel/issue-panel.view.tsx",
+                lineNumber: 175,
                 columnNumber: 19
               }, this)
             ] }, void 0, true, {
@@ -1324,28 +1325,29 @@ var IssuePanel = ({ issue }) => {
               columnNumber: 17
             }, this),
             /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)("div", { className: "mt-6 grid grid-cols-3 items-end", children: [
-              /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)("span", { className: "font-primary-light text-2xs text-font-light text-opacity-80 dark:text-font-light-dark", children: [
+              /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)("span", { style: { color: "#ffd460" }, className: " text-2xs text-font-light text-opacity-80 dark:text-font-light-dark", children: [
                 "Press ",
                 /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)(Kbd, { children: "Shift" }, void 0, false, {
                   fileName: "src/app/ui/main/project/board/issue-panel/issue-panel.view.tsx",
-                  lineNumber: 214,
+                  lineNumber: 215,
                   columnNumber: 27
                 }, this),
                 " + ",
                 /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)(Kbd, { children: "S" }, void 0, false, {
                   fileName: "src/app/ui/main/project/board/issue-panel/issue-panel.view.tsx",
-                  lineNumber: 214,
+                  lineNumber: 215,
                   columnNumber: 46
                 }, this),
                 " to accept"
               ] }, void 0, true, {
                 fileName: "src/app/ui/main/project/board/issue-panel/issue-panel.view.tsx",
-                lineNumber: 213,
+                lineNumber: 214,
                 columnNumber: 19
               }, this),
               /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)(
                 "button",
                 {
+                  style: { color: "#ffd460", backgroundColor: "#5a7fb0", borderRadius: "20px" },
                   type: "submit",
                   className: "flex w-fit cursor-pointer items-center gap-4 justify-self-center rounded border-none bg-primary-main py-2 px-8 font-primary-bold text-lg text-white enabled:hover:bg-primary-main-hover disabled:cursor-not-allowed disabled:opacity-60",
                   disabled: transition.state !== "idle",
@@ -1354,12 +1356,12 @@ var IssuePanel = ({ issue }) => {
                     "Submmiting",
                     /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)(Spinner, {}, void 0, false, {
                       fileName: "src/app/ui/main/project/board/issue-panel/issue-panel.view.tsx",
-                      lineNumber: 225,
+                      lineNumber: 226,
                       columnNumber: 25
                     }, this)
                   ] }, void 0, true, {
                     fileName: "src/app/ui/main/project/board/issue-panel/issue-panel.view.tsx",
-                    lineNumber: 223,
+                    lineNumber: 224,
                     columnNumber: 23
                   }, this) : "Accept"
                 },
@@ -1367,27 +1369,27 @@ var IssuePanel = ({ issue }) => {
                 false,
                 {
                   fileName: "src/app/ui/main/project/board/issue-panel/issue-panel.view.tsx",
-                  lineNumber: 216,
+                  lineNumber: 217,
                   columnNumber: 19
                 },
                 this
               ),
-              /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)("span", { className: "justify-self-end font-primary-light text-2xs text-font-light text-opacity-80 dark:text-font-light-dark", children: [
+              /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)("span", { style: { color: "#ffd460" }, className: "justify-self-end font-primary-light text-2xs text-font-light text-opacity-80 dark:text-font-light-dark", children: [
                 "Press ",
                 /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)(Kbd, { children: "Esc" }, void 0, false, {
                   fileName: "src/app/ui/main/project/board/issue-panel/issue-panel.view.tsx",
-                  lineNumber: 232,
+                  lineNumber: 233,
                   columnNumber: 27
                 }, this),
                 " to close"
               ] }, void 0, true, {
                 fileName: "src/app/ui/main/project/board/issue-panel/issue-panel.view.tsx",
-                lineNumber: 231,
+                lineNumber: 232,
                 columnNumber: 19
               }, this)
             ] }, void 0, true, {
               fileName: "src/app/ui/main/project/board/issue-panel/issue-panel.view.tsx",
-              lineNumber: 212,
+              lineNumber: 213,
               columnNumber: 17
             }, this)
           ] }, void 0, true, {
@@ -1428,7 +1430,7 @@ var IssuePanel = ({ issue }) => {
       false,
       {
         fileName: "src/app/ui/main/project/board/issue-panel/issue-panel.view.tsx",
-        lineNumber: 241,
+        lineNumber: 242,
         columnNumber: 7
       },
       this
@@ -1447,33 +1449,33 @@ var CreatedUpdatedAt = ({ issue }) => {
   return /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)("table", { children: /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)("tbody", { className: "text-sm", children: values.map(({ label, value }) => /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)("tr", { children: [
     /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)("td", { className: "pr-4", children: /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)("p", { className: "mb-2", children: label }, void 0, false, {
       fileName: "src/app/ui/main/project/board/issue-panel/issue-panel.view.tsx",
-      lineNumber: 265,
+      lineNumber: 266,
       columnNumber: 15
     }, this) }, void 0, false, {
       fileName: "src/app/ui/main/project/board/issue-panel/issue-panel.view.tsx",
-      lineNumber: 264,
+      lineNumber: 265,
       columnNumber: 13
     }, this),
     /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)("td", { children: /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)("p", { className: "mb-2 text-white", children: value ? formatDateTime(value) : "Just now" }, void 0, false, {
       fileName: "src/app/ui/main/project/board/issue-panel/issue-panel.view.tsx",
-      lineNumber: 268,
+      lineNumber: 269,
       columnNumber: 15
     }, this) }, void 0, false, {
       fileName: "src/app/ui/main/project/board/issue-panel/issue-panel.view.tsx",
-      lineNumber: 267,
+      lineNumber: 268,
       columnNumber: 13
     }, this)
   ] }, label, true, {
     fileName: "src/app/ui/main/project/board/issue-panel/issue-panel.view.tsx",
-    lineNumber: 263,
+    lineNumber: 264,
     columnNumber: 11
   }, this)) }, void 0, false, {
     fileName: "src/app/ui/main/project/board/issue-panel/issue-panel.view.tsx",
-    lineNumber: 261,
+    lineNumber: 262,
     columnNumber: 7
   }, this) }, void 0, false, {
     fileName: "src/app/ui/main/project/board/issue-panel/issue-panel.view.tsx",
-    lineNumber: 260,
+    lineNumber: 261,
     columnNumber: 5
   }, this);
 };
@@ -1496,7 +1498,7 @@ var Spinner = () => /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)(
         false,
         {
           fileName: "src/app/ui/main/project/board/issue-panel/issue-panel.view.tsx",
-          lineNumber: 287,
+          lineNumber: 288,
           columnNumber: 5
         },
         this
@@ -1511,7 +1513,7 @@ var Spinner = () => /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)(
         false,
         {
           fileName: "src/app/ui/main/project/board/issue-panel/issue-panel.view.tsx",
-          lineNumber: 291,
+          lineNumber: 292,
           columnNumber: 5
         },
         this
@@ -1522,7 +1524,7 @@ var Spinner = () => /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)(
   true,
   {
     fileName: "src/app/ui/main/project/board/issue-panel/issue-panel.view.tsx",
-    lineNumber: 280,
+    lineNumber: 281,
     columnNumber: 3
   },
   this
@@ -1531,4 +1533,4 @@ var Spinner = () => /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)(
 export {
   IssuePanel
 };
-//# sourceMappingURL=/build/_shared/chunk-IELYD6QZ.js.map
+//# sourceMappingURL=/build/_shared/chunk-B5UC4I5R.js.map

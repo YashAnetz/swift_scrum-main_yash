@@ -28,17 +28,17 @@ export const Title = ({
   };
 
   return (
-    <div className="relative">
-      <TextareaAutosize
+    <div style={{color:'#2D4059'}} className="relative">
+      <TextareaAutosize  
         name="title"
         value={title}
         setValue={updateTitle}
-        placeholder="Write the title"
+        placeholder="Enter Issue name"
         readOnly={readOnly}
         onFocus={onFocus}
         onBlur={onBlur}
         textareaClassName={cx(
-          "font-primary-black text-2xl",
+          "text-2xl",
           requireError &&
             "focus-visible:outline-error-main outline outline-2 outline-error-main dark:outline-error-main-dark dark:focus-visible:outline-error-main-dark"
         )}
@@ -50,9 +50,9 @@ export const Title = ({
         </span>
       )}
       {isFocus && (
-        <span
+        <span 
           className={cx(
-            "absolute right-0 top-full font-primary-light",
+            "absolute right-0 top-full ",
             isMaxLength
               ? "text-error-main dark:text-error-main-dark"
               : "text-font-light dark:text-font-light-dark"
