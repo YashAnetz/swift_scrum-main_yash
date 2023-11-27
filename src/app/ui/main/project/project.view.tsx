@@ -19,7 +19,7 @@
     const sectionTitle = sectionTitles[section] || sectionTitles[defaultSection];
 
     return (
-      <div  style={{backgroundColor:'#3a5170'}} className="relative flex h-full flex-grow">
+      <div  style={{backgroundColor:'#425B7D'}} className="relative flex h-full flex-grow">
       
         <div className="z-10 flex h-full w-full flex-grow flex-col py-6 px-5">
           <section style={{color:'#ffd460',padding:'10px', width:'600px', borderRadius:'10px'}}>

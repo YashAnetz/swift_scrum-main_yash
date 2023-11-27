@@ -4418,7 +4418,7 @@ var Search = () => {
         type: "text",
         name: "search",
         value: search,
-        placeholder: "Filter issues",
+        placeholder: "Search",
         onChange: handleChange,
         className: t(
           "border-1 box-border h-[40px] w-[120px] rounded border-none bg-grey-100 py-2",
@@ -5455,20 +5455,19 @@ var SelectSort = () => {
   const handleSubmit = (value) => {
     submit({ sortBy: value });
   };
-  return /* @__PURE__ */ (0, import_jsx_dev_runtime4.jsxDEV)(Form, { style: { backgroundColor: "#2D4059" }, method: "get", children: /* @__PURE__ */ (0, import_jsx_dev_runtime4.jsxDEV)($cc7e05a45900e73f$export$be92b6f5f03c0fe9, { defaultValue: sortBy, onValueChange: handleSubmit, children: [
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime4.jsxDEV)(Form, { method: "get", children: /* @__PURE__ */ (0, import_jsx_dev_runtime4.jsxDEV)($cc7e05a45900e73f$export$be92b6f5f03c0fe9, { defaultValue: sortBy, onValueChange: handleSubmit, children: [
     /* @__PURE__ */ (0, import_jsx_dev_runtime4.jsxDEV)(
       $cc7e05a45900e73f$export$41fb9f06171c75f4,
       {
-        className: "flex cursor-pointer items-center justify-center rounded border-none bg-primary-light py-1.5 px-3 text-xs text-primary-main hover:bg-primary-light-hover dark:border-2 dark:border-solid dark:border-primary-main-dark dark:bg-transparent dark:text-primary-main-dark dark:hover:bg-primary-main-dark dark:hover:bg-opacity-20 dark:focus-visible:outline-white",
         "aria-label": "Open sort issues select",
         children: [
           /* @__PURE__ */ (0, import_jsx_dev_runtime4.jsxDEV)("div", { className: "mr-2 flex items-center", children: /* @__PURE__ */ (0, import_jsx_dev_runtime4.jsxDEV)(FaSortAmountDownAlt, { size: 14 }, void 0, false, {
             fileName: "src/app/ui/main/project/board/select-sort.tsx",
-            lineNumber: 31,
+            lineNumber: 30,
             columnNumber: 13
           }, this) }, void 0, false, {
             fileName: "src/app/ui/main/project/board/select-sort.tsx",
-            lineNumber: 30,
+            lineNumber: 29,
             columnNumber: 11
           }, this),
           /* @__PURE__ */ (0, import_jsx_dev_runtime4.jsxDEV)($cc7e05a45900e73f$export$4c8d1a57a761ef94, { children: [
@@ -5476,7 +5475,7 @@ var SelectSort = () => {
             sortBy
           ] }, void 0, true, {
             fileName: "src/app/ui/main/project/board/select-sort.tsx",
-            lineNumber: 33,
+            lineNumber: 32,
             columnNumber: 11
           }, this)
         ]
@@ -5493,7 +5492,7 @@ var SelectSort = () => {
     /* @__PURE__ */ (0, import_jsx_dev_runtime4.jsxDEV)($cc7e05a45900e73f$export$7c6e2c02157bb7d2, { className: "select-none rounded bg-white p-1.5 shadow-blue dark:bg-dark-500", children: [
       /* @__PURE__ */ (0, import_jsx_dev_runtime4.jsxDEV)($cc7e05a45900e73f$export$2f60d3ec9ad468f2, {}, void 0, false, {
         fileName: "src/app/ui/main/project/board/select-sort.tsx",
-        lineNumber: 36,
+        lineNumber: 35,
         columnNumber: 11
       }, this),
       /* @__PURE__ */ (0, import_jsx_dev_runtime4.jsxDEV)($cc7e05a45900e73f$export$d5c6c08dc2d3ca7, { children: sortList.map((sort, index) => /* @__PURE__ */ (0, import_jsx_dev_runtime4.jsxDEV)(
@@ -5504,12 +5503,12 @@ var SelectSort = () => {
           children: [
             /* @__PURE__ */ (0, import_jsx_dev_runtime4.jsxDEV)(SortIcon, { sort: sort.id }, void 0, false, {
               fileName: "src/app/ui/main/project/board/select-sort.tsx",
-              lineNumber: 44,
+              lineNumber: 43,
               columnNumber: 17
             }, this),
             /* @__PURE__ */ (0, import_jsx_dev_runtime4.jsxDEV)($cc7e05a45900e73f$export$d6e5bf9c43ea9319, { children: sort.label }, void 0, false, {
               fileName: "src/app/ui/main/project/board/select-sort.tsx",
-              lineNumber: 45,
+              lineNumber: 44,
               columnNumber: 17
             }, this)
           ]
@@ -5518,23 +5517,23 @@ var SelectSort = () => {
         true,
         {
           fileName: "src/app/ui/main/project/board/select-sort.tsx",
-          lineNumber: 39,
+          lineNumber: 38,
           columnNumber: 15
         },
         this
       )) }, void 0, false, {
         fileName: "src/app/ui/main/project/board/select-sort.tsx",
-        lineNumber: 37,
+        lineNumber: 36,
         columnNumber: 11
       }, this),
       /* @__PURE__ */ (0, import_jsx_dev_runtime4.jsxDEV)($cc7e05a45900e73f$export$bf1aedc3039c8d63, {}, void 0, false, {
         fileName: "src/app/ui/main/project/board/select-sort.tsx",
-        lineNumber: 49,
+        lineNumber: 48,
         columnNumber: 11
       }, this)
     ] }, void 0, true, {
       fileName: "src/app/ui/main/project/board/select-sort.tsx",
-      lineNumber: 35,
+      lineNumber: 34,
       columnNumber: 9
     }, this)
   ] }, void 0, true, {
@@ -6091,4 +6090,4 @@ react/cjs/react-jsx-runtime.development.js:
    * LICENSE file in the root directory of this source tree.
    *)
 */
-//# sourceMappingURL=/build/routes/__main/projects.$projectId/board-33CS53ST.js.map
+//# sourceMappingURL=/build/routes/__main/projects.$projectId/board-2HPAFJSH.js.map

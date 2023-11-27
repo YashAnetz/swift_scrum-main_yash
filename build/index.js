@@ -1070,7 +1070,7 @@ var import_react12 = require("@remix-run/react"), import_jsx_dev_runtime17 = req
   image
 }) => {
   let section = (0, import_react12.useLocation)().pathname.split("/").slice(-1)[0], sectionTitle = sectionTitles[section] || sectionTitles[defaultSection];
-  return /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)("div", { style: { backgroundColor: "#3a5170" }, className: "relative flex h-full flex-grow", children: /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)("div", { className: "z-10 flex h-full w-full flex-grow flex-col py-6 px-5", children: [
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)("div", { style: { backgroundColor: "#425B7D" }, className: "relative flex h-full flex-grow", children: /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)("div", { className: "z-10 flex h-full w-full flex-grow flex-col py-6 px-5", children: [
     /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)("section", { style: { color: "#ffd460", padding: "10px", width: "600px", borderRadius: "10px" }, children: [
       /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)(import_react12.Link, { to: "/projects", className: "underline underline-offset-[3px]", children: "open" }, void 0, !1, {
         fileName: "src/app/ui/main/project/project.view.tsx",
@@ -3702,7 +3702,7 @@ var import_jsx_dev_runtime23 = require("react/jsx-dev-runtime"), Search = () => 
         type: "text",
         name: "search",
         value: search,
-        placeholder: "Filter issues",
+        placeholder: "Search",
         onChange: (e) => {
           setSearch(e.target.value);
         },
@@ -3993,22 +3993,21 @@ var import_jsx_dev_runtime27 = require("react/jsx-dev-runtime"), SelectSort = ()
       columnNumber: 9
     }, this)
   );
-  return /* @__PURE__ */ (0, import_jsx_dev_runtime27.jsxDEV)(import_react33.Form, { style: { backgroundColor: "#2D4059" }, method: "get", children: /* @__PURE__ */ (0, import_jsx_dev_runtime27.jsxDEV)(Select.Root, { defaultValue: sortBy, onValueChange: (value) => {
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime27.jsxDEV)(import_react33.Form, { method: "get", children: /* @__PURE__ */ (0, import_jsx_dev_runtime27.jsxDEV)(Select.Root, { defaultValue: sortBy, onValueChange: (value) => {
     submit({ sortBy: value });
   }, children: [
     /* @__PURE__ */ (0, import_jsx_dev_runtime27.jsxDEV)(
       Select.Trigger,
       {
-        className: "flex cursor-pointer items-center justify-center rounded border-none bg-primary-light py-1.5 px-3 text-xs text-primary-main hover:bg-primary-light-hover dark:border-2 dark:border-solid dark:border-primary-main-dark dark:bg-transparent dark:text-primary-main-dark dark:hover:bg-primary-main-dark dark:hover:bg-opacity-20 dark:focus-visible:outline-white",
         "aria-label": "Open sort issues select",
         children: [
           /* @__PURE__ */ (0, import_jsx_dev_runtime27.jsxDEV)("div", { className: "mr-2 flex items-center", children: /* @__PURE__ */ (0, import_jsx_dev_runtime27.jsxDEV)(import_fa2.FaSortAmountDownAlt, { size: 14 }, void 0, !1, {
             fileName: "src/app/ui/main/project/board/select-sort.tsx",
-            lineNumber: 31,
+            lineNumber: 30,
             columnNumber: 13
           }, this) }, void 0, !1, {
             fileName: "src/app/ui/main/project/board/select-sort.tsx",
-            lineNumber: 30,
+            lineNumber: 29,
             columnNumber: 11
           }, this),
           /* @__PURE__ */ (0, import_jsx_dev_runtime27.jsxDEV)(Select.Value, { children: [
@@ -4016,7 +4015,7 @@ var import_jsx_dev_runtime27 = require("react/jsx-dev-runtime"), SelectSort = ()
             sortBy
           ] }, void 0, !0, {
             fileName: "src/app/ui/main/project/board/select-sort.tsx",
-            lineNumber: 33,
+            lineNumber: 32,
             columnNumber: 11
           }, this)
         ]
@@ -4033,7 +4032,7 @@ var import_jsx_dev_runtime27 = require("react/jsx-dev-runtime"), SelectSort = ()
     /* @__PURE__ */ (0, import_jsx_dev_runtime27.jsxDEV)(Select.Content, { className: "select-none rounded bg-white p-1.5 shadow-blue dark:bg-dark-500", children: [
       /* @__PURE__ */ (0, import_jsx_dev_runtime27.jsxDEV)(Select.ScrollUpButton, {}, void 0, !1, {
         fileName: "src/app/ui/main/project/board/select-sort.tsx",
-        lineNumber: 36,
+        lineNumber: 35,
         columnNumber: 11
       }, this),
       /* @__PURE__ */ (0, import_jsx_dev_runtime27.jsxDEV)(Select.Viewport, { children: sortList.map((sort, index) => /* @__PURE__ */ (0, import_jsx_dev_runtime27.jsxDEV)(
@@ -4044,12 +4043,12 @@ var import_jsx_dev_runtime27 = require("react/jsx-dev-runtime"), SelectSort = ()
           children: [
             /* @__PURE__ */ (0, import_jsx_dev_runtime27.jsxDEV)(SortIcon, { sort: sort.id }, void 0, !1, {
               fileName: "src/app/ui/main/project/board/select-sort.tsx",
-              lineNumber: 44,
+              lineNumber: 43,
               columnNumber: 17
             }, this),
             /* @__PURE__ */ (0, import_jsx_dev_runtime27.jsxDEV)(Select.ItemText, { children: sort.label }, void 0, !1, {
               fileName: "src/app/ui/main/project/board/select-sort.tsx",
-              lineNumber: 45,
+              lineNumber: 44,
               columnNumber: 17
             }, this)
           ]
@@ -4058,23 +4057,23 @@ var import_jsx_dev_runtime27 = require("react/jsx-dev-runtime"), SelectSort = ()
         !0,
         {
           fileName: "src/app/ui/main/project/board/select-sort.tsx",
-          lineNumber: 39,
+          lineNumber: 38,
           columnNumber: 15
         },
         this
       )) }, void 0, !1, {
         fileName: "src/app/ui/main/project/board/select-sort.tsx",
-        lineNumber: 37,
+        lineNumber: 36,
         columnNumber: 11
       }, this),
       /* @__PURE__ */ (0, import_jsx_dev_runtime27.jsxDEV)(Select.ScrollDownButton, {}, void 0, !1, {
         fileName: "src/app/ui/main/project/board/select-sort.tsx",
-        lineNumber: 49,
+        lineNumber: 48,
         columnNumber: 11
       }, this)
     ] }, void 0, !0, {
       fileName: "src/app/ui/main/project/board/select-sort.tsx",
-      lineNumber: 35,
+      lineNumber: 34,
       columnNumber: 9
     }, this)
   ] }, void 0, !0, {
@@ -6787,8 +6786,8 @@ var import_jsx_dev_runtime50 = require("react/jsx-dev-runtime"), defaultProjects
   (projectMock) => projectMock.id
 ), ProjectsView = ({
   projectsSummary
-}) => /* @__PURE__ */ (0, import_jsx_dev_runtime50.jsxDEV)("div", { style: { backgroundColor: "#5a7fb0" }, className: "bg-white p-6 dark:bg-dark-400", children: [
-  /* @__PURE__ */ (0, import_jsx_dev_runtime50.jsxDEV)("h1", { style: { color: "#ffd460", marginLeft: "300px" }, className: "font-primary-black text-2xl", children: "PROJECTS" }, void 0, !1, {
+}) => /* @__PURE__ */ (0, import_jsx_dev_runtime50.jsxDEV)("div", { style: { backgroundColor: "#2D4059", height: "100vh" }, className: "bg-white p-6 dark:bg-dark-400", children: [
+  /* @__PURE__ */ (0, import_jsx_dev_runtime50.jsxDEV)("h1", { style: { color: "#ffd460", marginLeft: "300px" }, className: "font-primary-black text-2xl", children: "WORKSPACE" }, void 0, !1, {
     fileName: "src/app/ui/main/projects/projects.view.tsx",
     lineNumber: 17,
     columnNumber: 7
@@ -7162,20 +7161,21 @@ var import_jsx_dev_runtime53 = require("react/jsx-dev-runtime"), ProjectPanelVie
         children: /* @__PURE__ */ (0, import_jsx_dev_runtime53.jsxDEV)(
           Content5,
           {
+            style: { backgroundColor: "#2D4059", borderRadius: "20px" },
             onEscapeKeyDown: handleProgrammaticClose,
             onPointerDownOutside: handleProgrammaticClose,
             className: (0, import_classix21.default)(
-              "max-w-[500px]",
+              "max-w-[800px]",
               !isOpen && "translate-y-[10px] opacity-0"
             ),
             children: [
               /* @__PURE__ */ (0, import_jsx_dev_runtime53.jsxDEV)(PanelHeaderProject, { id: (project == null ? void 0 : project.id) || "Create new project" }, void 0, !1, {
                 fileName: "src/app/ui/main/projects/project-panel/project-panel.view.tsx",
-                lineNumber: 99,
+                lineNumber: 101,
                 columnNumber: 15
               }, this),
               /* @__PURE__ */ (0, import_jsx_dev_runtime53.jsxDEV)(import_react59.Form, { method: "post", ref: formRef, children: [
-                /* @__PURE__ */ (0, import_jsx_dev_runtime53.jsxDEV)("div", { className: "mb-6", children: [
+                /* @__PURE__ */ (0, import_jsx_dev_runtime53.jsxDEV)("div", { style: { color: "#ffd460" }, className: "mb-6", children: [
                   /* @__PURE__ */ (0, import_jsx_dev_runtime53.jsxDEV)(Title2, { className: "mt-5 mb-8 -ml-3", children: /* @__PURE__ */ (0, import_jsx_dev_runtime53.jsxDEV)(
                     Title3,
                     {
@@ -7187,27 +7187,27 @@ var import_jsx_dev_runtime53 = require("react/jsx-dev-runtime"), ProjectPanelVie
                     !1,
                     {
                       fileName: "src/app/ui/main/projects/project-panel/project-panel.view.tsx",
-                      lineNumber: 103,
+                      lineNumber: 105,
                       columnNumber: 21
                     },
                     this
                   ) }, void 0, !1, {
                     fileName: "src/app/ui/main/projects/project-panel/project-panel.view.tsx",
-                    lineNumber: 102,
+                    lineNumber: 104,
                     columnNumber: 19
                   }, this),
-                  /* @__PURE__ */ (0, import_jsx_dev_runtime53.jsxDEV)("p", { className: "font-primary-black text-font-main dark:text-font-main-dark", children: "Description" }, void 0, !1, {
+                  /* @__PURE__ */ (0, import_jsx_dev_runtime53.jsxDEV)("p", { children: "Description" }, void 0, !1, {
                     fileName: "src/app/ui/main/projects/project-panel/project-panel.view.tsx",
-                    lineNumber: 109,
+                    lineNumber: 111,
                     columnNumber: 19
                   }, this),
                   /* @__PURE__ */ (0, import_jsx_dev_runtime53.jsxDEV)("div", { className: "-ml-3 mb-5", children: /* @__PURE__ */ (0, import_jsx_dev_runtime53.jsxDEV)(Description, { initDescription: (project == null ? void 0 : project.description) || "" }, void 0, !1, {
                     fileName: "src/app/ui/main/projects/project-panel/project-panel.view.tsx",
-                    lineNumber: 113,
+                    lineNumber: 115,
                     columnNumber: 21
                   }, this) }, void 0, !1, {
                     fileName: "src/app/ui/main/projects/project-panel/project-panel.view.tsx",
-                    lineNumber: 112,
+                    lineNumber: 114,
                     columnNumber: 19
                   }, this),
                   /* @__PURE__ */ (0, import_jsx_dev_runtime53.jsxDEV)("ul", { className: "space-y-1.5", children: users.map((user) => /* @__PURE__ */ (0, import_jsx_dev_runtime53.jsxDEV)(
@@ -7223,17 +7223,17 @@ var import_jsx_dev_runtime53 = require("react/jsx-dev-runtime"), ProjectPanelVie
                             /* @__PURE__ */ (0, import_jsx_dev_runtime53.jsxDEV)("span", { className: "flex items-center gap-4", children: [
                               /* @__PURE__ */ (0, import_jsx_dev_runtime53.jsxDEV)(UserAvatar, { ...user, size: 48 }, void 0, !1, {
                                 fileName: "src/app/ui/main/projects/project-panel/project-panel.view.tsx",
-                                lineNumber: 126,
+                                lineNumber: 128,
                                 columnNumber: 29
                               }, this),
                               /* @__PURE__ */ (0, import_jsx_dev_runtime53.jsxDEV)("span", { children: user.name }, void 0, !1, {
                                 fileName: "src/app/ui/main/projects/project-panel/project-panel.view.tsx",
-                                lineNumber: 127,
+                                lineNumber: 129,
                                 columnNumber: 29
                               }, this)
                             ] }, void 0, !0, {
                               fileName: "src/app/ui/main/projects/project-panel/project-panel.view.tsx",
-                              lineNumber: 125,
+                              lineNumber: 127,
                               columnNumber: 27
                             }, this),
                             /* @__PURE__ */ (0, import_jsx_dev_runtime53.jsxDEV)(
@@ -7244,13 +7244,13 @@ var import_jsx_dev_runtime53 = require("react/jsx-dev-runtime"), ProjectPanelVie
                                 name: "user",
                                 value: user.id,
                                 defaultChecked: user.id === (loggedUser == null ? void 0 : loggedUser.id),
-                                children: /* @__PURE__ */ (0, import_jsx_dev_runtime53.jsxDEV)(Checkbox.Indicator, { className: "flex h-[36px] w-[36px] rounded-md bg-primary-main duration-150 ease-in flex-center", children: /* @__PURE__ */ (0, import_jsx_dev_runtime53.jsxDEV)(import_bs2.BsCheckLg, { size: 16, className: "text-grey-400" }, void 0, !1, {
+                                children: /* @__PURE__ */ (0, import_jsx_dev_runtime53.jsxDEV)(Checkbox.Indicator, { style: { backgroundColor: "#ffd460" }, className: "flex h-[36px] w-[36px] rounded-md bg-primary-main duration-150 ease-in flex-center", children: /* @__PURE__ */ (0, import_jsx_dev_runtime53.jsxDEV)(import_bs2.BsCheckLg, { size: 16, className: "text-grey-400" }, void 0, !1, {
                                   fileName: "src/app/ui/main/projects/project-panel/project-panel.view.tsx",
-                                  lineNumber: 137,
+                                  lineNumber: 139,
                                   columnNumber: 31
                                 }, this) }, void 0, !1, {
                                   fileName: "src/app/ui/main/projects/project-panel/project-panel.view.tsx",
-                                  lineNumber: 136,
+                                  lineNumber: 138,
                                   columnNumber: 29
                                 }, this)
                               },
@@ -7258,7 +7258,7 @@ var import_jsx_dev_runtime53 = require("react/jsx-dev-runtime"), ProjectPanelVie
                               !1,
                               {
                                 fileName: "src/app/ui/main/projects/project-panel/project-panel.view.tsx",
-                                lineNumber: 129,
+                                lineNumber: 131,
                                 columnNumber: 27
                               },
                               this
@@ -7269,7 +7269,7 @@ var import_jsx_dev_runtime53 = require("react/jsx-dev-runtime"), ProjectPanelVie
                         !0,
                         {
                           fileName: "src/app/ui/main/projects/project-panel/project-panel.view.tsx",
-                          lineNumber: 121,
+                          lineNumber: 123,
                           columnNumber: 25
                         },
                         this
@@ -7279,43 +7279,44 @@ var import_jsx_dev_runtime53 = require("react/jsx-dev-runtime"), ProjectPanelVie
                     !1,
                     {
                       fileName: "src/app/ui/main/projects/project-panel/project-panel.view.tsx",
-                      lineNumber: 117,
+                      lineNumber: 119,
                       columnNumber: 23
                     },
                     this
                   )) }, void 0, !1, {
                     fileName: "src/app/ui/main/projects/project-panel/project-panel.view.tsx",
-                    lineNumber: 115,
+                    lineNumber: 117,
                     columnNumber: 19
                   }, this)
                 ] }, void 0, !0, {
                   fileName: "src/app/ui/main/projects/project-panel/project-panel.view.tsx",
-                  lineNumber: 101,
+                  lineNumber: 103,
                   columnNumber: 17
                 }, this),
                 /* @__PURE__ */ (0, import_jsx_dev_runtime53.jsxDEV)("div", { className: "mt-6 grid grid-cols-3 items-end", children: [
-                  /* @__PURE__ */ (0, import_jsx_dev_runtime53.jsxDEV)("span", { className: "font-primary-light text-2xs text-font-light text-opacity-80 dark:text-font-light-dark", children: [
+                  /* @__PURE__ */ (0, import_jsx_dev_runtime53.jsxDEV)("span", { style: { color: "#ffd460" }, className: "font-primary-light text-2xs text-font-light text-opacity-80 dark:text-font-light-dark", children: [
                     "Press ",
                     /* @__PURE__ */ (0, import_jsx_dev_runtime53.jsxDEV)(Kbd, { children: "Shift" }, void 0, !1, {
                       fileName: "src/app/ui/main/projects/project-panel/project-panel.view.tsx",
-                      lineNumber: 147,
+                      lineNumber: 150,
                       columnNumber: 27
                     }, this),
                     " + ",
                     /* @__PURE__ */ (0, import_jsx_dev_runtime53.jsxDEV)(Kbd, { children: "S" }, void 0, !1, {
                       fileName: "src/app/ui/main/projects/project-panel/project-panel.view.tsx",
-                      lineNumber: 147,
+                      lineNumber: 150,
                       columnNumber: 46
                     }, this),
                     " to accept"
                   ] }, void 0, !0, {
                     fileName: "src/app/ui/main/projects/project-panel/project-panel.view.tsx",
-                    lineNumber: 146,
+                    lineNumber: 149,
                     columnNumber: 19
                   }, this),
                   /* @__PURE__ */ (0, import_jsx_dev_runtime53.jsxDEV)(
                     "button",
                     {
+                      style: { backgroundColor: "#5a7fb0", color: "#ffd460" },
                       type: "submit",
                       name: "_action",
                       value: "upsert",
@@ -7326,12 +7327,12 @@ var import_jsx_dev_runtime53 = require("react/jsx-dev-runtime"), ProjectPanelVie
                         "Submmiting",
                         /* @__PURE__ */ (0, import_jsx_dev_runtime53.jsxDEV)(Spinner2, {}, void 0, !1, {
                           fileName: "src/app/ui/main/projects/project-panel/project-panel.view.tsx",
-                          lineNumber: 160,
+                          lineNumber: 163,
                           columnNumber: 25
                         }, this)
                       ] }, void 0, !0, {
                         fileName: "src/app/ui/main/projects/project-panel/project-panel.view.tsx",
-                        lineNumber: 158,
+                        lineNumber: 161,
                         columnNumber: 23
                       }, this) : "Accept"
                     },
@@ -7339,32 +7340,32 @@ var import_jsx_dev_runtime53 = require("react/jsx-dev-runtime"), ProjectPanelVie
                     !1,
                     {
                       fileName: "src/app/ui/main/projects/project-panel/project-panel.view.tsx",
-                      lineNumber: 149,
+                      lineNumber: 152,
                       columnNumber: 19
                     },
                     this
                   ),
-                  /* @__PURE__ */ (0, import_jsx_dev_runtime53.jsxDEV)("span", { className: "justify-self-end font-primary-light text-2xs text-font-light text-opacity-80 dark:text-font-light-dark", children: [
+                  /* @__PURE__ */ (0, import_jsx_dev_runtime53.jsxDEV)("span", { style: { color: "#ffd460" }, className: "justify-self-end font-primary-light text-2xs text-font-light text-opacity-80 dark:text-font-light-dark", children: [
                     "Press ",
                     /* @__PURE__ */ (0, import_jsx_dev_runtime53.jsxDEV)(Kbd, { children: "Esc" }, void 0, !1, {
                       fileName: "src/app/ui/main/projects/project-panel/project-panel.view.tsx",
-                      lineNumber: 167,
+                      lineNumber: 170,
                       columnNumber: 27
                     }, this),
                     " to close"
                   ] }, void 0, !0, {
                     fileName: "src/app/ui/main/projects/project-panel/project-panel.view.tsx",
-                    lineNumber: 166,
+                    lineNumber: 169,
                     columnNumber: 19
                   }, this)
                 ] }, void 0, !0, {
                   fileName: "src/app/ui/main/projects/project-panel/project-panel.view.tsx",
-                  lineNumber: 145,
+                  lineNumber: 147,
                   columnNumber: 17
                 }, this)
               ] }, void 0, !0, {
                 fileName: "src/app/ui/main/projects/project-panel/project-panel.view.tsx",
-                lineNumber: 100,
+                lineNumber: 102,
                 columnNumber: 15
               }, this)
             ]
@@ -7406,7 +7407,7 @@ var import_jsx_dev_runtime53 = require("react/jsx-dev-runtime"), ProjectPanelVie
       !1,
       {
         fileName: "src/app/ui/main/projects/project-panel/project-panel.view.tsx",
-        lineNumber: 176,
+        lineNumber: 179,
         columnNumber: 7
       },
       this
@@ -7435,7 +7436,7 @@ var import_jsx_dev_runtime53 = require("react/jsx-dev-runtime"), ProjectPanelVie
         !1,
         {
           fileName: "src/app/ui/main/projects/project-panel/project-panel.view.tsx",
-          lineNumber: 197,
+          lineNumber: 200,
           columnNumber: 5
         },
         this
@@ -7450,7 +7451,7 @@ var import_jsx_dev_runtime53 = require("react/jsx-dev-runtime"), ProjectPanelVie
         !1,
         {
           fileName: "src/app/ui/main/projects/project-panel/project-panel.view.tsx",
-          lineNumber: 201,
+          lineNumber: 204,
           columnNumber: 5
         },
         this
@@ -7461,7 +7462,7 @@ var import_jsx_dev_runtime53 = require("react/jsx-dev-runtime"), ProjectPanelVie
   !0,
   {
     fileName: "src/app/ui/main/projects/project-panel/project-panel.view.tsx",
-    lineNumber: 190,
+    lineNumber: 193,
     columnNumber: 3
   },
   this
@@ -7805,7 +7806,7 @@ function NotFound404Route() {
 }
 
 // server-assets-manifest:@remix-run/dev/assets-manifest
-var assets_manifest_default = { entry: { module: "/build/entry.client-4CY7YKVG.js", imports: ["/build/_shared/chunk-6DAQMQYB.js", "/build/_shared/chunk-QERF53GL.js", "/build/_shared/chunk-JR7JHID7.js", "/build/_shared/chunk-4D7IJTTE.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-MEY7VFIV.js", imports: ["/build/_shared/chunk-TH5S6TNI.js", "/build/_shared/chunk-FSLR7CSD.js", "/build/_shared/chunk-NY22QEBI.js", "/build/_shared/chunk-Y5IUY2WO.js", "/build/_shared/chunk-WA2U3LPD.js", "/build/_shared/chunk-SVGTTPU7.js", "/build/_shared/chunk-XCXQ6IAD.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !0, hasErrorBoundary: !0 }, "routes/404": { id: "routes/404", parentId: "root", path: "404", index: void 0, caseSensitive: void 0, module: "/build/routes/404-WJMBUNTI.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/__main": { id: "routes/__main", parentId: "root", path: void 0, index: void 0, caseSensitive: void 0, module: "/build/routes/__main-WJF3YPIQ.js", imports: ["/build/_shared/chunk-6PMHYZHM.js", "/build/_shared/chunk-P4P35UP3.js", "/build/_shared/chunk-4TVAHHRS.js", "/build/_shared/chunk-EZ43UAVT.js", "/build/_shared/chunk-HKTS347N.js", "/build/_shared/chunk-GE42YXME.js", "/build/_shared/chunk-KTTHBX2X.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/__main/projects": { id: "routes/__main/projects", parentId: "routes/__main", path: "projects", index: void 0, caseSensitive: void 0, module: "/build/routes/__main/projects-F6DU22UB.js", imports: ["/build/_shared/chunk-376LLFFT.js", "/build/_shared/chunk-BQPQJZQN.js", "/build/_shared/chunk-VD4CXEVL.js", "/build/_shared/chunk-EEOCHXUC.js", "/build/_shared/chunk-KHVVK2Q5.js", "/build/_shared/chunk-FSLR7CSD.js", "/build/_shared/chunk-NY22QEBI.js", "/build/_shared/chunk-WA2U3LPD.js"], hasAction: !0, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !0 }, "routes/__main/projects.$projectId": { id: "routes/__main/projects.$projectId", parentId: "routes/__main", path: "projects/:projectId", index: void 0, caseSensitive: void 0, module: "/build/routes/__main/projects.$projectId-Z3U7QIVS.js", imports: ["/build/_shared/chunk-AUYLHJJM.js", "/build/_shared/chunk-NY22QEBI.js", "/build/_shared/chunk-Y5IUY2WO.js", "/build/_shared/chunk-WA2U3LPD.js", "/build/_shared/chunk-SVGTTPU7.js", "/build/_shared/chunk-XCXQ6IAD.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !0, hasErrorBoundary: !0 }, "routes/__main/projects.$projectId/$": { id: "routes/__main/projects.$projectId/$", parentId: "routes/__main/projects.$projectId", path: "*", index: void 0, caseSensitive: void 0, module: "/build/routes/__main/projects.$projectId/$-HBKK36VO.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !0, hasErrorBoundary: !1 }, "routes/__main/projects.$projectId/analytics": { id: "routes/__main/projects.$projectId/analytics", parentId: "routes/__main/projects.$projectId", path: "analytics", index: void 0, caseSensitive: void 0, module: "/build/routes/__main/projects.$projectId/analytics-GVJPB2AU.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !0 }, "routes/__main/projects.$projectId/board": { id: "routes/__main/projects.$projectId/board", parentId: "routes/__main/projects.$projectId", path: "board", index: void 0, caseSensitive: void 0, module: "/build/routes/__main/projects.$projectId/board-33CS53ST.js", imports: ["/build/_shared/chunk-4NR53C3Y.js", "/build/_shared/chunk-VXZWJF3R.js", "/build/_shared/chunk-YNKUQ7C5.js", "/build/_shared/chunk-6R7GYKXN.js", "/build/_shared/chunk-UD3IMZBA.js", "/build/_shared/chunk-6PMHYZHM.js", "/build/_shared/chunk-P4P35UP3.js", "/build/_shared/chunk-4TVAHHRS.js", "/build/_shared/chunk-HKTS347N.js", "/build/_shared/chunk-GE42YXME.js", "/build/_shared/chunk-KTTHBX2X.js", "/build/_shared/chunk-FSLR7CSD.js"], hasAction: !0, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !0 }, "routes/__main/projects.$projectId/board/issue/$issueId": { id: "routes/__main/projects.$projectId/board/issue/$issueId", parentId: "routes/__main/projects.$projectId/board", path: "issue/:issueId", index: void 0, caseSensitive: void 0, module: "/build/routes/__main/projects.$projectId/board/issue/$issueId-VSJ7VWBM.js", imports: ["/build/_shared/chunk-FWLV63FH.js", "/build/_shared/chunk-HFO4DK57.js", "/build/_shared/chunk-376LLFFT.js", "/build/_shared/chunk-BQPQJZQN.js", "/build/_shared/chunk-WFQVPQSX.js", "/build/_shared/chunk-EEOCHXUC.js", "/build/_shared/chunk-KHVVK2Q5.js", "/build/_shared/chunk-TH5S6TNI.js", "/build/_shared/chunk-EZ43UAVT.js", "/build/_shared/chunk-AUYLHJJM.js", "/build/_shared/chunk-NY22QEBI.js", "/build/_shared/chunk-Y5IUY2WO.js", "/build/_shared/chunk-WA2U3LPD.js", "/build/_shared/chunk-XCXQ6IAD.js"], hasAction: !0, hasLoader: !0, hasCatchBoundary: !0, hasErrorBoundary: !1 }, "routes/__main/projects.$projectId/board/issue/issue-event": { id: "routes/__main/projects.$projectId/board/issue/issue-event", parentId: "routes/__main/projects.$projectId/board", path: "issue/issue-event", index: void 0, caseSensitive: void 0, module: "/build/routes/__main/projects.$projectId/board/issue/issue-event-HBPGP2AU.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/__main/projects.$projectId/board/issue/new": { id: "routes/__main/projects.$projectId/board/issue/new", parentId: "routes/__main/projects.$projectId/board", path: "issue/new", index: void 0, caseSensitive: void 0, module: "/build/routes/__main/projects.$projectId/board/issue/new-2ID454OP.js", imports: ["/build/_shared/chunk-FWLV63FH.js", "/build/_shared/chunk-HFO4DK57.js", "/build/_shared/chunk-376LLFFT.js", "/build/_shared/chunk-BQPQJZQN.js", "/build/_shared/chunk-WFQVPQSX.js", "/build/_shared/chunk-EEOCHXUC.js", "/build/_shared/chunk-KHVVK2Q5.js", "/build/_shared/chunk-TH5S6TNI.js", "/build/_shared/chunk-EZ43UAVT.js", "/build/_shared/chunk-AUYLHJJM.js", "/build/_shared/chunk-NY22QEBI.js", "/build/_shared/chunk-WA2U3LPD.js"], hasAction: !0, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/__main/projects.$projectId/server-error": { id: "routes/__main/projects.$projectId/server-error", parentId: "routes/__main/projects.$projectId", path: "server-error", index: void 0, caseSensitive: void 0, module: "/build/routes/__main/projects.$projectId/server-error-7FRKP6YA.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !0 }, "routes/__main/projects/new": { id: "routes/__main/projects/new", parentId: "routes/__main/projects", path: "new", index: void 0, caseSensitive: void 0, module: "/build/routes/__main/projects/new-ZZXJAEMG.js", imports: ["/build/_shared/chunk-YNKUQ7C5.js", "/build/_shared/chunk-WFQVPQSX.js", "/build/_shared/chunk-6R7GYKXN.js", "/build/_shared/chunk-UD3IMZBA.js", "/build/_shared/chunk-EZ43UAVT.js", "/build/_shared/chunk-HKTS347N.js", "/build/_shared/chunk-GE42YXME.js", "/build/_shared/chunk-KTTHBX2X.js"], hasAction: !0, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/action/logout": { id: "routes/action/logout", parentId: "root", path: "action/logout", index: void 0, caseSensitive: void 0, module: "/build/routes/action/logout-6TZMVFRF.js", imports: void 0, hasAction: !0, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/action/set-theme": { id: "routes/action/set-theme", parentId: "root", path: "action/set-theme", index: void 0, caseSensitive: void 0, module: "/build/routes/action/set-theme-65MGGDEN.js", imports: void 0, hasAction: !0, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/index": { id: "routes/index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/index-HUH7SFBN.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !0, hasErrorBoundary: !1 }, "routes/login": { id: "routes/login", parentId: "root", path: "login", index: void 0, caseSensitive: void 0, module: "/build/routes/login-FHCT5ZZT.js", imports: ["/build/_shared/chunk-HFO4DK57.js", "/build/_shared/chunk-VXZWJF3R.js", "/build/_shared/chunk-BQPQJZQN.js", "/build/_shared/chunk-UD3IMZBA.js", "/build/_shared/chunk-KHVVK2Q5.js", "/build/_shared/chunk-4TVAHHRS.js", "/build/_shared/chunk-HKTS347N.js", "/build/_shared/chunk-KTTHBX2X.js"], hasAction: !0, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, version: "60852e12", hmr: void 0, url: "/build/manifest-60852E12.js" };
+var assets_manifest_default = { entry: { module: "/build/entry.client-4CY7YKVG.js", imports: ["/build/_shared/chunk-6DAQMQYB.js", "/build/_shared/chunk-QERF53GL.js", "/build/_shared/chunk-JR7JHID7.js", "/build/_shared/chunk-4D7IJTTE.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-MEY7VFIV.js", imports: ["/build/_shared/chunk-TH5S6TNI.js", "/build/_shared/chunk-FSLR7CSD.js", "/build/_shared/chunk-NY22QEBI.js", "/build/_shared/chunk-Y5IUY2WO.js", "/build/_shared/chunk-WA2U3LPD.js", "/build/_shared/chunk-SVGTTPU7.js", "/build/_shared/chunk-XCXQ6IAD.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !0, hasErrorBoundary: !0 }, "routes/404": { id: "routes/404", parentId: "root", path: "404", index: void 0, caseSensitive: void 0, module: "/build/routes/404-WJMBUNTI.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/__main": { id: "routes/__main", parentId: "root", path: void 0, index: void 0, caseSensitive: void 0, module: "/build/routes/__main-WJF3YPIQ.js", imports: ["/build/_shared/chunk-6PMHYZHM.js", "/build/_shared/chunk-P4P35UP3.js", "/build/_shared/chunk-4TVAHHRS.js", "/build/_shared/chunk-EZ43UAVT.js", "/build/_shared/chunk-HKTS347N.js", "/build/_shared/chunk-GE42YXME.js", "/build/_shared/chunk-KTTHBX2X.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/__main/projects": { id: "routes/__main/projects", parentId: "routes/__main", path: "projects", index: void 0, caseSensitive: void 0, module: "/build/routes/__main/projects-FEVPRU45.js", imports: ["/build/_shared/chunk-376LLFFT.js", "/build/_shared/chunk-BQPQJZQN.js", "/build/_shared/chunk-VD4CXEVL.js", "/build/_shared/chunk-EEOCHXUC.js", "/build/_shared/chunk-KHVVK2Q5.js", "/build/_shared/chunk-FSLR7CSD.js", "/build/_shared/chunk-NY22QEBI.js", "/build/_shared/chunk-WA2U3LPD.js"], hasAction: !0, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !0 }, "routes/__main/projects.$projectId": { id: "routes/__main/projects.$projectId", parentId: "routes/__main", path: "projects/:projectId", index: void 0, caseSensitive: void 0, module: "/build/routes/__main/projects.$projectId-NVZIV4L4.js", imports: ["/build/_shared/chunk-AUYLHJJM.js", "/build/_shared/chunk-NY22QEBI.js", "/build/_shared/chunk-Y5IUY2WO.js", "/build/_shared/chunk-WA2U3LPD.js", "/build/_shared/chunk-SVGTTPU7.js", "/build/_shared/chunk-XCXQ6IAD.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !0, hasErrorBoundary: !0 }, "routes/__main/projects.$projectId/$": { id: "routes/__main/projects.$projectId/$", parentId: "routes/__main/projects.$projectId", path: "*", index: void 0, caseSensitive: void 0, module: "/build/routes/__main/projects.$projectId/$-HBKK36VO.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !0, hasErrorBoundary: !1 }, "routes/__main/projects.$projectId/analytics": { id: "routes/__main/projects.$projectId/analytics", parentId: "routes/__main/projects.$projectId", path: "analytics", index: void 0, caseSensitive: void 0, module: "/build/routes/__main/projects.$projectId/analytics-GVJPB2AU.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !0 }, "routes/__main/projects.$projectId/board": { id: "routes/__main/projects.$projectId/board", parentId: "routes/__main/projects.$projectId", path: "board", index: void 0, caseSensitive: void 0, module: "/build/routes/__main/projects.$projectId/board-2HPAFJSH.js", imports: ["/build/_shared/chunk-4NR53C3Y.js", "/build/_shared/chunk-VXZWJF3R.js", "/build/_shared/chunk-YNKUQ7C5.js", "/build/_shared/chunk-6R7GYKXN.js", "/build/_shared/chunk-UD3IMZBA.js", "/build/_shared/chunk-6PMHYZHM.js", "/build/_shared/chunk-P4P35UP3.js", "/build/_shared/chunk-4TVAHHRS.js", "/build/_shared/chunk-HKTS347N.js", "/build/_shared/chunk-GE42YXME.js", "/build/_shared/chunk-KTTHBX2X.js", "/build/_shared/chunk-FSLR7CSD.js"], hasAction: !0, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !0 }, "routes/__main/projects.$projectId/board/issue/$issueId": { id: "routes/__main/projects.$projectId/board/issue/$issueId", parentId: "routes/__main/projects.$projectId/board", path: "issue/:issueId", index: void 0, caseSensitive: void 0, module: "/build/routes/__main/projects.$projectId/board/issue/$issueId-VSJ7VWBM.js", imports: ["/build/_shared/chunk-FWLV63FH.js", "/build/_shared/chunk-HFO4DK57.js", "/build/_shared/chunk-376LLFFT.js", "/build/_shared/chunk-BQPQJZQN.js", "/build/_shared/chunk-WFQVPQSX.js", "/build/_shared/chunk-EEOCHXUC.js", "/build/_shared/chunk-KHVVK2Q5.js", "/build/_shared/chunk-TH5S6TNI.js", "/build/_shared/chunk-EZ43UAVT.js", "/build/_shared/chunk-AUYLHJJM.js", "/build/_shared/chunk-NY22QEBI.js", "/build/_shared/chunk-Y5IUY2WO.js", "/build/_shared/chunk-WA2U3LPD.js", "/build/_shared/chunk-XCXQ6IAD.js"], hasAction: !0, hasLoader: !0, hasCatchBoundary: !0, hasErrorBoundary: !1 }, "routes/__main/projects.$projectId/board/issue/issue-event": { id: "routes/__main/projects.$projectId/board/issue/issue-event", parentId: "routes/__main/projects.$projectId/board", path: "issue/issue-event", index: void 0, caseSensitive: void 0, module: "/build/routes/__main/projects.$projectId/board/issue/issue-event-HBPGP2AU.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/__main/projects.$projectId/board/issue/new": { id: "routes/__main/projects.$projectId/board/issue/new", parentId: "routes/__main/projects.$projectId/board", path: "issue/new", index: void 0, caseSensitive: void 0, module: "/build/routes/__main/projects.$projectId/board/issue/new-2ID454OP.js", imports: ["/build/_shared/chunk-FWLV63FH.js", "/build/_shared/chunk-HFO4DK57.js", "/build/_shared/chunk-376LLFFT.js", "/build/_shared/chunk-BQPQJZQN.js", "/build/_shared/chunk-WFQVPQSX.js", "/build/_shared/chunk-EEOCHXUC.js", "/build/_shared/chunk-KHVVK2Q5.js", "/build/_shared/chunk-TH5S6TNI.js", "/build/_shared/chunk-EZ43UAVT.js", "/build/_shared/chunk-AUYLHJJM.js", "/build/_shared/chunk-NY22QEBI.js", "/build/_shared/chunk-WA2U3LPD.js"], hasAction: !0, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/__main/projects.$projectId/server-error": { id: "routes/__main/projects.$projectId/server-error", parentId: "routes/__main/projects.$projectId", path: "server-error", index: void 0, caseSensitive: void 0, module: "/build/routes/__main/projects.$projectId/server-error-7FRKP6YA.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !0 }, "routes/__main/projects/new": { id: "routes/__main/projects/new", parentId: "routes/__main/projects", path: "new", index: void 0, caseSensitive: void 0, module: "/build/routes/__main/projects/new-5ZBXM75H.js", imports: ["/build/_shared/chunk-YNKUQ7C5.js", "/build/_shared/chunk-WFQVPQSX.js", "/build/_shared/chunk-6R7GYKXN.js", "/build/_shared/chunk-UD3IMZBA.js", "/build/_shared/chunk-EZ43UAVT.js", "/build/_shared/chunk-HKTS347N.js", "/build/_shared/chunk-GE42YXME.js", "/build/_shared/chunk-KTTHBX2X.js"], hasAction: !0, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/action/logout": { id: "routes/action/logout", parentId: "root", path: "action/logout", index: void 0, caseSensitive: void 0, module: "/build/routes/action/logout-6TZMVFRF.js", imports: void 0, hasAction: !0, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/action/set-theme": { id: "routes/action/set-theme", parentId: "root", path: "action/set-theme", index: void 0, caseSensitive: void 0, module: "/build/routes/action/set-theme-65MGGDEN.js", imports: void 0, hasAction: !0, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/index": { id: "routes/index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/index-HUH7SFBN.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !0, hasErrorBoundary: !1 }, "routes/login": { id: "routes/login", parentId: "root", path: "login", index: void 0, caseSensitive: void 0, module: "/build/routes/login-FHCT5ZZT.js", imports: ["/build/_shared/chunk-HFO4DK57.js", "/build/_shared/chunk-VXZWJF3R.js", "/build/_shared/chunk-BQPQJZQN.js", "/build/_shared/chunk-UD3IMZBA.js", "/build/_shared/chunk-KHVVK2Q5.js", "/build/_shared/chunk-4TVAHHRS.js", "/build/_shared/chunk-HKTS347N.js", "/build/_shared/chunk-KTTHBX2X.js"], hasAction: !0, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, version: "b05063ad", hmr: void 0, url: "/build/manifest-B05063AD.js" };
 
 // server-entry-module:@remix-run/dev/server-build
 var assetsBuildDirectory = "public/build", future = { v2_dev: !1, unstable_postcss: !1, unstable_tailwind: !1, v2_errorBoundary: !1, v2_headers: !1, v2_meta: !0, v2_normalizeFormMethod: !0, v2_routeConvention: !1 }, publicPath = "/build/", entry = { module: entry_server_exports }, routes = {

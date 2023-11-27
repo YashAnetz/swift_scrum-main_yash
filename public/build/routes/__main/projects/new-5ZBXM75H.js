@@ -317,20 +317,21 @@ var ProjectPanelView = ({ project, users }) => {
         children: /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)(
           Content,
           {
+            style: { backgroundColor: "#2D4059", borderRadius: "20px" },
             onEscapeKeyDown: handleProgrammaticClose,
             onPointerDownOutside: handleProgrammaticClose,
             className: t(
-              "max-w-[500px]",
+              "max-w-[800px]",
               !isOpen && "translate-y-[10px] opacity-0"
             ),
             children: [
               /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)(PanelHeaderProject, { id: (project == null ? void 0 : project.id) || "Create new project" }, void 0, false, {
                 fileName: "src/app/ui/main/projects/project-panel/project-panel.view.tsx",
-                lineNumber: 99,
+                lineNumber: 101,
                 columnNumber: 15
               }, this),
               /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)(Form, { method: "post", ref: formRef, children: [
-                /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("div", { className: "mb-6", children: [
+                /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("div", { style: { color: "#ffd460" }, className: "mb-6", children: [
                   /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)(Title, { className: "mt-5 mb-8 -ml-3", children: /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)(
                     Title2,
                     {
@@ -342,27 +343,27 @@ var ProjectPanelView = ({ project, users }) => {
                     false,
                     {
                       fileName: "src/app/ui/main/projects/project-panel/project-panel.view.tsx",
-                      lineNumber: 103,
+                      lineNumber: 105,
                       columnNumber: 21
                     },
                     this
                   ) }, void 0, false, {
                     fileName: "src/app/ui/main/projects/project-panel/project-panel.view.tsx",
-                    lineNumber: 102,
+                    lineNumber: 104,
                     columnNumber: 19
                   }, this),
-                  /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("p", { className: "font-primary-black text-font-main dark:text-font-main-dark", children: "Description" }, void 0, false, {
+                  /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("p", { children: "Description" }, void 0, false, {
                     fileName: "src/app/ui/main/projects/project-panel/project-panel.view.tsx",
-                    lineNumber: 109,
+                    lineNumber: 111,
                     columnNumber: 19
                   }, this),
                   /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("div", { className: "-ml-3 mb-5", children: /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)(Description, { initDescription: (project == null ? void 0 : project.description) || "" }, void 0, false, {
                     fileName: "src/app/ui/main/projects/project-panel/project-panel.view.tsx",
-                    lineNumber: 113,
+                    lineNumber: 115,
                     columnNumber: 21
                   }, this) }, void 0, false, {
                     fileName: "src/app/ui/main/projects/project-panel/project-panel.view.tsx",
-                    lineNumber: 112,
+                    lineNumber: 114,
                     columnNumber: 19
                   }, this),
                   /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("ul", { className: "space-y-1.5", children: users.map((user) => /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)(
@@ -378,17 +379,17 @@ var ProjectPanelView = ({ project, users }) => {
                             /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("span", { className: "flex items-center gap-4", children: [
                               /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)(UserAvatar, { ...user, size: 48 }, void 0, false, {
                                 fileName: "src/app/ui/main/projects/project-panel/project-panel.view.tsx",
-                                lineNumber: 126,
+                                lineNumber: 128,
                                 columnNumber: 29
                               }, this),
                               /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("span", { children: user.name }, void 0, false, {
                                 fileName: "src/app/ui/main/projects/project-panel/project-panel.view.tsx",
-                                lineNumber: 127,
+                                lineNumber: 129,
                                 columnNumber: 29
                               }, this)
                             ] }, void 0, true, {
                               fileName: "src/app/ui/main/projects/project-panel/project-panel.view.tsx",
-                              lineNumber: 125,
+                              lineNumber: 127,
                               columnNumber: 27
                             }, this),
                             /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)(
@@ -399,13 +400,13 @@ var ProjectPanelView = ({ project, users }) => {
                                 name: "user",
                                 value: user.id,
                                 defaultChecked: user.id === (loggedUser == null ? void 0 : loggedUser.id),
-                                children: /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)($e698a72e93240346$export$adb584737d712b70, { className: "flex h-[36px] w-[36px] rounded-md bg-primary-main duration-150 ease-in flex-center", children: /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)(BsCheckLg, { size: 16, className: "text-grey-400" }, void 0, false, {
+                                children: /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)($e698a72e93240346$export$adb584737d712b70, { style: { backgroundColor: "#ffd460" }, className: "flex h-[36px] w-[36px] rounded-md bg-primary-main duration-150 ease-in flex-center", children: /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)(BsCheckLg, { size: 16, className: "text-grey-400" }, void 0, false, {
                                   fileName: "src/app/ui/main/projects/project-panel/project-panel.view.tsx",
-                                  lineNumber: 137,
+                                  lineNumber: 139,
                                   columnNumber: 31
                                 }, this) }, void 0, false, {
                                   fileName: "src/app/ui/main/projects/project-panel/project-panel.view.tsx",
-                                  lineNumber: 136,
+                                  lineNumber: 138,
                                   columnNumber: 29
                                 }, this)
                               },
@@ -413,7 +414,7 @@ var ProjectPanelView = ({ project, users }) => {
                               false,
                               {
                                 fileName: "src/app/ui/main/projects/project-panel/project-panel.view.tsx",
-                                lineNumber: 129,
+                                lineNumber: 131,
                                 columnNumber: 27
                               },
                               this
@@ -424,7 +425,7 @@ var ProjectPanelView = ({ project, users }) => {
                         true,
                         {
                           fileName: "src/app/ui/main/projects/project-panel/project-panel.view.tsx",
-                          lineNumber: 121,
+                          lineNumber: 123,
                           columnNumber: 25
                         },
                         this
@@ -434,43 +435,44 @@ var ProjectPanelView = ({ project, users }) => {
                     false,
                     {
                       fileName: "src/app/ui/main/projects/project-panel/project-panel.view.tsx",
-                      lineNumber: 117,
+                      lineNumber: 119,
                       columnNumber: 23
                     },
                     this
                   )) }, void 0, false, {
                     fileName: "src/app/ui/main/projects/project-panel/project-panel.view.tsx",
-                    lineNumber: 115,
+                    lineNumber: 117,
                     columnNumber: 19
                   }, this)
                 ] }, void 0, true, {
                   fileName: "src/app/ui/main/projects/project-panel/project-panel.view.tsx",
-                  lineNumber: 101,
+                  lineNumber: 103,
                   columnNumber: 17
                 }, this),
                 /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("div", { className: "mt-6 grid grid-cols-3 items-end", children: [
-                  /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("span", { className: "font-primary-light text-2xs text-font-light text-opacity-80 dark:text-font-light-dark", children: [
+                  /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("span", { style: { color: "#ffd460" }, className: "font-primary-light text-2xs text-font-light text-opacity-80 dark:text-font-light-dark", children: [
                     "Press ",
                     /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)(Kbd, { children: "Shift" }, void 0, false, {
                       fileName: "src/app/ui/main/projects/project-panel/project-panel.view.tsx",
-                      lineNumber: 147,
+                      lineNumber: 150,
                       columnNumber: 27
                     }, this),
                     " + ",
                     /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)(Kbd, { children: "S" }, void 0, false, {
                       fileName: "src/app/ui/main/projects/project-panel/project-panel.view.tsx",
-                      lineNumber: 147,
+                      lineNumber: 150,
                       columnNumber: 46
                     }, this),
                     " to accept"
                   ] }, void 0, true, {
                     fileName: "src/app/ui/main/projects/project-panel/project-panel.view.tsx",
-                    lineNumber: 146,
+                    lineNumber: 149,
                     columnNumber: 19
                   }, this),
                   /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)(
                     "button",
                     {
+                      style: { backgroundColor: "#5a7fb0", color: "#ffd460" },
                       type: "submit",
                       name: "_action",
                       value: "upsert",
@@ -481,12 +483,12 @@ var ProjectPanelView = ({ project, users }) => {
                         "Submmiting",
                         /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)(Spinner, {}, void 0, false, {
                           fileName: "src/app/ui/main/projects/project-panel/project-panel.view.tsx",
-                          lineNumber: 160,
+                          lineNumber: 163,
                           columnNumber: 25
                         }, this)
                       ] }, void 0, true, {
                         fileName: "src/app/ui/main/projects/project-panel/project-panel.view.tsx",
-                        lineNumber: 158,
+                        lineNumber: 161,
                         columnNumber: 23
                       }, this) : "Accept"
                     },
@@ -494,32 +496,32 @@ var ProjectPanelView = ({ project, users }) => {
                     false,
                     {
                       fileName: "src/app/ui/main/projects/project-panel/project-panel.view.tsx",
-                      lineNumber: 149,
+                      lineNumber: 152,
                       columnNumber: 19
                     },
                     this
                   ),
-                  /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("span", { className: "justify-self-end font-primary-light text-2xs text-font-light text-opacity-80 dark:text-font-light-dark", children: [
+                  /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("span", { style: { color: "#ffd460" }, className: "justify-self-end font-primary-light text-2xs text-font-light text-opacity-80 dark:text-font-light-dark", children: [
                     "Press ",
                     /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)(Kbd, { children: "Esc" }, void 0, false, {
                       fileName: "src/app/ui/main/projects/project-panel/project-panel.view.tsx",
-                      lineNumber: 167,
+                      lineNumber: 170,
                       columnNumber: 27
                     }, this),
                     " to close"
                   ] }, void 0, true, {
                     fileName: "src/app/ui/main/projects/project-panel/project-panel.view.tsx",
-                    lineNumber: 166,
+                    lineNumber: 169,
                     columnNumber: 19
                   }, this)
                 ] }, void 0, true, {
                   fileName: "src/app/ui/main/projects/project-panel/project-panel.view.tsx",
-                  lineNumber: 145,
+                  lineNumber: 147,
                   columnNumber: 17
                 }, this)
               ] }, void 0, true, {
                 fileName: "src/app/ui/main/projects/project-panel/project-panel.view.tsx",
-                lineNumber: 100,
+                lineNumber: 102,
                 columnNumber: 15
               }, this)
             ]
@@ -561,7 +563,7 @@ var ProjectPanelView = ({ project, users }) => {
       false,
       {
         fileName: "src/app/ui/main/projects/project-panel/project-panel.view.tsx",
-        lineNumber: 176,
+        lineNumber: 179,
         columnNumber: 7
       },
       this
@@ -591,7 +593,7 @@ var Spinner = () => /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)(
         false,
         {
           fileName: "src/app/ui/main/projects/project-panel/project-panel.view.tsx",
-          lineNumber: 197,
+          lineNumber: 200,
           columnNumber: 5
         },
         this
@@ -606,7 +608,7 @@ var Spinner = () => /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)(
         false,
         {
           fileName: "src/app/ui/main/projects/project-panel/project-panel.view.tsx",
-          lineNumber: 201,
+          lineNumber: 204,
           columnNumber: 5
         },
         this
@@ -617,7 +619,7 @@ var Spinner = () => /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)(
   true,
   {
     fileName: "src/app/ui/main/projects/project-panel/project-panel.view.tsx",
-    lineNumber: 190,
+    lineNumber: 193,
     columnNumber: 3
   },
   this
@@ -669,4 +671,4 @@ export {
   IssuePanelRoute as default,
   meta
 };
-//# sourceMappingURL=/build/routes/__main/projects/new-ZZXJAEMG.js.map
+//# sourceMappingURL=/build/routes/__main/projects/new-5ZBXM75H.js.map

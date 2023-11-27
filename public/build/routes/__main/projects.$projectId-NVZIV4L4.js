@@ -45,7 +45,7 @@ var ProjectView = ({
   const location = useLocation();
   const section = location.pathname.split("/").slice(-1)[0];
   const sectionTitle = sectionTitles[section] || sectionTitles[defaultSection];
-  return /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { style: { backgroundColor: "#3a5170" }, className: "relative flex h-full flex-grow", children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { className: "z-10 flex h-full w-full flex-grow flex-col py-6 px-5", children: [
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { style: { backgroundColor: "#425B7D" }, className: "relative flex h-full flex-grow", children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { className: "z-10 flex h-full w-full flex-grow flex-col py-6 px-5", children: [
     /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("section", { style: { color: "#ffd460", padding: "10px", width: "600px", borderRadius: "10px" }, children: [
       /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(Link, { to: "/projects", className: "underline underline-offset-[3px]", children: "open" }, void 0, false, {
         fileName: "src/app/ui/main/project/project.view.tsx",
@@ -163,4 +163,4 @@ export {
   ProjectRoute as default,
   meta
 };
-//# sourceMappingURL=/build/routes/__main/projects.$projectId-Z3U7QIVS.js.map
+//# sourceMappingURL=/build/routes/__main/projects.$projectId-NVZIV4L4.js.map

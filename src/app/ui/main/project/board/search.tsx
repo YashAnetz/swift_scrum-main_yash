@@ -26,7 +26,7 @@ export const Search = (): JSX.Element => {
         type="text"
         name="search"
         value={search}
-        placeholder="Filter issues"
+        placeholder="Search"
         onChange={handleChange}
         className={cx(
           "border-1 box-border h-[40px] w-[120px] rounded border-none bg-grey-100 py-2",

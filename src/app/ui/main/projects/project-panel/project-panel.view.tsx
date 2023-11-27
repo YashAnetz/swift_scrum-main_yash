@@ -82,31 +82,33 @@ export const ProjectPanelView = ({ project, users }: Props): JSX.Element => {
 
   return (
     <>
-      <Dialog.Root open={true}>
-        <Dialog.Portal container={portalContainer}>
-          <Dialog.Overlay
+      <Dialog.Root  open={true}>
+        <Dialog.Portal   container={portalContainer}>
+          <Dialog.Overlay 
             id="project-panel-overlay"
             className={isOpen ? "" : "bg-opacity-0"}
           >
-            <Dialog.Content
+            <Dialog.Content style={{backgroundColor:'#2D4059',borderRadius:'20px'}}
               onEscapeKeyDown={handleProgrammaticClose}
               onPointerDownOutside={handleProgrammaticClose}
+              
+              
               className={cx(
-                "max-w-[500px]",
+                "max-w-[800px]",
                 !isOpen && "translate-y-[10px] opacity-0"
               )}
             >
-              <PanelHeaderProject id={project?.id || "Create new project"} />
-              <Form method="post" ref={formRef}>
-                <div className="mb-6">
+              <PanelHeaderProject   id={project?.id || "Create new project"} />
+              <Form   method="post" ref={formRef}>
+                <div style={{color:'#ffd460'}}   className="mb-6">
                   <Dialog.Title className="mt-5 mb-8 -ml-3">
-                    <Title
+                    <Title 
                       initTitle={project?.name || ""}
                       maxLength={30}
                       error={actionData?.errors?.name}
                     />
                   </Dialog.Title>
-                  <p className="font-primary-black text-font-main dark:text-font-main-dark">
+                  <p >
                     Description
                   </p>
                   <div className="-ml-3 mb-5">
@@ -133,7 +135,7 @@ export const ProjectPanelView = ({ project, users }: Props): JSX.Element => {
                             value={user.id}
                             defaultChecked={user.id === loggedUser?.id}
                           >
-                            <Checkbox.Indicator className="flex h-[36px] w-[36px] rounded-md bg-primary-main duration-150 ease-in flex-center">
+                            <Checkbox.Indicator style={{backgroundColor:'#ffd460'}} className="flex h-[36px] w-[36px] rounded-md bg-primary-main duration-150 ease-in flex-center">
                               <BsCheckLg size={16} className="text-grey-400" />
                             </Checkbox.Indicator>
                           </Checkbox.Root>
@@ -142,11 +144,12 @@ export const ProjectPanelView = ({ project, users }: Props): JSX.Element => {
                     ))}
                   </ul>
                 </div>
-                <div className="mt-6 grid grid-cols-3 items-end">
-                  <span className="font-primary-light text-2xs text-font-light text-opacity-80 dark:text-font-light-dark">
+                <div  className="mt-6 grid grid-cols-3 items-end">
+              
+                  <span style={{color:'#ffd460'}} className="font-primary-light text-2xs text-font-light text-opacity-80 dark:text-font-light-dark">
                     Press <Kbd>Shift</Kbd> + <Kbd>S</Kbd> to accept
                   </span>
-                  <button
+                  <button style={{backgroundColor:'#5a7fb0',color:'#ffd460'}}
                     type="submit"
                     name="_action"
                     value="upsert"
@@ -163,7 +166,7 @@ export const ProjectPanelView = ({ project, users }: Props): JSX.Element => {
                       "Accept"
                     )}
                   </button>
-                  <span className="justify-self-end font-primary-light text-2xs text-font-light text-opacity-80 dark:text-font-light-dark">
+                  <span style={{color:'#ffd460'}}  className="justify-self-end font-primary-light text-2xs text-font-light text-opacity-80 dark:text-font-light-dark">
                     Press <Kbd>Esc</Kbd> to close
                   </span>
                 </div>
