@@ -166,7 +166,7 @@ const errorComponentStyle: CSSProperties = {
 export function ErrorBoundary({ error }: { error: Error }) {
   console.error(error);
   const errorMessage =
-    "It seems there is a critical error! Please try again or contact me at: danielserrano.contacto@gmail.com";
+    "It seems there is a critical error! Please try again or contact me at: yahire@uncc.edu or nbansal@uncc.edu";
 
   return (
     // Inline styles because tailwind is not loaded at this point

@@ -400,7 +400,7 @@ var App = () => {
 };
 function ErrorBoundary({ error }) {
   return console.error(error), // Inline styles because tailwind is not loaded at this point
-  /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("div", { style: errorComponentStyle, children: /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)(Error500, { message: "It seems there is a critical error! Please try again or contact me at: danielserrano.contacto@gmail.com", href: "/" }, void 0, !1, {
+  /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("div", { style: errorComponentStyle, children: /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)(Error500, { message: "It seems there is a critical error! Please try again or contact me at: yahire@uncc.edu or nbansal@uncc.edu", href: "/" }, void 0, !1, {
     fileName: "src/app/root.tsx",
     lineNumber: 174,
     columnNumber: 7
@@ -4700,52 +4700,52 @@ var import_react_toastify2 = require("react-toastify");
 var usersMock = [
   {
     id: "1c6855bf-9a0f-4a45-9641-7b7c7855c570",
-    name: "Daniel Serrano",
+    name: "Nikhil Bansal",
     color: "#dae3f9"
   },
   {
     id: "b18b41e7-749e-44ed-ad0d-6cd27a78a1cf",
-    name: "Woody",
-    image: "woody.webp"
+    name: "Yash Ahire",
+    color: "#8eedd1"
   },
   {
     id: "eacafed4-c6f3-4908-a614-d3b97d76b1fe",
-    name: "Buzz Lightyear",
-    image: "buzz-lightyear.webp"
+    name: "Rhythm Agrawal",
+    color: "#b0e34b"
   },
   {
     id: "114020ad-5bc4-4ebe-a7cf-8ea78b338a73",
-    name: "Jessie",
-    image: "jessie.webp"
+    name: "Rimjhim Jain",
+    color: "#c54be3"
   },
   {
     id: "3086bfaa-2978-43b3-95d2-cac334ad603e",
-    name: "Emperor Zurg",
-    image: "emperor-zurg.webp"
+    name: "Sanchi Sharma",
+    color: "#e34b94"
   },
   {
     id: "4a9f3bc0-8aa0-4a38-b28a-e813b2414e64",
-    name: "Mr Potato",
-    image: "mr-potato.webp"
+    name: "Yash Agrawal",
+    color: "#e36c4b"
   },
   {
     id: "a211fc6a-fa1f-4dd6-a6d8-acb5d8ab2b2a",
-    name: "Ms Potato",
-    image: "ms-potato.webp"
+    name: "Dr.Ali Sever",
+    color: "#4be3d4"
   },
   {
     id: "a91ea376-c533-4ec8-bd0a-57d93862e1d6",
-    name: "Little Green Men",
-    image: "little-green-men.webp"
+    name: "Aniket Ghumed",
+    color: "#e34b52"
   },
   {
     id: "29a87499-9d0c-4030-91c3-03b01d8fd362",
-    name: "T-Rex"
+    name: "Viraj Ranaware"
   },
   {
     id: "759af9f6-2ffb-45d2-9c0a-be751185f286",
-    name: "Andy Davis",
-    image: "andy-davis.webp"
+    name: "Akshay Shinde",
+    color: "#324eed"
   }
 ], userMock1 = usersMock[0], userMock2 = usersMock[1];
 
@@ -4754,14 +4754,14 @@ var createdAt = Date.now(), updatedAt = Date.now(), commentMock1 = {
   id: "92149ee5-0459-4286-8323-1542e1295154",
   user: usersMock[3],
   // Jessie
-  message: "Depending on the user, some features are restricted. For example, only the reporter of an issue can edit the title and description.",
+  message: "Investigated the user registration bug. Found an issue with the validation process. Working on a fix and will update once resolved.",
   createdAt,
   updatedAt
 }, commentMock2 = {
   id: "3375b7ea-425d-4bd3-a728-c8888b63a7f2",
   user: usersMock[7],
   // Little Green Men
-  message: "And only the original poster of a comment can edit or delete it!",
+  message: "Started implementing advanced search options for improved functionality. Discussing design considerations with the team to ensure a seamless user experience.",
   createdAt,
   updatedAt
 }, commentMock3 = {
@@ -4775,14 +4775,14 @@ var createdAt = Date.now(), updatedAt = Date.now(), commentMock1 = {
   id: "c0db6d6f-f395-4882-8bf4-e644f0e45460",
   user: userMock1,
   // Daniel Serrano
-  message: "By the way, the 404 error will be triggered if you modify the URL to any non existing path.",
+  message: "Conducted a performance analysis of the dashboard. Identified key bottlenecks and planning optimizations. Next step is to implement and test improvements.",
   createdAt,
   updatedAt
 }, commentMock5 = {
   id: "6c57eff9-f310-470a-b8e9-0f5234b63f5a",
   user: usersMock[6],
   // Ms. Potato
-  message: "By the way, the 404 error will be triggered if you modify the URL to any non existing path.",
+  message: "Researched and selected a secure two-factor authentication solution. Starting the implementation process. Will update with progress and any challenges.",
   createdAt,
   updatedAt
 };
@@ -4810,8 +4810,8 @@ var prioritiesMock = [
 var createdAt2 = (/* @__PURE__ */ new Date("2022-01-18 11:00")).valueOf(), todoIssuesMock1 = [], inProgressIssuesMock1 = [
   {
     id: "ea07f7ca-13e9-4143-b623-f5713adef81a",
-    name: "HINT: Open two tabs to see events in real time.",
-    description: "With the same project open in two different tabs, try making some changes on one of them. The result will be reflected instantly on the other. This will happen with every other user with the app open.",
+    name: "User Registration Bug",
+    description: "Users are unable to register on the website due to a bug in the registration process. Investigate and fix the issue.",
     reporter: userMock1,
     // Daniel Serrano
     asignee: userMock2,
@@ -4824,8 +4824,8 @@ var createdAt2 = (/* @__PURE__ */ new Date("2022-01-18 11:00")).valueOf(), todoI
   },
   {
     id: "23717058-379a-447a-a215-e425a124154f",
-    name: "HINT: Try to login and interact with different users. ",
-    description: "This will be reflected on the UI (e. g. which user created and issue or wrote a comment). A user can only see the projects they are assigned to. You can try this by creating a new project at the /projects page. To logout, go to the avatar dropdown (top right).",
+    name: "Enhance Search Functionality",
+    description: "Improve the search feature to allow users to filter and find information more efficiently. Consider adding advanced search options and keyword highlighting.",
     reporter: userMock2,
     // Woody
     asignee: usersMock[2],
@@ -4839,8 +4839,8 @@ var createdAt2 = (/* @__PURE__ */ new Date("2022-01-18 11:00")).valueOf(), todoI
 ], doneIssuesMock1 = [
   {
     id: "cb3eb5e6-299d-4e1a-8521-a5541f8403e4",
-    name: "HINT: Check the URL when filter or navigate. Try navigate directly to the URL.",
-    description: "All the routing is handled server-side thanks to Remix Run framework. Everytime you apply a filter, a new request is sent, the data is revalidated in the server and the page HTML is resent to the server. This is very useful when sharing a link. The other person will receive the same exact result as you.",
+    name: "Performance Optimization for Dashboard",
+    description: "The dashboard is slow to load, affecting user experience. Identify and implement performance optimizations to ensure quicker loading times.",
     reporter: userMock1,
     asignee: userMock1,
     comments: [],
@@ -4851,8 +4851,8 @@ var createdAt2 = (/* @__PURE__ */ new Date("2022-01-18 11:00")).valueOf(), todoI
   },
   {
     id: "8264e3fc-dd97-4abe-9612-deee6472e5c4",
-    name: "HINT: Try key combinations to execute actions. They are indicated on the UI.",
-    description: 'E. g., try Shift + N on the board page to create a new issue. By default, it will be created under the category "TO DO". Another common key combination is using Shift + S to save changes (try it on this very issue!).',
+    name: "Implement Two-Factor Authentication",
+    description: "Strengthen security by adding two-factor authentication (2FA) for user accounts. Research and implement a secure 2FA solution.",
     reporter: userMock1,
     asignee: userMock1,
     comments: [commentMock3],
@@ -4863,8 +4863,8 @@ var createdAt2 = (/* @__PURE__ */ new Date("2022-01-18 11:00")).valueOf(), todoI
   },
   {
     id: "4db55cbf-222d-424a-b23b-08e61534c706",
-    name: "HINT: Check network status when navigating to an error page.",
-    description: 'There are two sections on the sidebar that will intentionally throw an error. The section "Server error" will trigger a 500 error response, while "Not found" returns a 404 error. You can check the status response on the browser network tab and see how it is handled on the UI.',
+    name: "Update Third-Party Libraries",
+    description: "Some third-party libraries used in the project are outdated. Update them to the latest versions to benefit from bug fixes and new features.",
     reporter: userMock1,
     asignee: userMock1,
     comments: [commentMock4, commentMock5],
@@ -4876,8 +4876,8 @@ var createdAt2 = (/* @__PURE__ */ new Date("2022-01-18 11:00")).valueOf(), todoI
 ], todoIssuesMock2 = [
   {
     id: "f3efefcf-7859-4241-8b03-4ae815183355",
-    name: "Add and display issue timestamps",
-    description: "Id should be create automatically on new Issue(). It must be displayed on issue panel, as well as an updatedAt parameter",
+    name: "Responsive Design for Mobile",
+    description: "Ensure that the application is fully responsive on mobile devices. Test and fix any layout or functionality issues on different screen sizes.",
     reporter: userMock1,
     asignee: userMock2,
     comments: [],
@@ -4888,8 +4888,8 @@ var createdAt2 = (/* @__PURE__ */ new Date("2022-01-18 11:00")).valueOf(), todoI
   },
   {
     id: "6bf6a1f4-20bb-492b-8ea4-4aa18efeb062",
-    name: "Add projects section and the ability to create multiple projects",
-    description: "Router would be needed. Can create and edit project, as well as add users to that particular project",
+    name: "Email Notification Configuration",
+    description: "Users are not receiving email notifications for important events. Review and configure email notification settings to ensure users are appropriately informed.",
     reporter: userMock1,
     asignee: userMock1,
     comments: [],
@@ -6765,20 +6765,20 @@ var createdAt3 = (/* @__PURE__ */ new Date("2022-01-01")).valueOf(), updatedAt2 
 // src/domain/project/project.mock.ts
 var projectMock1 = {
   id: "jira-clone",
-  name: "JIRA Clone",
-  description: "Software project",
+  name: "Swift Scrum",
+  description: "SwiftScrum stands as a web-based application designed for project management and communication, catering to efficient task management for both teams and individuals. With its user-friendly design, swiftScrum ensures simplicity in learning and adaptability to various workflows.",
   users: usersMock,
   categories: categoriesMock1,
-  image: "https://admin.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/10400?size=xxlarge",
+  image: "https://admin.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/10405?size=xxlarge",
   createdAt: (/* @__PURE__ */ new Date("2023-01-01 10:00")).valueOf()
 }, projectMock2 = {
   id: "second-project",
   name: "Second project",
-  description: "Super long description to test how it clamps on project card in the projects page and in the project sidebar",
+  description: "Description for second project.",
   users: usersMock.slice(0, 3),
   // Only the first 3 users
   categories: categoriesMock2,
-  image: "https://admin.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/10401?size=xxlarge",
+  image: "https://admin.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/10406?size=xxlarge",
   createdAt: (/* @__PURE__ */ new Date("2023-01-01 11:00")).valueOf()
 }, projectsMock = [projectMock1, projectMock2];
 
@@ -7805,7 +7805,7 @@ function NotFound404Route() {
 }
 
 // server-assets-manifest:@remix-run/dev/assets-manifest
-var assets_manifest_default = { entry: { module: "/build/entry.client-4CY7YKVG.js", imports: ["/build/_shared/chunk-6DAQMQYB.js", "/build/_shared/chunk-QERF53GL.js", "/build/_shared/chunk-JR7JHID7.js", "/build/_shared/chunk-4D7IJTTE.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-C54XUT2M.js", imports: ["/build/_shared/chunk-TH5S6TNI.js", "/build/_shared/chunk-FSLR7CSD.js", "/build/_shared/chunk-NY22QEBI.js", "/build/_shared/chunk-Y5IUY2WO.js", "/build/_shared/chunk-WA2U3LPD.js", "/build/_shared/chunk-SVGTTPU7.js", "/build/_shared/chunk-XCXQ6IAD.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !0, hasErrorBoundary: !0 }, "routes/404": { id: "routes/404", parentId: "root", path: "404", index: void 0, caseSensitive: void 0, module: "/build/routes/404-WJMBUNTI.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/__main": { id: "routes/__main", parentId: "root", path: void 0, index: void 0, caseSensitive: void 0, module: "/build/routes/__main-WJF3YPIQ.js", imports: ["/build/_shared/chunk-6PMHYZHM.js", "/build/_shared/chunk-P4P35UP3.js", "/build/_shared/chunk-4TVAHHRS.js", "/build/_shared/chunk-EZ43UAVT.js", "/build/_shared/chunk-HKTS347N.js", "/build/_shared/chunk-GE42YXME.js", "/build/_shared/chunk-KTTHBX2X.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/__main/projects": { id: "routes/__main/projects", parentId: "routes/__main", path: "projects", index: void 0, caseSensitive: void 0, module: "/build/routes/__main/projects-S4STP3U5.js", imports: ["/build/_shared/chunk-EDGCQ7EH.js", "/build/_shared/chunk-NCHMJE4I.js", "/build/_shared/chunk-VD4CXEVL.js", "/build/_shared/chunk-EEOCHXUC.js", "/build/_shared/chunk-KHVVK2Q5.js", "/build/_shared/chunk-FSLR7CSD.js", "/build/_shared/chunk-NY22QEBI.js", "/build/_shared/chunk-WA2U3LPD.js"], hasAction: !0, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !0 }, "routes/__main/projects.$projectId": { id: "routes/__main/projects.$projectId", parentId: "routes/__main", path: "projects/:projectId", index: void 0, caseSensitive: void 0, module: "/build/routes/__main/projects.$projectId-Z3U7QIVS.js", imports: ["/build/_shared/chunk-AUYLHJJM.js", "/build/_shared/chunk-NY22QEBI.js", "/build/_shared/chunk-Y5IUY2WO.js", "/build/_shared/chunk-WA2U3LPD.js", "/build/_shared/chunk-SVGTTPU7.js", "/build/_shared/chunk-XCXQ6IAD.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !0, hasErrorBoundary: !0 }, "routes/__main/projects.$projectId/$": { id: "routes/__main/projects.$projectId/$", parentId: "routes/__main/projects.$projectId", path: "*", index: void 0, caseSensitive: void 0, module: "/build/routes/__main/projects.$projectId/$-HBKK36VO.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !0, hasErrorBoundary: !1 }, "routes/__main/projects.$projectId/analytics": { id: "routes/__main/projects.$projectId/analytics", parentId: "routes/__main/projects.$projectId", path: "analytics", index: void 0, caseSensitive: void 0, module: "/build/routes/__main/projects.$projectId/analytics-GVJPB2AU.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !0 }, "routes/__main/projects.$projectId/board": { id: "routes/__main/projects.$projectId/board", parentId: "routes/__main/projects.$projectId", path: "board", index: void 0, caseSensitive: void 0, module: "/build/routes/__main/projects.$projectId/board-33CS53ST.js", imports: ["/build/_shared/chunk-4NR53C3Y.js", "/build/_shared/chunk-VXZWJF3R.js", "/build/_shared/chunk-YNKUQ7C5.js", "/build/_shared/chunk-6R7GYKXN.js", "/build/_shared/chunk-UD3IMZBA.js", "/build/_shared/chunk-6PMHYZHM.js", "/build/_shared/chunk-P4P35UP3.js", "/build/_shared/chunk-4TVAHHRS.js", "/build/_shared/chunk-HKTS347N.js", "/build/_shared/chunk-GE42YXME.js", "/build/_shared/chunk-KTTHBX2X.js", "/build/_shared/chunk-FSLR7CSD.js"], hasAction: !0, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !0 }, "routes/__main/projects.$projectId/board/issue/$issueId": { id: "routes/__main/projects.$projectId/board/issue/$issueId", parentId: "routes/__main/projects.$projectId/board", path: "issue/:issueId", index: void 0, caseSensitive: void 0, module: "/build/routes/__main/projects.$projectId/board/issue/$issueId-CQGFCC5B.js", imports: ["/build/_shared/chunk-B5UC4I5R.js", "/build/_shared/chunk-HFO4DK57.js", "/build/_shared/chunk-EDGCQ7EH.js", "/build/_shared/chunk-NCHMJE4I.js", "/build/_shared/chunk-WFQVPQSX.js", "/build/_shared/chunk-EEOCHXUC.js", "/build/_shared/chunk-KHVVK2Q5.js", "/build/_shared/chunk-TH5S6TNI.js", "/build/_shared/chunk-EZ43UAVT.js", "/build/_shared/chunk-AUYLHJJM.js", "/build/_shared/chunk-NY22QEBI.js", "/build/_shared/chunk-Y5IUY2WO.js", "/build/_shared/chunk-WA2U3LPD.js", "/build/_shared/chunk-XCXQ6IAD.js"], hasAction: !0, hasLoader: !0, hasCatchBoundary: !0, hasErrorBoundary: !1 }, "routes/__main/projects.$projectId/board/issue/issue-event": { id: "routes/__main/projects.$projectId/board/issue/issue-event", parentId: "routes/__main/projects.$projectId/board", path: "issue/issue-event", index: void 0, caseSensitive: void 0, module: "/build/routes/__main/projects.$projectId/board/issue/issue-event-HBPGP2AU.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/__main/projects.$projectId/board/issue/new": { id: "routes/__main/projects.$projectId/board/issue/new", parentId: "routes/__main/projects.$projectId/board", path: "issue/new", index: void 0, caseSensitive: void 0, module: "/build/routes/__main/projects.$projectId/board/issue/new-BV547Y6L.js", imports: ["/build/_shared/chunk-B5UC4I5R.js", "/build/_shared/chunk-HFO4DK57.js", "/build/_shared/chunk-EDGCQ7EH.js", "/build/_shared/chunk-NCHMJE4I.js", "/build/_shared/chunk-WFQVPQSX.js", "/build/_shared/chunk-EEOCHXUC.js", "/build/_shared/chunk-KHVVK2Q5.js", "/build/_shared/chunk-TH5S6TNI.js", "/build/_shared/chunk-EZ43UAVT.js", "/build/_shared/chunk-AUYLHJJM.js", "/build/_shared/chunk-NY22QEBI.js", "/build/_shared/chunk-WA2U3LPD.js"], hasAction: !0, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/__main/projects.$projectId/server-error": { id: "routes/__main/projects.$projectId/server-error", parentId: "routes/__main/projects.$projectId", path: "server-error", index: void 0, caseSensitive: void 0, module: "/build/routes/__main/projects.$projectId/server-error-7FRKP6YA.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !0 }, "routes/__main/projects/new": { id: "routes/__main/projects/new", parentId: "routes/__main/projects", path: "new", index: void 0, caseSensitive: void 0, module: "/build/routes/__main/projects/new-ZZXJAEMG.js", imports: ["/build/_shared/chunk-YNKUQ7C5.js", "/build/_shared/chunk-WFQVPQSX.js", "/build/_shared/chunk-6R7GYKXN.js", "/build/_shared/chunk-UD3IMZBA.js", "/build/_shared/chunk-EZ43UAVT.js", "/build/_shared/chunk-HKTS347N.js", "/build/_shared/chunk-GE42YXME.js", "/build/_shared/chunk-KTTHBX2X.js"], hasAction: !0, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/action/logout": { id: "routes/action/logout", parentId: "root", path: "action/logout", index: void 0, caseSensitive: void 0, module: "/build/routes/action/logout-6TZMVFRF.js", imports: void 0, hasAction: !0, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/action/set-theme": { id: "routes/action/set-theme", parentId: "root", path: "action/set-theme", index: void 0, caseSensitive: void 0, module: "/build/routes/action/set-theme-65MGGDEN.js", imports: void 0, hasAction: !0, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/index": { id: "routes/index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/index-HUH7SFBN.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !0, hasErrorBoundary: !1 }, "routes/login": { id: "routes/login", parentId: "root", path: "login", index: void 0, caseSensitive: void 0, module: "/build/routes/login-TM6WV5IR.js", imports: ["/build/_shared/chunk-HFO4DK57.js", "/build/_shared/chunk-VXZWJF3R.js", "/build/_shared/chunk-NCHMJE4I.js", "/build/_shared/chunk-UD3IMZBA.js", "/build/_shared/chunk-KHVVK2Q5.js", "/build/_shared/chunk-4TVAHHRS.js", "/build/_shared/chunk-HKTS347N.js", "/build/_shared/chunk-KTTHBX2X.js"], hasAction: !0, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, version: "780eb93f", hmr: void 0, url: "/build/manifest-780EB93F.js" };
+var assets_manifest_default = { entry: { module: "/build/entry.client-4CY7YKVG.js", imports: ["/build/_shared/chunk-6DAQMQYB.js", "/build/_shared/chunk-QERF53GL.js", "/build/_shared/chunk-JR7JHID7.js", "/build/_shared/chunk-4D7IJTTE.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-MEY7VFIV.js", imports: ["/build/_shared/chunk-TH5S6TNI.js", "/build/_shared/chunk-FSLR7CSD.js", "/build/_shared/chunk-NY22QEBI.js", "/build/_shared/chunk-Y5IUY2WO.js", "/build/_shared/chunk-WA2U3LPD.js", "/build/_shared/chunk-SVGTTPU7.js", "/build/_shared/chunk-XCXQ6IAD.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !0, hasErrorBoundary: !0 }, "routes/404": { id: "routes/404", parentId: "root", path: "404", index: void 0, caseSensitive: void 0, module: "/build/routes/404-WJMBUNTI.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/__main": { id: "routes/__main", parentId: "root", path: void 0, index: void 0, caseSensitive: void 0, module: "/build/routes/__main-WJF3YPIQ.js", imports: ["/build/_shared/chunk-6PMHYZHM.js", "/build/_shared/chunk-P4P35UP3.js", "/build/_shared/chunk-4TVAHHRS.js", "/build/_shared/chunk-EZ43UAVT.js", "/build/_shared/chunk-HKTS347N.js", "/build/_shared/chunk-GE42YXME.js", "/build/_shared/chunk-KTTHBX2X.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/__main/projects": { id: "routes/__main/projects", parentId: "routes/__main", path: "projects", index: void 0, caseSensitive: void 0, module: "/build/routes/__main/projects-F6DU22UB.js", imports: ["/build/_shared/chunk-376LLFFT.js", "/build/_shared/chunk-BQPQJZQN.js", "/build/_shared/chunk-VD4CXEVL.js", "/build/_shared/chunk-EEOCHXUC.js", "/build/_shared/chunk-KHVVK2Q5.js", "/build/_shared/chunk-FSLR7CSD.js", "/build/_shared/chunk-NY22QEBI.js", "/build/_shared/chunk-WA2U3LPD.js"], hasAction: !0, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !0 }, "routes/__main/projects.$projectId": { id: "routes/__main/projects.$projectId", parentId: "routes/__main", path: "projects/:projectId", index: void 0, caseSensitive: void 0, module: "/build/routes/__main/projects.$projectId-Z3U7QIVS.js", imports: ["/build/_shared/chunk-AUYLHJJM.js", "/build/_shared/chunk-NY22QEBI.js", "/build/_shared/chunk-Y5IUY2WO.js", "/build/_shared/chunk-WA2U3LPD.js", "/build/_shared/chunk-SVGTTPU7.js", "/build/_shared/chunk-XCXQ6IAD.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !0, hasErrorBoundary: !0 }, "routes/__main/projects.$projectId/$": { id: "routes/__main/projects.$projectId/$", parentId: "routes/__main/projects.$projectId", path: "*", index: void 0, caseSensitive: void 0, module: "/build/routes/__main/projects.$projectId/$-HBKK36VO.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !0, hasErrorBoundary: !1 }, "routes/__main/projects.$projectId/analytics": { id: "routes/__main/projects.$projectId/analytics", parentId: "routes/__main/projects.$projectId", path: "analytics", index: void 0, caseSensitive: void 0, module: "/build/routes/__main/projects.$projectId/analytics-GVJPB2AU.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !0 }, "routes/__main/projects.$projectId/board": { id: "routes/__main/projects.$projectId/board", parentId: "routes/__main/projects.$projectId", path: "board", index: void 0, caseSensitive: void 0, module: "/build/routes/__main/projects.$projectId/board-33CS53ST.js", imports: ["/build/_shared/chunk-4NR53C3Y.js", "/build/_shared/chunk-VXZWJF3R.js", "/build/_shared/chunk-YNKUQ7C5.js", "/build/_shared/chunk-6R7GYKXN.js", "/build/_shared/chunk-UD3IMZBA.js", "/build/_shared/chunk-6PMHYZHM.js", "/build/_shared/chunk-P4P35UP3.js", "/build/_shared/chunk-4TVAHHRS.js", "/build/_shared/chunk-HKTS347N.js", "/build/_shared/chunk-GE42YXME.js", "/build/_shared/chunk-KTTHBX2X.js", "/build/_shared/chunk-FSLR7CSD.js"], hasAction: !0, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !0 }, "routes/__main/projects.$projectId/board/issue/$issueId": { id: "routes/__main/projects.$projectId/board/issue/$issueId", parentId: "routes/__main/projects.$projectId/board", path: "issue/:issueId", index: void 0, caseSensitive: void 0, module: "/build/routes/__main/projects.$projectId/board/issue/$issueId-VSJ7VWBM.js", imports: ["/build/_shared/chunk-FWLV63FH.js", "/build/_shared/chunk-HFO4DK57.js", "/build/_shared/chunk-376LLFFT.js", "/build/_shared/chunk-BQPQJZQN.js", "/build/_shared/chunk-WFQVPQSX.js", "/build/_shared/chunk-EEOCHXUC.js", "/build/_shared/chunk-KHVVK2Q5.js", "/build/_shared/chunk-TH5S6TNI.js", "/build/_shared/chunk-EZ43UAVT.js", "/build/_shared/chunk-AUYLHJJM.js", "/build/_shared/chunk-NY22QEBI.js", "/build/_shared/chunk-Y5IUY2WO.js", "/build/_shared/chunk-WA2U3LPD.js", "/build/_shared/chunk-XCXQ6IAD.js"], hasAction: !0, hasLoader: !0, hasCatchBoundary: !0, hasErrorBoundary: !1 }, "routes/__main/projects.$projectId/board/issue/issue-event": { id: "routes/__main/projects.$projectId/board/issue/issue-event", parentId: "routes/__main/projects.$projectId/board", path: "issue/issue-event", index: void 0, caseSensitive: void 0, module: "/build/routes/__main/projects.$projectId/board/issue/issue-event-HBPGP2AU.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/__main/projects.$projectId/board/issue/new": { id: "routes/__main/projects.$projectId/board/issue/new", parentId: "routes/__main/projects.$projectId/board", path: "issue/new", index: void 0, caseSensitive: void 0, module: "/build/routes/__main/projects.$projectId/board/issue/new-2ID454OP.js", imports: ["/build/_shared/chunk-FWLV63FH.js", "/build/_shared/chunk-HFO4DK57.js", "/build/_shared/chunk-376LLFFT.js", "/build/_shared/chunk-BQPQJZQN.js", "/build/_shared/chunk-WFQVPQSX.js", "/build/_shared/chunk-EEOCHXUC.js", "/build/_shared/chunk-KHVVK2Q5.js", "/build/_shared/chunk-TH5S6TNI.js", "/build/_shared/chunk-EZ43UAVT.js", "/build/_shared/chunk-AUYLHJJM.js", "/build/_shared/chunk-NY22QEBI.js", "/build/_shared/chunk-WA2U3LPD.js"], hasAction: !0, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/__main/projects.$projectId/server-error": { id: "routes/__main/projects.$projectId/server-error", parentId: "routes/__main/projects.$projectId", path: "server-error", index: void 0, caseSensitive: void 0, module: "/build/routes/__main/projects.$projectId/server-error-7FRKP6YA.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !0 }, "routes/__main/projects/new": { id: "routes/__main/projects/new", parentId: "routes/__main/projects", path: "new", index: void 0, caseSensitive: void 0, module: "/build/routes/__main/projects/new-ZZXJAEMG.js", imports: ["/build/_shared/chunk-YNKUQ7C5.js", "/build/_shared/chunk-WFQVPQSX.js", "/build/_shared/chunk-6R7GYKXN.js", "/build/_shared/chunk-UD3IMZBA.js", "/build/_shared/chunk-EZ43UAVT.js", "/build/_shared/chunk-HKTS347N.js", "/build/_shared/chunk-GE42YXME.js", "/build/_shared/chunk-KTTHBX2X.js"], hasAction: !0, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/action/logout": { id: "routes/action/logout", parentId: "root", path: "action/logout", index: void 0, caseSensitive: void 0, module: "/build/routes/action/logout-6TZMVFRF.js", imports: void 0, hasAction: !0, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/action/set-theme": { id: "routes/action/set-theme", parentId: "root", path: "action/set-theme", index: void 0, caseSensitive: void 0, module: "/build/routes/action/set-theme-65MGGDEN.js", imports: void 0, hasAction: !0, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/index": { id: "routes/index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/index-HUH7SFBN.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !0, hasErrorBoundary: !1 }, "routes/login": { id: "routes/login", parentId: "root", path: "login", index: void 0, caseSensitive: void 0, module: "/build/routes/login-FHCT5ZZT.js", imports: ["/build/_shared/chunk-HFO4DK57.js", "/build/_shared/chunk-VXZWJF3R.js", "/build/_shared/chunk-BQPQJZQN.js", "/build/_shared/chunk-UD3IMZBA.js", "/build/_shared/chunk-KHVVK2Q5.js", "/build/_shared/chunk-4TVAHHRS.js", "/build/_shared/chunk-HKTS347N.js", "/build/_shared/chunk-KTTHBX2X.js"], hasAction: !0, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, version: "60852e12", hmr: void 0, url: "/build/manifest-60852E12.js" };
 
 // server-entry-module:@remix-run/dev/server-build
 var assetsBuildDirectory = "public/build", future = { v2_dev: !1, unstable_postcss: !1, unstable_tailwind: !1, v2_errorBoundary: !1, v2_headers: !1, v2_meta: !0, v2_normalizeFormMethod: !0, v2_routeConvention: !1 }, publicPath = "/build/", entry = { module: entry_server_exports }, routes = {

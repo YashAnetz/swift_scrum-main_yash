@@ -1,6 +1,34 @@
-# Jira clone v2.0
+# Swift Scrum
 
-A simplified Jira clone application with some custom modifications made with Remix Run. This is a personal project for practicing skills and it is not intended to work as a real Jira application. It is still in early development and some features and improves are coming.
+swiftScrum stands as a web-based application designed for project management
+and communication, catering to efficient task management for both teams and
+individuals. With its user-friendly design, swiftScrum ensures simplicity in
+learning and adaptability to various workflows. The following highlights key
+aspects that make swiftScrum appealing to potential users:
+
+
+swiftScrum revolves around three primary organizational components: Boards,
+Lists, and Cards. A Board can represent an entire project or a specific element
+within a project. Lists function as columns within Boards, while Cards represent
+individual tasks. The visual representation of task status is facilitated by moving
+Cards across Lists.
+
+
+The flexibility of swiftScrum's framework empowers users to create and
+customize workflows tailored to their specific needs. Adding or removing Lists,
+Cards, or entire Boards is a seamless process, ensuring adaptability to the
+evolving requirements of a team.
+
+
+swiftScrum facilitates collaboration by allowing team members to contribute
+comments, attachments, and task assignments. The option to mention other
+team members in comments fosters informed communication and effective
+collaboration.
+
+
+The color-coded labeling system in swiftScrum enables users to categorize tasks
+based on priority, type, or any other specific criteria. This feature aids teams in
+maintaining organizational structure and making timely decisions related to work.
 
 For pragmatic purposes, many features are not included. Others have been modified according to my tastes. The application should serve the basic functionalities of a project management software. I have taken inspiration from the actual [Jira website](https://www.atlassian.com/es/software/jira), as well as from [Trello](https://trello.com/). Also, [Ivor's Jira clone](https://github.com/oldboyxx/jira_clone) has been a great inspiration for me (I have to admit I like his designs more than Jira's originals). I only took ideas and resources (fonts and icons) from the original projects, all developments have being from scratch and by myself.
 
