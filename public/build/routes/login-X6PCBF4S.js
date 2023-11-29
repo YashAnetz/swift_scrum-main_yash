@@ -29,7 +29,7 @@ import "/build/_shared/chunk-FSLR7CSD.js";
 import {
   Form,
   useLoaderData
-} from "/build/_shared/chunk-QERF53GL.js";
+} from "/build/_shared/chunk-N6RV6PVQ.js";
 import {
   require_node
 } from "/build/_shared/chunk-WA2U3LPD.js";
@@ -71,11 +71,6 @@ var LoginView = ({ users }) => {
       lineNumber: 29,
       columnNumber: 7
     }, this),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("h2", { style: { fontSize: "20px", color: "white" }, className: "mt-3 mb-8 font-primary-light text-lg text-font-dark dark:text-font-light-dark", children: "Users have been added by your organization . Contact your admin to add new users." }, void 0, false, {
-      fileName: "src/app/ui/login/login.view.tsx",
-      lineNumber: 30,
-      columnNumber: 7
-    }, this),
     /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(Form, { method: "post", className: "mx-auto w-[300px]", children: [
       /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(
         $cc7e05a45900e73f$export$be92b6f5f03c0fe9,
@@ -94,22 +89,22 @@ var LoginView = ({ users }) => {
                   /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { className: "flex items-center gap-2", children: [
                     /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(UserAvatar, { ...selectedValue }, void 0, false, {
                       fileName: "src/app/ui/login/login.view.tsx",
-                      lineNumber: 44,
+                      lineNumber: 41,
                       columnNumber: 15
                     }, this),
                     /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)($cc7e05a45900e73f$export$4c8d1a57a761ef94, {}, void 0, false, {
                       fileName: "src/app/ui/login/login.view.tsx",
-                      lineNumber: 45,
+                      lineNumber: 42,
                       columnNumber: 15
                     }, this)
                   ] }, void 0, true, {
                     fileName: "src/app/ui/login/login.view.tsx",
-                    lineNumber: 43,
+                    lineNumber: 40,
                     columnNumber: 13
                   }, this),
                   /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(SelectTriggerIcon, {}, void 0, false, {
                     fileName: "src/app/ui/login/login.view.tsx",
-                    lineNumber: 47,
+                    lineNumber: 44,
                     columnNumber: 13
                   }, this)
                 ]
@@ -118,7 +113,7 @@ var LoginView = ({ users }) => {
               true,
               {
                 fileName: "src/app/ui/login/login.view.tsx",
-                lineNumber: 39,
+                lineNumber: 36,
                 columnNumber: 11
               },
               this
@@ -126,49 +121,49 @@ var LoginView = ({ users }) => {
             /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(SelectContent, { children: [
               /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)($cc7e05a45900e73f$export$2f60d3ec9ad468f2, {}, void 0, false, {
                 fileName: "src/app/ui/login/login.view.tsx",
-                lineNumber: 50,
+                lineNumber: 47,
                 columnNumber: 13
               }, this),
               /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)($cc7e05a45900e73f$export$d5c6c08dc2d3ca7, { children: [
                 users.map((user, index) => /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(SelectItem, { value: user.id, children: [
                   /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(SelectItemIndicator, {}, void 0, false, {
                     fileName: "src/app/ui/login/login.view.tsx",
-                    lineNumber: 54,
+                    lineNumber: 51,
                     columnNumber: 19
                   }, this),
                   /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(UserAvatar, { ...user }, void 0, false, {
                     fileName: "src/app/ui/login/login.view.tsx",
-                    lineNumber: 55,
+                    lineNumber: 52,
                     columnNumber: 19
                   }, this),
                   /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)($cc7e05a45900e73f$export$d6e5bf9c43ea9319, { children: user.name }, void 0, false, {
                     fileName: "src/app/ui/login/login.view.tsx",
-                    lineNumber: 56,
+                    lineNumber: 53,
                     columnNumber: 19
                   }, this)
                 ] }, index, true, {
                   fileName: "src/app/ui/login/login.view.tsx",
-                  lineNumber: 53,
+                  lineNumber: 50,
                   columnNumber: 17
                 }, this)),
                 /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)($cc7e05a45900e73f$export$1ff3c3f08ae963c0, {}, void 0, false, {
                   fileName: "src/app/ui/login/login.view.tsx",
-                  lineNumber: 59,
+                  lineNumber: 56,
                   columnNumber: 15
                 }, this)
               ] }, void 0, true, {
                 fileName: "src/app/ui/login/login.view.tsx",
-                lineNumber: 51,
+                lineNumber: 48,
                 columnNumber: 13
               }, this),
               /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)($cc7e05a45900e73f$export$bf1aedc3039c8d63, {}, void 0, false, {
                 fileName: "src/app/ui/login/login.view.tsx",
-                lineNumber: 61,
+                lineNumber: 58,
                 columnNumber: 13
               }, this)
             ] }, void 0, true, {
               fileName: "src/app/ui/login/login.view.tsx",
-              lineNumber: 49,
+              lineNumber: 46,
               columnNumber: 11
             }, this)
           ]
@@ -177,7 +172,7 @@ var LoginView = ({ users }) => {
         true,
         {
           fileName: "src/app/ui/login/login.view.tsx",
-          lineNumber: 34,
+          lineNumber: 31,
           columnNumber: 9
         },
         this
@@ -196,7 +191,7 @@ var LoginView = ({ users }) => {
         false,
         {
           fileName: "src/app/ui/login/login.view.tsx",
-          lineNumber: 64,
+          lineNumber: 61,
           columnNumber: 9
         },
         this
@@ -211,14 +206,14 @@ var LoginView = ({ users }) => {
         false,
         {
           fileName: "src/app/ui/login/login.view.tsx",
-          lineNumber: 72,
+          lineNumber: 69,
           columnNumber: 9
         },
         this
       )
     ] }, void 0, true, {
       fileName: "src/app/ui/login/login.view.tsx",
-      lineNumber: 33,
+      lineNumber: 30,
       columnNumber: 7
     }, this)
   ] }, void 0, true, {
@@ -241,4 +236,4 @@ function LoginRoute() {
 export {
   LoginRoute as default
 };
-//# sourceMappingURL=/build/routes/login-FHCT5ZZT.js.map
+//# sourceMappingURL=/build/routes/login-X6PCBF4S.js.map

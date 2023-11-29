@@ -1,6 +1,6 @@
 import {
   IssuePanel
-} from "/build/_shared/chunk-FWLV63FH.js";
+} from "/build/_shared/chunk-3TMLYZPY.js";
 import "/build/_shared/chunk-HFO4DK57.js";
 import "/build/_shared/chunk-4NR53C3Y.js";
 import "/build/_shared/chunk-VXZWJF3R.js";
@@ -39,7 +39,7 @@ import {
   useLoaderData,
   useLocation,
   useNavigate
-} from "/build/_shared/chunk-QERF53GL.js";
+} from "/build/_shared/chunk-N6RV6PVQ.js";
 import {
   require_node
 } from "/build/_shared/chunk-WA2U3LPD.js";
@@ -166,4 +166,4 @@ export {
   IssuePanelRoute as default,
   meta
 };
-//# sourceMappingURL=/build/routes/__main/projects.$projectId/board/issue/$issueId-VSJ7VWBM.js.map
+//# sourceMappingURL=/build/routes/__main/projects.$projectId/board/issue/$issueId-2RM5MOCH.js.map

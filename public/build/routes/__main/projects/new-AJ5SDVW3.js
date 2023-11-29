@@ -53,7 +53,7 @@ import {
   useFetcher,
   useLoaderData,
   useNavigate
-} from "/build/_shared/chunk-QERF53GL.js";
+} from "/build/_shared/chunk-N6RV6PVQ.js";
 import {
   require_node
 } from "/build/_shared/chunk-WA2U3LPD.js";
@@ -671,4 +671,4 @@ export {
   IssuePanelRoute as default,
   meta
 };
-//# sourceMappingURL=/build/routes/__main/projects/new-5ZBXM75H.js.map
+//# sourceMappingURL=/build/routes/__main/projects/new-AJ5SDVW3.js.map

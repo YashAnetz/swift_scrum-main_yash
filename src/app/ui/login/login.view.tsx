@@ -27,9 +27,6 @@ export const LoginView = ({ users }: Props) => {
     <div className="mx-auto max-w-[800px] pt-[20vh]" style={{backgroundColor:'#2D4059',position:'relative', padding:'250px',borderRadius:'10px',top:'0px',left:'0',right:'0',left:'0',margin:'auto',height:'100vh'}}>
       <img src={logo}></img>
       <h1 style={{fontSize:'20px', color:'#ffd460'}}>Login to swiftScrum</h1>
-      <h2 style={{fontSize:'20px', color:'white'}} className="mt-3 mb-8 font-primary-light text-lg text-font-dark dark:text-font-light-dark">
-        Users have been added by your organization . Contact your admin to add new users. 
-      </h2>
       <Form  method="post" className="mx-auto w-[300px]">
         <Select.Root 
           name="user"

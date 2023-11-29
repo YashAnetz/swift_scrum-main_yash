@@ -3,7 +3,7 @@ import {
 } from "/build/_shared/chunk-Y5IUY2WO.js";
 import {
   useParams
-} from "/build/_shared/chunk-QERF53GL.js";
+} from "/build/_shared/chunk-N6RV6PVQ.js";
 import "/build/_shared/chunk-XCXQ6IAD.js";
 import {
   require_jsx_dev_runtime
@@ -36,4 +36,4 @@ export {
   CatchBoundary,
   Error404Route as default
 };
-//# sourceMappingURL=/build/routes/__main/projects.$projectId/$-HBKK36VO.js.map
+//# sourceMappingURL=/build/routes/__main/projects.$projectId/$-QYWSSOBF.js.map
