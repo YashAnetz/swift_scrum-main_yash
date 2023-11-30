@@ -1,6 +1,6 @@
 import {
   IssuePanel
-} from "/build/_shared/chunk-3TMLYZPY.js";
+} from "/build/_shared/chunk-FWLV63FH.js";
 import "/build/_shared/chunk-HFO4DK57.js";
 import "/build/_shared/chunk-4NR53C3Y.js";
 import "/build/_shared/chunk-VXZWJF3R.js";
@@ -25,7 +25,7 @@ import {
   formatProperties,
   formatTags
 } from "/build/_shared/chunk-NY22QEBI.js";
-import "/build/_shared/chunk-N6RV6PVQ.js";
+import "/build/_shared/chunk-QERF53GL.js";
 import {
   require_node
 } from "/build/_shared/chunk-WA2U3LPD.js";
@@ -41,7 +41,7 @@ var import_node = __toESM(require_node());
 var import_jsx_dev_runtime = __toESM(require_jsx_dev_runtime());
 var meta = ({ data }) => {
   const { projectId } = data;
-  const title = `Jira clone - Create issue`;
+  const title = `Swift Scrum - Create issue`;
   const description = "Create new issue, edit it and and assigne team members.";
   const image = "https://jira-clone.fly.dev/static/images/readme/issue-panel.png";
   const url = `https://jira-clone.fly.dev/projects/${projectId}/board/issue/new`;
@@ -83,4 +83,4 @@ export {
   IssuePanelRoute as default,
   meta
 };
-//# sourceMappingURL=/build/routes/__main/projects.$projectId/board/issue/new-FGRWHHH3.js.map
+//# sourceMappingURL=/build/routes/__main/projects.$projectId/board/issue/new-KXP23CI4.js.map

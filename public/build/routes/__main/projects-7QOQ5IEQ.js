@@ -40,7 +40,7 @@ import {
   Link,
   Outlet,
   useLoaderData
-} from "/build/_shared/chunk-N6RV6PVQ.js";
+} from "/build/_shared/chunk-QERF53GL.js";
 import {
   require_node
 } from "/build/_shared/chunk-WA2U3LPD.js";
@@ -354,7 +354,7 @@ var ProjectCard = ({ project }) => {
 // src/app/routes/__main/projects.tsx
 var import_jsx_dev_runtime2 = __toESM(require_jsx_dev_runtime());
 var meta = () => {
-  const title = "Jira clone - Projects";
+  const title = "Swift Scrum - Projects";
   const description = "See all your projects in one place. Create new ones and assigne team members.";
   const image = "https://jira-clone.fly.dev/static/images/readme/projects.png";
   const url = "https://jira-clone.fly.dev/projects";
@@ -417,4 +417,4 @@ export {
   ProjectsRoute as default,
   meta
 };
-//# sourceMappingURL=/build/routes/__main/projects-Q5K3FUYW.js.map
+//# sourceMappingURL=/build/routes/__main/projects-7QOQ5IEQ.js.map

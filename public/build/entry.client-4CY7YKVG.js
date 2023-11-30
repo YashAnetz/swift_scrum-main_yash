@@ -3,7 +3,7 @@ import {
 } from "/build/_shared/chunk-6DAQMQYB.js";
 import {
   RemixBrowser
-} from "/build/_shared/chunk-N6RV6PVQ.js";
+} from "/build/_shared/chunk-QERF53GL.js";
 import {
   require_jsx_dev_runtime,
   require_react
@@ -65,4 +65,4 @@ function hydrate() {
   });
 }
 window.requestIdleCallback ? window.requestIdleCallback(hydrate) : window.setTimeout(hydrate, 1);
-//# sourceMappingURL=/build/entry.client-TPCWP6JA.js.map
+//# sourceMappingURL=/build/entry.client-4CY7YKVG.js.map

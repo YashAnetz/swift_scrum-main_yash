@@ -77,7 +77,7 @@ import {
   useRevalidator,
   useSearchParams,
   useSubmit
-} from "/build/_shared/chunk-N6RV6PVQ.js";
+} from "/build/_shared/chunk-QERF53GL.js";
 import {
   require_node
 } from "/build/_shared/chunk-WA2U3LPD.js";
@@ -6020,7 +6020,7 @@ var Categories = ({ categories }) => {
 var import_jsx_dev_runtime8 = __toESM(require_jsx_dev_runtime());
 var meta = ({ data }) => {
   const { project } = data;
-  const title = "Jira clone - Board";
+  const title = "Swift Scrum - Board";
   const description = "Manage your project. Create, edit, delete new issues and assigne them.";
   const image = "https://jira-clone.fly.dev/static/images/readme/project.png";
   const url = `https://jira-clone.fly.dev/projects/${project.id}/board`;
@@ -6090,4 +6090,4 @@ react/cjs/react-jsx-runtime.development.js:
    * LICENSE file in the root directory of this source tree.
    *)
 */
-//# sourceMappingURL=/build/routes/__main/projects.$projectId/board-EFITQZOE.js.map
+//# sourceMappingURL=/build/routes/__main/projects.$projectId/board-7BBJREOG.js.map

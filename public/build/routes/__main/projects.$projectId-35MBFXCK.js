@@ -11,7 +11,7 @@ import {
   Outlet,
   useLoaderData,
   useLocation
-} from "/build/_shared/chunk-N6RV6PVQ.js";
+} from "/build/_shared/chunk-QERF53GL.js";
 import {
   require_node
 } from "/build/_shared/chunk-WA2U3LPD.js";
@@ -92,7 +92,7 @@ var ProjectView = ({
 var import_jsx_dev_runtime2 = __toESM(require_jsx_dev_runtime());
 var meta = ({ data }) => {
   const { projectSummary } = data;
-  const title = `Jira clone - ${projectSummary.name || "Project"}`;
+  const title = `Swift Scrum - ${projectSummary.name || "Project"}`;
   const description = "See all your projects in one place. Create new ones and assigne team members.";
   const image = "https://jira-clone.fly.dev/static/images/readme/project.png";
   const url = `https://jira-clone.fly.dev/projects/${projectSummary.id}`;
@@ -163,4 +163,4 @@ export {
   ProjectRoute as default,
   meta
 };
-//# sourceMappingURL=/build/routes/__main/projects.$projectId-GROHGAYY.js.map
+//# sourceMappingURL=/build/routes/__main/projects.$projectId-35MBFXCK.js.map

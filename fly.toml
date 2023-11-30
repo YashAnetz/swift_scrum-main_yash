@@ -1,6 +1,6 @@
 # fly.toml file generated for jira-clone on 2023-01-13T19:03:42+01:00
 
-app = "jira-clone"
+app = "-clone"
 kill_signal = "SIGINT"
 kill_timeout = 5
 processes = []

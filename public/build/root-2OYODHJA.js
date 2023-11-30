@@ -20,7 +20,7 @@ import {
   ScrollRestoration,
   useFetcher,
   useLoaderData
-} from "/build/_shared/chunk-N6RV6PVQ.js";
+} from "/build/_shared/chunk-QERF53GL.js";
 import {
   require_node
 } from "/build/_shared/chunk-WA2U3LPD.js";
@@ -190,7 +190,7 @@ var links = () => {
   ];
 };
 var meta = () => {
-  const title = "Jira clone";
+  const title = "Swift Scrum";
   const description = "Task manager application inspired in Jira. Side project made with Remix, React, Tailwind, TypeScript and more.";
   const image = "https://jira-clone.fly.dev/static/images/select-theme-light.png";
   const url = "https://jira-clone.fly.dev";
@@ -416,4 +416,4 @@ export {
   links,
   meta
 };
-//# sourceMappingURL=/build/root-PPMLYUFC.js.map
+//# sourceMappingURL=/build/root-2OYODHJA.js.map

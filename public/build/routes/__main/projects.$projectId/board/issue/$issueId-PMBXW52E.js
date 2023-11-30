@@ -1,6 +1,6 @@
 import {
   IssuePanel
-} from "/build/_shared/chunk-3TMLYZPY.js";
+} from "/build/_shared/chunk-FWLV63FH.js";
 import "/build/_shared/chunk-HFO4DK57.js";
 import "/build/_shared/chunk-4NR53C3Y.js";
 import "/build/_shared/chunk-VXZWJF3R.js";
@@ -39,7 +39,7 @@ import {
   useLoaderData,
   useLocation,
   useNavigate
-} from "/build/_shared/chunk-N6RV6PVQ.js";
+} from "/build/_shared/chunk-QERF53GL.js";
 import {
   require_node
 } from "/build/_shared/chunk-WA2U3LPD.js";
@@ -56,7 +56,7 @@ var import_node = __toESM(require_node());
 var import_jsx_dev_runtime = __toESM(require_jsx_dev_runtime());
 var meta = ({ data }) => {
   const { issue, projectId } = data;
-  const title = `Jira clone - ${issue.name}`;
+  const title = `Swift Scrum - ${issue.name}`;
   const description = issue.description || "No description";
   const image = "https://jira-clone.fly.dev/static/images/readme/issue-panel.png";
   const url = `https://jira-clone.fly.dev/projects/${projectId}/board/issue/${issue.name}`;
@@ -166,4 +166,4 @@ export {
   IssuePanelRoute as default,
   meta
 };
-//# sourceMappingURL=/build/routes/__main/projects.$projectId/board/issue/$issueId-2RM5MOCH.js.map
+//# sourceMappingURL=/build/routes/__main/projects.$projectId/board/issue/$issueId-PMBXW52E.js.map

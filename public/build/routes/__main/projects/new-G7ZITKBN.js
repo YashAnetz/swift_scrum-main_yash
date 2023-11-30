@@ -53,7 +53,7 @@ import {
   useFetcher,
   useLoaderData,
   useNavigate
-} from "/build/_shared/chunk-N6RV6PVQ.js";
+} from "/build/_shared/chunk-QERF53GL.js";
 import {
   require_node
 } from "/build/_shared/chunk-WA2U3LPD.js";
@@ -628,7 +628,7 @@ var Spinner = () => /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)(
 // src/app/routes/__main/projects/new.tsx
 var import_jsx_dev_runtime3 = __toESM(require_jsx_dev_runtime());
 var meta = () => {
-  const title = "Jira clone - Create project";
+  const title = "Swift Scrum - Create project";
   const description = "Create new project and assigne team members.";
   const image = "https://jira-clone.fly.dev/static/images/readme/projects-new.png";
   const url = "https://jira-clone.fly.dev/projects/new";
@@ -671,4 +671,4 @@ export {
   IssuePanelRoute as default,
   meta
 };
-//# sourceMappingURL=/build/routes/__main/projects/new-AJ5SDVW3.js.map
+//# sourceMappingURL=/build/routes/__main/projects/new-G7ZITKBN.js.map
